@@ -85,7 +85,7 @@ gulp.task('default', ['styles', 'js-dev', 'browser-sync', 'watch:styles', 'watch
 	gulp.watch(javascripts, function() {
 	    gulp.run('js-dev');
 	});
-	gulp.watch(markupFiles, ['bs-reload']);
+	gulp.watch(markupFiles, browserSync.reload);
 });
 
 gulp.task('watch:styles', function () {
@@ -105,6 +105,83 @@ gulp.task('watch:favicon', function () {
 gulp.task('production', ['styles-production', 'js-production'], function(){});
 
 
+
+// Development
+
+gulp.task('styles', function() {
+	gulp.src('style.styl')
+		.pipe(plugins.sourcemaps.init())
+		.pipe(plugins.stylus({
+			use: [typographic(), nib(), axis(), rupture()]
+			}))
+		.pipe(plugins.postcss(processors))
+		// .pipe(plugins.cssnano())
+		.pipe(plugins.sourcemaps.write('./'))
+		.pipe(gulp.dest('./'))
+		.pipe(browserSync.stream({match: '**/*.css'}));
+});
+
+gulp.task('js-dev', function(){
+	gulp.src(javascripts)
+		// .pipe( uglify() )
+		// .pipe( stripDebug() )
+		.pipe( plugins.concat('site.js') )
+		.pipe( gulp.dest(javascripts_dest) )
+		.pipe(browserSync.reload({stream:true, notify: false}))
+		.pipe(plugins.notify({ message: 'Development JS processed!'}));     // notify when done
+});
+
+
+
+// Production
+
+gulp.task('styles-production', function() {
+	gulp.src('style.styl')
+		.pipe(plugins.sourcemaps.init())
+		.pipe(plugins.stylus({
+			use: [typographic(), nib(), axis(), rupture()]
+			}))
+		.pipe(plugins.postcss(processors))
+		.pipe(plugins.cssnano())
+		.pipe(plugins.sourcemaps.write('./'))
+		.pipe(gulp.dest('./'))
+		.pipe(browserSync.reload({stream:true, notify: false}));
+});
+
+gulp.task('js-production', function(){
+	gulp.src(javascripts)
+		.pipe( plugins.uglify() )
+		.pipe( plugins.stripDebug() )
+		.pipe( plugins.concat('site.js') )
+		.pipe( gulp.dest(javascripts_dest) )
+		.pipe(browserSync.reload({stream:true, notify: false}))
+		.pipe(plugins.notify({ message: 'Production JS processed!'}));     // notify when done
+});
+
+
+
+// Global
+
+gulp.task('browser-sync', function() {
+    browserSync.init({
+        // proxy: "yourlocal.dev"
+        // proxy: "localhost:8888/papercloud/Bladnoch",
+        server: {
+        	baseDir: "./"
+        },
+        browser: "google chrome canary",
+        ghostMode: {
+            clicks: true,
+            location: true,
+            forms: true,
+            scroll: true
+        }
+    });
+});
+
+gulp.task('bs-reload', function() {
+	browserSync.reload({notify: false});
+});
 
 // svg png sprites
 
@@ -177,83 +254,4 @@ gulp.task('minifyimages', function () {
             use: [pngcrush()]
         }))
         .pipe(gulp.dest('img'));
-});
-
-
-
-// Development
-
-gulp.task('styles', function() {
-	gulp.src('style.styl')
-		.pipe(plugins.sourcemaps.init())
-		.pipe(plugins.stylus({
-			use: [typographic(), nib(), axis(), rupture()]
-			}))
-		.pipe(plugins.postcss(processors))
-		// .pipe(plugins.cssnano())
-		.pipe(plugins.sourcemaps.write('./'))
-		.pipe(gulp.dest('./'))
-		.pipe(browserSync.reload({stream:true, notify: false}));
-});
-
-gulp.task('js-dev', function(){
-	gulp.src(javascripts)
-		// .pipe( uglify() )
-		// .pipe( stripDebug() )
-		.pipe( plugins.concat('site.js') )
-		.pipe( gulp.dest(javascripts_dest) )
-		.pipe(browserSync.reload({stream:true, notify: false}))
-		.pipe(plugins.notify({ message: 'Development JS processed!'}));     // notify when done
-});
-
-
-
-// Production
-
-gulp.task('styles-production', function() {
-	gulp.src('style.styl')
-		.pipe(plugins.sourcemaps.init())
-		.pipe(plugins.stylus({
-			use: [typographic(), nib(), axis(), rupture()]
-			}))
-		.pipe(plugins.postcss(processors))
-		.pipe(plugins.cssnano())
-		.pipe(plugins.sourcemaps.write('./'))
-		.pipe(gulp.dest('./'))
-		.pipe(browserSync.reload({stream:true, notify: false}));
-});
-
-gulp.task('js-production', function(){
-	gulp.src(javascripts)
-		.pipe( plugins.uglify() )
-		.pipe( plugins.stripDebug() )
-		.pipe( plugins.concat('site.js') )
-		.pipe( gulp.dest(javascripts_dest) )
-		.pipe(browserSync.reload({stream:true, notify: false}))
-		.pipe(plugins.notify({ message: 'Production JS processed!'}));     // notify when done
-});
-
-
-
-// Global
-
-gulp.task('browser-sync', function() {
-    browserSync.init({
-        // proxy: "yourlocal.dev"
-        // proxy: "localhost:8888/papercloud/Bladnoch",
-        server: {
-        	baseDir: "./"
-        },
-        browser: "google chrome canary",
-        ghostMode: {
-            clicks: true,
-            location: true,
-            forms: true,
-            scroll: true
-        }
-    });
-});
-
-gulp.task('bs-reload', function() {
-	browserSync.reload({notify: false});
 });
