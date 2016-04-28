@@ -8,6 +8,30 @@ $(function() {
 	});
 
 
+	// intro
+
+	var introSequence = [
+		// { e: $('.crowdspot-logo-main'), p: 'transition.slideDownIn' },
+		// { e: $('.crowdspot-logo-bird2, .crowdspot-logo-bird1'), p: 'transition.slideLeftIn', o: { stagger: 250 } },
+		// { e: $('.main-intro'), p: { height: '50vh' }, o: { duration: 1000 } },
+		// { e: $('.crowdspot-logo-main'), p: { opacity: 0 } },
+		{ e: $('#mainroad1, #mainroad2, #mainroad3, #mainroad4, #rivers, #roads'), p: 'transition.slideDownIn', o: { stagger: 250 } },
+	];
+
+	$.Velocity.RunSequence(introSequence);
+
+	// $('.crowdspot-logo-main')
+	// 	.velocity("transition.slideDownIn");
+	// $('.crowdspot-logo-bird2, .crowdspot-logo-bird1')
+	// 	.delay(250)
+	// 	.velocity("transition.slideLeftIn", { 
+	// 		stagger: 250,
+	// 		complete: function() {
+	// 			$('.main-intro').velocity({ height: '500px' });
+	// 		}
+	// 	});
+
+
 	// mailchimp-form for ajax mailchimp forms
 
 	$('.mailchimp-form').ajaxChimp({
@@ -168,76 +192,6 @@ $(function() {
 	$('.main-navigation .menu-item').on('click', function(event) {
 	  $('.main-navigation .menu-item').removeClass('current-menu-item');
 	  $(this).addClass('current-menu-item');
-	});
-
-
-	// Home Splash button
-
-	$('.home-splash-button').on('click', function(event) {
-	  event.preventDefault();
-	  $(window).scrollTo($('.home-more-info'), 1500, {offset:-40});
-	});
-
-
-	// share buttons
-
-	var share_button_top = new Share(".share-button-top", {
-	  title: "Share Button Multiple Element Test",
-	  ui: {
-	    flyout: "top center"
-	  },
-	  networks: {
-	    facebook: {
-	      app_id: "602752456409826",
-	    },
-	    googlePlus: {
-          enabled: false
-        },
-        twitter: {
-          enabled: false
-        },
-        pinterest: {
-          enabled: false
-        },
-        reddit: {
-          enabled: false // Enable Reddit. [Default: true]
-        },
-        linkedin: {
-          enabled: false // Enable LinkedIn. [Default: true]
-        },
-        whatsapp: {
-          enabled: false // Enable WhatsApp. [Default: true]
-        },
-        email: {
-          enabled: false // Enable Email. [Default: true]
-        }
-	  }
-	});
-
-	var share_button_left = new Share(".share-button-left", {
-	  title: "Share Button Multiple Instantiation Test",
-	  ui: {
-	    flyout: "top left",
-	    button_text: "Left"
-	  },
-	  networks: {
-	    facebook: {
-	      app_id: "602752456409826",
-	    }
-	  }
-	});
-
-	var share_button_right = new Share(".share-button-bottom", {
-	  title: "Share Button Multiple Instantiation Test",
-	  ui: {
-	    flyout: "bottom right",
-	    button_text: "Right"
-	  },
-	  networks: {
-	    facebook: {
-	      app_id: "602752456409826",
-	    }
-	  }
 	});
 
 

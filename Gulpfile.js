@@ -57,7 +57,9 @@ var javascripts = [
 	'bower_components/pace/pace.js',
 	'bower_components/jquery.scrollTo/jquery.scrollTo.js',
 	'bower_components/ajaxchimp/jquery.ajaxchimp.js',
-	'bower_components/share-button/build/share.js',
+	'bower_components/velocity/velocity.js',
+	'bower_components/velocity/velocity.ui.js',
+	// 'bower_components/share-button/build/share.js',
 	'js/site.js'
 ]
 
@@ -112,6 +114,7 @@ gulp.task('styles', function() {
 	gulp.src('style.styl')
 		.pipe(plugins.sourcemaps.init())
 		.pipe(plugins.stylus({
+			'include css': true,
 			use: [typographic(), nib(), axis(), rupture()]
 			}))
 		.pipe(plugins.postcss(processors))
@@ -139,6 +142,7 @@ gulp.task('styles-production', function() {
 	gulp.src('style.styl')
 		.pipe(plugins.sourcemaps.init())
 		.pipe(plugins.stylus({
+			'include css': true,
 			use: [typographic(), nib(), axis(), rupture()]
 			}))
 		.pipe(plugins.postcss(processors))

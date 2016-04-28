@@ -547,8 +547,10 @@ iframe {
 .float-right {
   float: right;
 }
+@import url("https://fonts.googleapis.com/css?family=Roboto:400,700,300");
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,300");
 html {
-  font-family: 'Garamond', 'Baskerville', 'Baskerville Old Face', 'Hoefler Text', 'Times New Roman', 'serif';
+  font-family: 'Open Sans', 'Courier', sans-serif;
   font-weight: 300;
   color: #666;
   font-size: 14px;
@@ -637,8 +639,8 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Courier New', 'Courier', 'Lucida Sans Typewriter', 'Lucida Typewriter', 'monospace';
-  font-weight: 500;
+  font-family: 'Roboto', 'Courier', sans-serif;
+  font-weight: 700;
   color: #111;
   clear: both;
 }
@@ -1075,8 +1077,10 @@ td {
   -webkit-transform: translate(-50%, -50%);
           transform: translate(-50%, -50%);
 }
-.align-child {
-  width: 500px;
+@media only screen and (min-width: 600px) {
+  .align-child {
+    width: 500px;
+  }
 }
 .row-container {
   height: 100vh;
@@ -1215,7 +1219,7 @@ td {
   height: 0;
   border-left: 16.3px solid transparent;
   border-right: 16.3px solid transparent;
-  border-top: 16.3px solid #0068c3;
+  border-top: 16.3px solid #bc3917;
   position: absolute;
   bottom: -16.3px;
   right: 14px;
@@ -1228,7 +1232,7 @@ td {
   height: 0;
   border-left: 15px solid transparent;
   border-right: 15px solid transparent;
-  border-top: 15px solid #0074d9;
+  border-top: 15px solid #d13f19;
   position: absolute;
   bottom: -15px;
   right: 15px;
@@ -2009,6 +2013,56 @@ label.label--block {
 .slick-prev {
   left: 10px;
   right: auto;
+}
+.main-intro {
+  height: 100vh;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: box;
+  display: flex;
+  -webkit-box-pack: center;
+  -o-box-pack: center;
+  -ms-flex-pack: center;
+  -webkit-justify-content: center;
+  justify-content: center;
+  -webkit-box-align: center;
+  -o-box-align: center;
+  -ms-flex-align: center;
+  -webkit-align-items: center;
+  align-items: center;
+  -ms-flex-line-pack: distribute;
+  -webkit-align-content: space-around;
+  align-content: space-around;
+}
+.crowdspot-logo-main {
+  opacity: 0;
+  width: 200px;
+  margin: 4em auto 4em;
+}
+.crowdspot-logo-main .crowdspot-logo-bird1,
+.crowdspot-logo-main .crowdspot-logo-bird2 {
+  opacity: 0;
+}
+@media only screen and (min-width: 600px) {
+  .crowdspot-logo-main {
+    width: 500px;
+  }
+}
+.intro-map {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+}
+.intro-map #roads,
+.intro-map #rivers,
+.intro-map #mainroad4,
+.intro-map #mainroad3,
+.intro-map #mainroad2,
+.intro-map #mainroad1 {
+  opacity: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
