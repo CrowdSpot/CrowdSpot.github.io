@@ -11,11 +11,55 @@ $(function() {
 	// intro
 
 	var introSequence = [
-		// { e: $('.crowdspot-logo-main'), p: 'transition.slideDownIn' },
-		// { e: $('.crowdspot-logo-bird2, .crowdspot-logo-bird1'), p: 'transition.slideLeftIn', o: { stagger: 250 } },
-		// { e: $('.main-intro'), p: { height: '50vh' }, o: { duration: 1000 } },
-		// { e: $('.crowdspot-logo-main'), p: { opacity: 0 } },
-		{ e: $('#mainroad1, #mainroad2, #mainroad3, #mainroad4, #rivers, #roads'), p: 'transition.slideDownIn', o: { stagger: 250 } },
+		{ e: $('.crowdspot-logo-main'), p: 'transition.slideDownIn' },
+		{ e: $('.crowdspot-logo-bird2, .crowdspot-logo-bird1'), p: 'transition.slideLeftIn', o: { stagger: 250 } },
+		
+		{ e: $('.main-intro'), p: { height: '60vh' }, o: { duration: 1000 } },
+
+		{ e: $('.crowdspot-logo-main'), p: { opacity: 0 } },
+
+		{ e: $('#mainroad1, #mainroad2, #mainroad3, #mainroad4'), p: 'transition.shrinkIn', o: { stagger: 250 } },
+		{ e: $('.intro-map .map_bases'), p: { rotateZ: '-20deg', translateY: '-20%' }, o: { sequenceQueue: false } },
+		{ e: $('#rivers'), p: 'transition.shrinkIn', o: { stagger: 250 } },
+		{ e: $('#roads'), p: 'transition.shrinkIn', o: { stagger: 250 } },
+
+		
+
+		{ e: $('.intro-build-title'), p: 'transition.slideUpIn' },
+		
+		{ e: $('.intro-build-title'), p: 'transition.slideUpOut', o: { delay: 100, queue: false } },
+
+		{ e: $('.arrow_green, .arrow_grey, .arrow_red'), p: 'transition.slideDownIn', o: { stagger: 250 } },
+
+		{ e: $('.intro-engage-title'), p: 'transition.slideUpIn' },
+
+		{ e: $('.intro-engage-title'), p: 'transition.slideUpOut', o: { delay: 100, queue: false } },
+
+		{ e: $('.arrow_green, .arrow_grey, .arrow_red'), p: 'transition.shrinkOut', o: { stagger: 100 } },
+
+		{ e: $('.circle_green, .circle_grey, .circle_red'), p: 'transition.expandIn', o: { stagger: 250 } },
+
+		{ e: $('.intro-visualise-title'), p: 'transition.slideUpIn' },
+
+		{ e: $('.intro-visualise-title'), p: 'transition.slideUpOut', o: { delay: 100, queue: false } },
+
+		{ e: $('.circle_green, .circle_grey, .circle_red'), p: 'transition.shrinkOut', o: { stagger: 100, delay: 100 } },
+
+		{ e: $('#mainroad1, #mainroad2, #mainroad3, #mainroad4, #roads, #rivers'), p: 'transition.shrinkOut', o: { stagger: 100, delay: 100 } },
+		
+		{ e: $('.crowdspot-logo-bird2, .crowdspot-logo-bird1'), p: { opacity: 0 }, o: { duration: 0 } },
+
+		{ e: $('.crowdspot-logo-main'), p: { opacity: 1 } },
+
+		{ e: $('.crowdspot-logo-bird2, .crowdspot-logo-bird1'), p: 'transition.slideLeftIn', o: { stagger: 250 } },
+
+
+
+		// { e: $('.crowdspot-logo-main'), p: { width: '100px' }, o: { duration: 1000 } },
+
+		// { e: $('.main-intro'), p: { height: '70px' }, o: { duration: 1000, sequenceQueue: false } },
+
+
 	];
 
 	$.Velocity.RunSequence(introSequence);

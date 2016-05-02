@@ -805,7 +805,7 @@ window.Detectizr = (function(window, navigator, document, undefined) {
 |___/_|_|\___|_|\_(_)/ |___/
                    |__/
 
- Version: 1.5.9
+ Version: 1.5.8
   Author: Ken Wheeler
  Website: http://kenwheeler.github.io
     Docs: http://kenwheeler.github.io/slick
@@ -880,7 +880,6 @@ window.Detectizr = (function(window, navigator, document, undefined) {
                 touchMove: true,
                 touchThreshold: 5,
                 useCSS: true,
-                useTransform: false,
                 variableWidth: false,
                 vertical: false,
                 verticalSwiping: false,
@@ -1299,6 +1298,8 @@ window.Detectizr = (function(window, navigator, document, undefined) {
                 .attr('data-slick-index', index)
                 .data('originalStyling', $(element).attr('style') || '');
         });
+
+        _.$slidesCache = _.$slides;
 
         _.$slider.addClass('slick-slider');
 
@@ -1765,8 +1766,6 @@ window.Detectizr = (function(window, navigator, document, undefined) {
 
         if (filter !== null) {
 
-            _.$slidesCache = _.$slides;
-
             _.unload();
 
             _.$slideTrack.children(this.options.slide).detach();
@@ -1797,7 +1796,7 @@ window.Detectizr = (function(window, navigator, document, undefined) {
         if (_.options.infinite === true) {
             while (breakPoint < _.slideCount) {
                 ++pagerQty;
-                breakPoint = counter + _.options.slidesToScroll;
+                breakPoint = counter + _.options.slidesToShow;
                 counter += _.options.slidesToScroll <= _.options.slidesToShow ? _.options.slidesToScroll : _.options.slidesToShow;
             }
         } else if (_.options.centerMode === true) {
@@ -1805,7 +1804,7 @@ window.Detectizr = (function(window, navigator, document, undefined) {
         } else {
             while (breakPoint < _.slideCount) {
                 ++pagerQty;
-                breakPoint = counter + _.options.slidesToScroll;
+                breakPoint = counter + _.options.slidesToShow;
                 counter += _.options.slidesToScroll <= _.options.slidesToShow ? _.options.slidesToScroll : _.options.slidesToShow;
             }
         }
@@ -1874,33 +1873,15 @@ window.Detectizr = (function(window, navigator, document, undefined) {
                 targetSlide = _.$slideTrack.children('.slick-slide').eq(slideIndex + _.options.slidesToShow);
             }
 
-            if (_.options.rtl === true) {
-                if (targetSlide[0]) {
-                    targetLeft = (_.$slideTrack.width() - targetSlide[0].offsetLeft - targetSlide.width()) * -1;
-                } else {
-                    targetLeft =  0;
-                }
-            } else {
-                targetLeft = targetSlide[0] ? targetSlide[0].offsetLeft * -1 : 0;
-            }
+            targetLeft = targetSlide[0] ? targetSlide[0].offsetLeft * -1 : 0;
 
             if (_.options.centerMode === true) {
-                if (_.slideCount <= _.options.slidesToShow || _.options.infinite === false) {
+                if (_.options.infinite === false) {
                     targetSlide = _.$slideTrack.children('.slick-slide').eq(slideIndex);
                 } else {
                     targetSlide = _.$slideTrack.children('.slick-slide').eq(slideIndex + _.options.slidesToShow + 1);
                 }
-
-                if (_.options.rtl === true) {
-                    if (targetSlide[0]) {
-                        targetLeft = (_.$slideTrack.width() - targetSlide[0].offsetLeft - targetSlide.width()) * -1;
-                    } else {
-                        targetLeft =  0;
-                    }
-                } else {
-                    targetLeft = targetSlide[0] ? targetSlide[0].offsetLeft * -1 : 0;
-                }
-
+                targetLeft = targetSlide[0] ? targetSlide[0].offsetLeft * -1 : 0;
                 targetLeft += (_.$list.width() - targetSlide.outerWidth()) / 2;
             }
         }
@@ -2312,7 +2293,6 @@ window.Detectizr = (function(window, navigator, document, undefined) {
 
         if (imgCount > 0) {
             targetImage = $('img[data-lazy]', _.$slider).first();
-            targetImage.attr('src', null);
             targetImage.attr('src', targetImage.attr('data-lazy')).removeClass('slick-loading').load(function() {
                     targetImage.removeAttr('data-lazy');
                     _.progressiveLazyLoad();
@@ -2331,22 +2311,8 @@ window.Detectizr = (function(window, navigator, document, undefined) {
 
     Slick.prototype.refresh = function( initializing ) {
 
-        var _ = this, currentSlide, firstVisible;
-
-        firstVisible = _.slideCount - _.options.slidesToShow;
-
-        // check that the new breakpoint can actually accept the
-        // "current slide" as the current slide, otherwise we need
-        // to set it to the closest possible value.
-        if ( !_.options.infinite ) {
-            if ( _.slideCount <= _.options.slidesToShow ) {
-                _.currentSlide = 0;
-            } else if ( _.currentSlide > firstVisible ) {
-                _.currentSlide = firstVisible;
-            }
-        }
-
-         currentSlide = _.currentSlide;
+        var _ = this,
+            currentSlide = _.currentSlide;
 
         _.destroy(true);
 
@@ -2725,7 +2691,8 @@ window.Detectizr = (function(window, navigator, document, undefined) {
             _.transformType = 'transform';
             _.transitionType = 'transition';
         }
-        _.transformsEnabled = _.options.useTransform && (_.animType !== null && _.animType !== false);
+        _.transformsEnabled = (_.animType !== null && _.animType !== false);
+
     };
 
 
@@ -3420,13 +3387,18 @@ window.Detectizr = (function(window, navigator, document, undefined) {
     };
 
     Slick.prototype.activateADA = function() {
-        var _ = this;
+        var _ = this,
+        _isSlideOnFocus =_.$slider.find('*').is(':focus');
+        // _isSlideOnFocus = _.$slides.is(':focus') || _.$slides.find('*').is(':focus');
 
         _.$slideTrack.find('.slick-active').attr({
-            'aria-hidden': 'false'
+            'aria-hidden': 'false',
+            'tabindex': '0'
         }).find('a, input, button, select').attr({
             'tabindex': '0'
         });
+
+        (_isSlideOnFocus) &&  _.$slideTrack.find('.slick-active').focus();
 
     };
 
@@ -3454,9 +3426,9 @@ window.Detectizr = (function(window, navigator, document, undefined) {
             opt = arguments[0],
             args = Array.prototype.slice.call(arguments, 1),
             l = _.length,
-            i,
+            i = 0,
             ret;
-        for (i = 0; i < l; i++) {
+        for (i; i < l; i++) {
             if (typeof opt == 'object' || typeof opt == 'undefined')
                 _[i].slick = new Slick(_[i], opt);
             else
@@ -3537,7 +3509,7 @@ window.Detectizr = (function(window, navigator, document, undefined) {
 })( window.jQuery || window.Zepto );
 
 /*!
-Waypoints - 3.1.1
+Waypoints - 4.0.0
 Copyright © 2011-2015 Caleb Troughton
 Licensed under the MIT license.
 https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
@@ -4186,7 +4158,7 @@ https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
 }())
 ;
 /*!
-Waypoints Sticky Element Shortcut - 3.1.1
+Waypoints Sticky Element Shortcut - 4.0.0
 Copyright © 2011-2015 Caleb Troughton
 Licensed under the MIT license.
 https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
@@ -4256,7 +4228,7 @@ https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
 }())
 ;
 /*!
- * JavaScript Cookie v2.0.4
+ * JavaScript Cookie v2.0.3
  * https://github.com/js-cookie/js-cookie
  *
  * Copyright 2006, 2015 Klaus Hartl & Fagner Brack
@@ -4269,7 +4241,7 @@ https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
 		module.exports = factory();
 	} else {
 		var _OldCookies = window.Cookies;
-		var api = window.Cookies = factory();
+		var api = window.Cookies = factory(window.jQuery);
 		api.noConflict = function () {
 			window.Cookies = _OldCookies;
 			return api;
@@ -10140,11 +10112,55 @@ $(function() {
 	// intro
 
 	var introSequence = [
-		// { e: $('.crowdspot-logo-main'), p: 'transition.slideDownIn' },
-		// { e: $('.crowdspot-logo-bird2, .crowdspot-logo-bird1'), p: 'transition.slideLeftIn', o: { stagger: 250 } },
-		// { e: $('.main-intro'), p: { height: '50vh' }, o: { duration: 1000 } },
-		// { e: $('.crowdspot-logo-main'), p: { opacity: 0 } },
-		{ e: $('#mainroad1, #mainroad2, #mainroad3, #mainroad4, #rivers, #roads'), p: 'transition.slideDownIn', o: { stagger: 250 } },
+		{ e: $('.crowdspot-logo-main'), p: 'transition.slideDownIn' },
+		{ e: $('.crowdspot-logo-bird2, .crowdspot-logo-bird1'), p: 'transition.slideLeftIn', o: { stagger: 250 } },
+		
+		{ e: $('.main-intro'), p: { height: '60vh' }, o: { duration: 1000 } },
+
+		{ e: $('.crowdspot-logo-main'), p: { opacity: 0 } },
+
+		{ e: $('#mainroad1, #mainroad2, #mainroad3, #mainroad4'), p: 'transition.shrinkIn', o: { stagger: 250 } },
+		{ e: $('.intro-map .map_bases'), p: { rotateZ: '-20deg', translateY: '-20%' }, o: { sequenceQueue: false } },
+		{ e: $('#rivers'), p: 'transition.shrinkIn', o: { stagger: 250 } },
+		{ e: $('#roads'), p: 'transition.shrinkIn', o: { stagger: 250 } },
+
+		
+
+		{ e: $('.intro-build-title'), p: 'transition.slideUpIn' },
+		
+		{ e: $('.intro-build-title'), p: 'transition.slideUpOut', o: { delay: 100, queue: false } },
+
+		{ e: $('.arrow_green, .arrow_grey, .arrow_red'), p: 'transition.slideDownIn', o: { stagger: 250 } },
+
+		{ e: $('.intro-engage-title'), p: 'transition.slideUpIn' },
+
+		{ e: $('.intro-engage-title'), p: 'transition.slideUpOut', o: { delay: 100, queue: false } },
+
+		{ e: $('.arrow_green, .arrow_grey, .arrow_red'), p: 'transition.shrinkOut', o: { stagger: 100 } },
+
+		{ e: $('.circle_green, .circle_grey, .circle_red'), p: 'transition.expandIn', o: { stagger: 250 } },
+
+		{ e: $('.intro-visualise-title'), p: 'transition.slideUpIn' },
+
+		{ e: $('.intro-visualise-title'), p: 'transition.slideUpOut', o: { delay: 100, queue: false } },
+
+		{ e: $('.circle_green, .circle_grey, .circle_red'), p: 'transition.shrinkOut', o: { stagger: 100, delay: 100 } },
+
+		{ e: $('#mainroad1, #mainroad2, #mainroad3, #mainroad4, #roads, #rivers'), p: 'transition.shrinkOut', o: { stagger: 100, delay: 100 } },
+		
+		{ e: $('.crowdspot-logo-bird2, .crowdspot-logo-bird1'), p: { opacity: 0 }, o: { duration: 0 } },
+
+		{ e: $('.crowdspot-logo-main'), p: { opacity: 1 } },
+
+		{ e: $('.crowdspot-logo-bird2, .crowdspot-logo-bird1'), p: 'transition.slideLeftIn', o: { stagger: 250 } },
+
+
+
+		// { e: $('.crowdspot-logo-main'), p: { width: '100px' }, o: { duration: 1000 } },
+
+		// { e: $('.main-intro'), p: { height: '70px' }, o: { duration: 1000, sequenceQueue: false } },
+
+
 	];
 
 	$.Velocity.RunSequence(introSequence);

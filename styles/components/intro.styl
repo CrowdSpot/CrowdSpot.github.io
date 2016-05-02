@@ -1,6 +1,7 @@
 .main-intro
 	// background-color grey
 	// padding 7em 0 6em
+	position relative
 	height 100vh
 	display flex
 	justify-content center
@@ -22,10 +23,65 @@
 		
 .intro-map
 	position absolute
-	left 0
-	right 0
-	top 0
-	bottom 0
+	
+	left 50%
+	top 50%
+	transform translate(-50%, -50%)
+	
+	// max-width 900px
+	width 800px
+	height 400px
+	
+	.intro-build-title, .intro-engage-title, .intro-visualise-title
+		font-family 'Roboto', sans-serif
+		font-weight 700
+		font-size 2rem
+		position absolute
+		left 0
+		opacity 0
+		
+	.arrow_green, .arrow_grey, .arrow_red
+		position absolute
+		width 40px
+		opacity 0
+		
+	.arrow_green
+		left 50%
+		top 10%
+		
+	.arrow_grey
+		left 80%
+		top 40%
+		
+	.arrow_red
+		left 20%
+		top 70%
+		
+	.circle_red, .circle_green, .circle_grey
+		opacity 0
+		
+	.circle_red
+		width 70px
+		left 15%
+		top 45%
+		
+	.circle_green
+		left 40%
+		width 150px
+		
+	.circle_grey
+		left 65%
+		top 10%
+		width 200px
+	
+	
+	
+	svg
+		// min-width 100%
+		// min-height 100%
+		// width 100%
+		position absolute
+		
 	
 	#roads, #rivers, #mainroad4, #mainroad3, #mainroad2, #mainroad1
 		opacity 0

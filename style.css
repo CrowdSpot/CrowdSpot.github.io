@@ -550,7 +550,7 @@ iframe {
 @import url("https://fonts.googleapis.com/css?family=Roboto:400,700,300");
 @import url("https://fonts.googleapis.com/css?family=Open+Sans:400,700,300");
 html {
-  font-family: 'Open Sans', 'Courier', sans-serif;
+  font-family: 'Open Sans', sans-serif;
   font-weight: 300;
   color: #666;
   font-size: 14px;
@@ -2015,6 +2015,7 @@ label.label--block {
   right: auto;
 }
 .main-intro {
+  position: relative;
   height: 100vh;
   display: -webkit-box;
   display: -webkit-flex;
@@ -2051,10 +2052,63 @@ label.label--block {
 }
 .intro-map {
   position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  width: 800px;
+  height: 400px;
+}
+.intro-map .intro-build-title,
+.intro-map .intro-engage-title,
+.intro-map .intro-visualise-title {
+  font-family: 'Roboto', sans-serif;
+  font-weight: 700;
+  font-size: 2rem;
+  position: absolute;
   left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+  opacity: 0;
+}
+.intro-map .arrow_green,
+.intro-map .arrow_grey,
+.intro-map .arrow_red {
+  position: absolute;
+  width: 40px;
+  opacity: 0;
+}
+.intro-map .arrow_green {
+  left: 50%;
+  top: 10%;
+}
+.intro-map .arrow_grey {
+  left: 80%;
+  top: 40%;
+}
+.intro-map .arrow_red {
+  left: 20%;
+  top: 70%;
+}
+.intro-map .circle_red,
+.intro-map .circle_green,
+.intro-map .circle_grey {
+  opacity: 0;
+}
+.intro-map .circle_red {
+  width: 70px;
+  left: 15%;
+  top: 45%;
+}
+.intro-map .circle_green {
+  left: 40%;
+  width: 150px;
+}
+.intro-map .circle_grey {
+  left: 65%;
+  top: 10%;
+  width: 200px;
+}
+.intro-map svg {
+  position: absolute;
 }
 .intro-map #roads,
 .intro-map #rivers,

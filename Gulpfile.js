@@ -10,9 +10,14 @@ var browserSync 	=	require('browser-sync').create(),
 	lost 			= 	require('lost'),
 	axis 			= 	require('axis'),
 	rupture 		= 	require('rupture'),
-	csswring 		= 	require('csswring');
+	csswring 		= 	require('csswring'),
+	cp				=	require('child_process');
 
 var plugins 		= 	require('gulp-load-plugins')();
+
+var messages = {
+    jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
+};
 
 //	uglify      	=	require('gulp-uglify'),
 //	jshint      	=	require('gulp-jshint'),
@@ -105,6 +110,19 @@ gulp.task('watch:favicon', function () {
 // Production Task
 
 gulp.task('production', ['styles-production', 'js-production'], function(){});
+
+
+// jekyll
+
+gulp.task('jekyll-build', function (done) {
+    browserSync.notify(messages.jekyllBuild);
+    return cp.spawn( 'jekyll' , ['build'], {stdio: 'inherit'})
+        .on('close', done);
+});
+
+gulp.task('jekyll-rebuild', ['jekyll-build'], function () {
+    browserSync.reload();
+});
 
 
 
