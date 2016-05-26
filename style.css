@@ -1413,6 +1413,13 @@ table tbody tr:hover th {
     clear: left;
   }
 }
+h2 {
+  text-align: center;
+}
+.gradientAnimatedBird {
+  margin-bottom: -20px;
+  margin-left: 1em;
+}
 .radio {
   cursor: pointer;
   display: block;
