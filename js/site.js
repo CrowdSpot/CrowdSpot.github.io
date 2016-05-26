@@ -33,6 +33,53 @@ $(function() {
 
 	$.Velocity.RunSequence(introSequence);
 
+	// gradient bird animations 
+	//#FF0000;#284EF6;#00FF28;#FF0000
+	//#284EF6;#FF0000;#00FF28;#284EF6
+	//#284EF6;#FFFFFF;#00FF28;#284EF6
+	//#FF0000;#00FF28;#284EF6;#FF0000
+
+	var gradientBirdAnimation = [
+
+		{ e: $('.firstStop1'), p: { stopColor: "#DB3833"}, o: { duration: 4000, sequenceQueue: false } },
+		{ e: $('.secondStop1'), p: { stopColor: "#DB3833"}, o: { duration: 4000, sequenceQueue: false } },
+		{ e: $('.firstStop2'), p: { stopColor: "#DB3833"}, o: { duration: 4000, sequenceQueue: false } },
+		{ e: $('.secondStop2'), p: { stopColor: "#DB3833"}, o: { duration: 4000 } },
+
+		{ e: $('.firstStop1'), p: { stopColor: "#FF0000"}, o: { duration: 4000, sequenceQueue: false } },
+		{ e: $('.secondStop1'), p: { stopColor: "#284EF6"}, o: { duration: 4000, sequenceQueue: false } },
+		{ e: $('.firstStop2'), p: { stopColor: "#284EF6"}, o: { duration: 4000, sequenceQueue: false } },
+		{ e: $('.secondStop2'), p: { stopColor: "#FF0000"}, o: { duration: 4000 } },
+
+		{ e: $('.firstStop1'), p: { stopColor: "#284EF6"}, o: { duration: 4000, sequenceQueue: false } },
+		{ e: $('.secondStop1'), p: { stopColor: "#FF0000"}, o: { duration: 4000, sequenceQueue: false } },
+		{ e: $('.firstStop2'), p: { stopColor: "#FFFFFF"}, o: { duration: 4000, sequenceQueue: false } },
+		{ e: $('.secondStop2'), p: { stopColor: "#00FF28"}, o: { duration: 4000 } },
+
+		{ e: $('.firstStop1'), p: { stopColor: "#4EAF46"}, o: { duration: 4000, sequenceQueue: false } },
+		{ e: $('.secondStop1'), p: { stopColor: "#4EAF46"}, o: { duration: 4000, sequenceQueue: false } },
+		{ e: $('.firstStop2'), p: { stopColor: "#4EAF46"}, o: { duration: 4000, sequenceQueue: false } },
+		{ e: $('.secondStop2'), p: { stopColor: "#4EAF46"}, o: { duration: 4000 } },
+
+		{ e: $('.firstStop1'), p: { stopColor: "#284EF6"}, o: { duration: 4000, sequenceQueue: false } },
+		{ e: $('.secondStop1'), p: { stopColor: "#FF0000"}, o: { duration: 4000, sequenceQueue: false } },
+		{ e: $('.firstStop2'), p: { stopColor: "#FFFFFF"}, o: { duration: 4000, sequenceQueue: false } },
+		{ e: $('.secondStop2'), p: { stopColor: "#00FF28"}, o: { duration: 4000 } },
+
+		{ e: $('.firstStop1'), p: { stopColor: "#DB3833"}, o: { duration: 4000, sequenceQueue: false } },
+		{ e: $('.secondStop1'), p: { stopColor: "#DB3833"}, o: { duration: 4000, sequenceQueue: false } },
+		{ e: $('.firstStop2'), p: { stopColor: "#DB3833"}, o: { duration: 4000, sequenceQueue: false } },
+		{ e: $('.secondStop2'), p: { stopColor: "#DB3833"}, o: { duration: 4000 } },
+
+		{ e: $('.firstStop1'), p: { stopColor: "#FF0000"}, o: { duration: 4000, sequenceQueue: false } },
+		{ e: $('.secondStop1'), p: { stopColor: "#284EF6"}, o: { duration: 4000, sequenceQueue: false } },
+		{ e: $('.firstStop2'), p: { stopColor: "#284EF6"}, o: { duration: 4000, sequenceQueue: false } },
+		{ e: $('.secondStop2'), p: { stopColor: "#FF0000"}, o: { duration: 4000, complete: function() { $.Velocity.RunSequence(gradientBirdAnimation); } } }
+
+	];
+
+	$.Velocity.RunSequence(gradientBirdAnimation);
+
 
 	// mailchimp-form for ajax mailchimp forms
 
