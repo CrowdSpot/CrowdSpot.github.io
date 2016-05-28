@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<svg width="1440px" height="346px" viewBox="0 0 1440 346" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 3.8.2 (29753) - http://www.bohemiancoding.com/sketch -->
+    <title>testimonials-background</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <radialGradient cx="0%" cy="0%" fx="0%" fy="0%" r="311.669572%" id="radialGradient-1">
+            <stop stop-color="#FFFFFF" stop-opacity="0.5" offset="0%"></stop>
+            <stop stop-color="#C2C2C2" stop-opacity="0.5" offset="100%"></stop>
+        </radialGradient>
+        <rect id="path-2" x="0" y="0" width="1440" height="346"></rect>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD" transform="translate(0.000000, -2098.000000)">
+            <g id="Testimonials" transform="translate(0.000000, 2098.000000)">
+                <g id="testimonials-background">
+                    <mask id="mask-3" fill="white">
+                        <use xlink:href="#path-2"></use>
+                    </mask>
+                    <g id="Mask">
+                        <use fill="#FFFFFF" xlink:href="#path-2"></use>
+                        <use fill-opacity="0.5" fill="url(#radialGradient-1)" xlink:href="#path-2"></use>
+                    </g>
+                    <path d="M101.111095,356.344142 L348.658548,356.344142 L349.814459,353.120431 L135.750562,226.708199 C135.628029,149.263336 100.959118,72.7759857 35.1856715,22.4257513 C-76.510714,-63.0733189 -235.584744,-40.8200343 -320.128254,72.1215275 C-404.686489,185.063089 -382.679997,345.928503 -270.990974,431.427573 C-159.301951,516.926643 -0.213196213,494.673359 84.3303141,381.731797 C90.4866932,373.507498 96.0781177,365.029078 101.111095,356.344142 Z M-33.6168282,228.54224 C-62.4409894,206.482527 -68.1321967,164.968872 -46.3024041,135.821462 C-24.4873365,106.674051 16.565926,100.93391 45.3827246,122.993623 C74.2068858,145.060781 79.8833681,186.574436 58.0756631,215.714402 C36.253233,244.861812 -4.80002952,250.609398 -33.6168282,228.54224 Z" id="Combined-Shape" fill="#F7F7F7" mask="url(#mask-3)"></path>
+                    <path d="M1380.00855,402.987069 C1280.37318,375.995949 1207,283.929027 1207,174.496567 C1207,43.8807675 1311.5399,-62 1440.5,-62 C1569.45333,-62 1674,43.8807675 1674,174.496567 C1674,283.528599 1601.15809,375.321946 1502.08179,402.688164 L1442.43884,626 L1439.56793,626 L1380.00855,402.987071 Z M1394.84513,110.939273 C1394.84513,144.653885 1367.87649,171.983933 1334.59778,171.983933 C1301.30551,171.983933 1274.33009,144.653885 1274.33009,110.939273 C1274.33009,77.2315273 1301.30551,49.9083441 1334.59778,49.9083441 C1367.87649,49.9083441 1394.84513,77.2315273 1394.84513,110.939273" id="Fill-3" fill="#F7F7F7" mask="url(#mask-3)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

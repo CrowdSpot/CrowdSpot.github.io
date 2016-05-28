@@ -3537,7 +3537,7 @@ window.Detectizr = (function(window, navigator, document, undefined) {
 })( window.jQuery || window.Zepto );
 
 /*!
-Waypoints - 3.1.1
+Waypoints - 4.0.0
 Copyright © 2011-2015 Caleb Troughton
 Licensed under the MIT license.
 https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
@@ -4186,7 +4186,7 @@ https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
 }())
 ;
 /*!
-Waypoints Sticky Element Shortcut - 3.1.1
+Waypoints Sticky Element Shortcut - 4.0.0
 Copyright © 2011-2015 Caleb Troughton
 Licensed under the MIT license.
 https://github.com/imakewebthings/waypoints/blog/master/licenses.txt
@@ -10260,12 +10260,23 @@ $(function() {
 	// slick slider
 
 	$('.slick-slider').slick({
-	  prevArrow : '<div class="slick-prev"><div class="sprite sprite-slider-arrow-left hide-mobile"></div><div class="sprite sprite-slider-arrow-left-mobile show-only-mobile"></div></div>',
-	  nextArrow : '<div class="slick-next"><div class="sprite sprite-slider-arrow-right hide-mobile"></div><div class="sprite sprite-slider-arrow-right-mobile show-only-mobile"></div></div>',
+	  prevArrow : '<div class="slick-prev"><div class="sprite sprite-slider-arrow-left-dark hide-mobile"></div><div class="sprite sprite-slider-arrow-left-dark show-only-mobile"></div></div>',
+	  nextArrow : '<div class="slick-next"><div class="sprite sprite-slider-arrow-right-dark hide-mobile"></div><div class="sprite sprite-slider-arrow-right-dark show-only-mobile"></div></div>',
 	  slidesToShow: 1,
 	  slidesToScroll: 1,
 	  dots: false,
-	  arrows: true
+	  arrows: true,
+  		fade: true,
+  		pauseOnHover: true,
+  		responsive: [
+  		  {
+  		  	breakpoint: 620,
+  		  	settings: {
+  		  		arrows: false,
+  		  		dots: true
+  		  	}
+  		  }
+  		]
 	});
 
 

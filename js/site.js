@@ -131,12 +131,23 @@ $(function() {
 	// slick slider
 
 	$('.slick-slider').slick({
-	  prevArrow : '<div class="slick-prev"><div class="sprite sprite-slider-arrow-left hide-mobile"></div><div class="sprite sprite-slider-arrow-left-mobile show-only-mobile"></div></div>',
-	  nextArrow : '<div class="slick-next"><div class="sprite sprite-slider-arrow-right hide-mobile"></div><div class="sprite sprite-slider-arrow-right-mobile show-only-mobile"></div></div>',
+	  prevArrow : '<div class="slick-prev"><div class="sprite sprite-slider-arrow-left-dark hide-mobile"></div><div class="sprite sprite-slider-arrow-left-dark show-only-mobile"></div></div>',
+	  nextArrow : '<div class="slick-next"><div class="sprite sprite-slider-arrow-right-dark hide-mobile"></div><div class="sprite sprite-slider-arrow-right-dark show-only-mobile"></div></div>',
 	  slidesToShow: 1,
 	  slidesToScroll: 1,
 	  dots: false,
-	  arrows: true
+	  arrows: true,
+  		fade: true,
+  		pauseOnHover: true,
+  		responsive: [
+  		  {
+  		  	breakpoint: 620,
+  		  	settings: {
+  		  		arrows: false,
+  		  		dots: true
+  		  	}
+  		  }
+  		]
 	});
 
 
