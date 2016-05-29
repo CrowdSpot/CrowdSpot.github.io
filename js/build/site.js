@@ -10260,23 +10260,25 @@ $(function() {
 	// slick slider
 
 	$('.slick-slider').slick({
-	  prevArrow : '<div class="slick-prev"><div class="sprite sprite-slider-arrow-left-dark hide-mobile"></div><div class="sprite sprite-slider-arrow-left-dark show-only-mobile"></div></div>',
-	  nextArrow : '<div class="slick-next"><div class="sprite sprite-slider-arrow-right-dark hide-mobile"></div><div class="sprite sprite-slider-arrow-right-dark show-only-mobile"></div></div>',
-	  slidesToShow: 1,
-	  slidesToScroll: 1,
-	  dots: false,
-	  arrows: true,
-  		fade: true,
-  		pauseOnHover: true,
-  		responsive: [
-  		  {
-  		  	breakpoint: 620,
-  		  	settings: {
-  		  		arrows: false,
-  		  		dots: true
-  		  	}
-  		  }
-  		]
+		prevArrow : '<div class="slick-prev"><div class="sprite sprite-slider-arrow-left-dark hide-mobile"></div><div class="sprite sprite-slider-arrow-left-dark show-only-mobile"></div></div>',
+		nextArrow : '<div class="slick-next"><div class="sprite sprite-slider-arrow-right-dark hide-mobile"></div><div class="sprite sprite-slider-arrow-right-dark show-only-mobile"></div></div>',
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: false,
+		arrows: true,
+		fade: true,
+		// pauseOnHover: true,
+		autoplaySpeed: 3000,
+		autoplay: true,
+		responsive: [
+		  {
+		  	breakpoint: 620,
+		  	settings: {
+		  		arrows: false,
+		  		dots: true
+		  	}
+		  }
+		]
 	});
 
 
