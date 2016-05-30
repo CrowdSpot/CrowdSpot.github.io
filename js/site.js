@@ -139,7 +139,7 @@ $(function() {
 		arrows: true,
 		fade: true,
 		// pauseOnHover: true,
-		autoplaySpeed: 3000,
+		autoplaySpeed: 2500,
 		autoplay: true,
 		responsive: [
 		  {
@@ -150,6 +150,17 @@ $(function() {
 		  	}
 		  }
 		]
+	});
+
+	$('.slick-slider--how-it-works').on('afterChange', function(slick, currentSlide, nextSlide) {
+		$('.how-it-works-tab').removeClass('active');
+		$('.how-it-works-tab').eq(nextSlide).addClass('active');
+	});
+
+	$('.how-it-works-tab').on('click', function(event) {
+		$('.how-it-works-tab').removeClass('active');
+		$('.how-it-works-tab').eq($(this).index()).addClass('active');
+		$('.slick-slider--how-it-works').slick('slickGoTo', $(this).index());
 	});
 
 

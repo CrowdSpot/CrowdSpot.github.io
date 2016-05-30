@@ -10282,7 +10282,6 @@ $(function() {
 	});
 
 	$('.slick-slider--how-it-works').on('afterChange', function(slick, currentSlide, nextSlide) {
-		console.log(nextSlide);
 		$('.how-it-works-tab').removeClass('active');
 		$('.how-it-works-tab').eq(nextSlide).addClass('active');
 	});

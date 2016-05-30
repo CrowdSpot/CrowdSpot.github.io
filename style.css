@@ -2102,6 +2102,9 @@ label.label--block {
     clear: left;
   }
 }
+.section__intro {
+  margin-bottom: 2em;
+}
 @media only screen and (min-width: 600px) {
   .section__intro {
     width: calc(99.99% * 10/12 - (30px - 30px * 10/12));
@@ -2180,6 +2183,8 @@ label.label--block {
 }
 .section-how-it-works {
   text-align: center;
+  padding-top: 80px;
+  background-color: #f4f4f4;
 }
 .slick-slider--how-it-works img {
   margin-left: auto;
@@ -2246,6 +2251,16 @@ label.label--block {
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
+}
+.slick-slider--how-it-works__tab-title {
+  font-weight: 600;
+  font-size: 24px;
+  font-size: 1.5rem;
+  margin-bottom: 1em;
+}
+.how-it-works-tab-icon {
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 
 /*# sourceMappingURL=style.css.map */

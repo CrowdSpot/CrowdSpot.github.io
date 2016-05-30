@@ -1,8 +1,41 @@
 .section-how-it-works
 	text-align center
+	padding-top 80px
+	background-color #F4F4F4
 	
 .slick-slider--how-it-works
 	
 	img
 		margin-left auto
 		margin-right auto
+
+.how-it-works-tab-icon__hover
+	opacity 1
+	transition opacity 1s ease
+	fill grey
+	
+.how-it-works-tabs
+	lost-utility clearfix
+
+.how-it-works-tab
+	opacity 0.55
+	transition opacity 1s ease
+	cursor pointer
+	
+	+above('s')
+		lost-column 1/3
+	
+	&:hover, &.active
+		opacity 1
+		
+		.how-it-works-tab-icon__hover
+			opacity 0
+
+.slick-slider--how-it-works__tab-title
+	font-weight 600
+	fs rem(24px)
+	margin-bottom 1em
+	
+.how-it-works-tab-icon
+	margin-top 1em
+	margin-bottom 1em
