@@ -2137,12 +2137,13 @@ label.label--block {
 #map .decisionbird,
 #map #logotype,
 #map .logobird,
-#map .mapgradient {
+#map .mapgradient,
+#map .introTitles {
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
 }
-.section-icons {
+.section-logos {
   text-align: center;
 }
 .client-logo {
@@ -2195,8 +2196,8 @@ label.label--block {
   -ms-filter: none;
   -webkit-filter: none;
           filter: none;
-  -webkit-transition: opacity 1s ease;
-  transition: opacity 1s ease;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
   fill: #808080;
 }
 .how-it-works-tabs {
@@ -2215,8 +2216,8 @@ label.label--block {
   opacity: 0.55;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=55)";
   filter: alpha(opacity=55);
-  -webkit-transition: opacity 1s ease;
-  transition: opacity 1s ease;
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
   cursor: pointer;
 }
 @media only screen and (min-width: 400px) {
@@ -2261,6 +2262,59 @@ label.label--block {
 .how-it-works-tab-icon {
   margin-top: 1em;
   margin-bottom: 1em;
+}
+.projects-tabs {
+  *zoom: 1;
+}
+.projects-tabs:before {
+  content: '';
+  display: table;
+}
+.projects-tabs:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.projects-tab {
+  width: calc(99.99% * 1/5 - (30px - 30px * 1/5));
+  text-align: center;
+}
+.projects-tab:nth-child(1n) {
+  float: left;
+  margin-right: 30px;
+  clear: none;
+}
+.projects-tab:last-child {
+  margin-right: 0;
+}
+.projects-tab:nth-child(5n) {
+  margin-right: 0;
+  float: right;
+}
+.projects-tab:nth-child(5n + 1) {
+  clear: left;
+}
+.projects-tab-images {
+  max-width: 105px;
+  margin: auto;
+}
+.project-slide__details {
+  width: calc(99.99% * 3/6 - (30px - 30px * 3/6));
+}
+.project-slide__details:nth-child(1n) {
+  float: left;
+  margin-right: 30px;
+  clear: none;
+}
+.project-slide__details:last-child {
+  margin-right: 0;
+}
+.project-slide__details:nth-child(6n) {
+  margin-right: 0;
+  float: right;
+}
+.project-slide__details:nth-child(6n + 1) {
+  clear: left;
 }
 
 /*# sourceMappingURL=style.css.map */

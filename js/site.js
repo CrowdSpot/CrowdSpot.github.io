@@ -14,17 +14,25 @@ $(function() {
 		{ e: $('#logotype'), p: 'transition.slideDownIn' },
 		{ e: $('.logobird'), p: 'transition.slideLeftIn', o: { stagger: 250 } },
 		{ e: $('.logobird, #logotype'), p: 'transition.fadeOut', o: { stagger: 250 } },
+		{ e: $('#Build_Title'), p: 'transition.slideUpIn', o: { duration: 1000, sequenceQueue: true } },
 		{ e: $('.mainroad, .features'), p: 'transition.shrinkIn', o: { stagger: 250 } },
 		{ e: $('.roads'), p: 'transition.shrinkIn', o: { stagger: 250 } },
+		{ e: $('#Build_Title'), p: 'transition.slideDownOut', o: { duration: 1000, sequenceQueue: true } },
+		{ e: $('#Engage_Title'), p: 'transition.slideUpIn', o: { duration: 1000, sequenceQueue: true } },
 		{ e: $('.marker'), p: 'transition.slideDownIn', o: { stagger: 250 } },
 		{ e: $('.marker'), p: 'transition.slideDownOut', o: { stagger: 50 } },
+		{ e: $('#Engage_Title'), p: 'transition.slideDownOut', o: { duration: 1000, sequenceQueue: true } },
+		{ e: $('#Insights_Title'), p: 'transition.slideUpIn', o: { duration: 1000, sequenceQueue: false } },
 		{ e: $('.visualise'), p: 'transition.expandIn', o: { stagger: 250 } },
 		{ e: $('.visualise'), p: 'transition.slideDownOut', o: { stagger: 50 } },
+		{ e: $('#Insights_Title'), p: 'transition.slideDownOut', o: { duration: 1000, sequenceQueue: false } },
 		{ e: $('.map'), p: { opacity: 0.5 }, o: { duration: 1000, sequenceQueue: false } },
 		{ e: $('#decisionbird3'), p: 'transition.slideDownIn', o: { duration: 500 } },
 		{ e: $('#decisionbird2'), p: 'transition.slideLeftIn', o: { duration: 500 } },
 		{ e: $('#decisionbird1'), p: 'transition.slideRightIn', o: { duration: 500 } },
+		{ e: $('#Decide_Title'), p: 'transition.slideUpIn', o: { duration: 1000, sequenceQueue: false } },
 		{ e: $('.decisionbird'), p: 'transition.slideDownOut', o: { stagger: 250 } },
+		{ e: $('#Decide_Title'), p: 'transition.slideDownOut', o: { duration: 1000, sequenceQueue: false } },
 		{ e: $('.mapgradient'), p: { opacity: 1 }, o: { duration: 1000, sequenceQueue: false } },
 		{ e: $('#logotype'), p: 'transition.slideDownIn' },
 		{ e: $('.logobird'), p: 'transition.slideLeftIn', o: { stagger: 250 } },
@@ -157,7 +165,7 @@ $(function() {
 		$('.how-it-works-tab').eq(nextSlide).addClass('active');
 	});
 
-	$('.how-it-works-tab').on('click', function(event) {
+	$('.how-it-works-tab').on('click mouseenter', function(event) {
 		$('.how-it-works-tab').removeClass('active');
 		$('.how-it-works-tab').eq($(this).index()).addClass('active');
 		$('.slick-slider--how-it-works').slick('slickGoTo', $(this).index());
