@@ -165,10 +165,43 @@ $(function() {
 		$('.how-it-works-tab').eq(nextSlide).addClass('active');
 	});
 
-	$('.how-it-works-tab').on('click mouseenter', function(event) {
+	$('.how-it-works-tab').on('click', function(event) {
 		$('.how-it-works-tab').removeClass('active');
 		$('.how-it-works-tab').eq($(this).index()).addClass('active');
 		$('.slick-slider--how-it-works').slick('slickGoTo', $(this).index());
+	});
+
+	$('.slick-slider--projects').slick({
+		prevArrow : '<div class="slick-prev"><div class="sprite sprite-slider-arrow-left-dark hide-mobile"></div><div class="sprite sprite-slider-arrow-left-dark show-only-mobile"></div></div>',
+		nextArrow : '<div class="slick-next"><div class="sprite sprite-slider-arrow-right-dark hide-mobile"></div><div class="sprite sprite-slider-arrow-right-dark show-only-mobile"></div></div>',
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: false,
+		arrows: true,
+		fade: true,
+		// pauseOnHover: true,
+		autoplaySpeed: 2500,
+		autoplay: false,
+		responsive: [
+		  {
+		  	breakpoint: 620,
+		  	settings: {
+		  		arrows: false,
+		  		dots: true
+		  	}
+		  }
+		]
+	});
+
+	$('.slick-slider--projects').on('afterChange', function(slick, currentSlide, nextSlide) {
+		$('.projects-tab').removeClass('active');
+		$('.projects-tab').eq(nextSlide).addClass('active');
+	});
+
+	$('.projects-tab').on('click', function(event) {
+		$('.projects-tab').removeClass('active');
+		$('.projects-tab').eq($(this).index()).addClass('active');
+		$('.slick-slider--projects').slick('slickGoTo', $(this).index());
 	});
 
 
