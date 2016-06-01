@@ -10280,7 +10280,7 @@ $(function() {
 		autoplay: true,
 		responsive: [
 		  {
-		  	breakpoint: 620,
+		  	breakpoint: 1000,
 		  	settings: {
 		  		arrows: false,
 		  		dots: true
@@ -10313,7 +10313,7 @@ $(function() {
 		autoplay: false,
 		responsive: [
 		  {
-		  	breakpoint: 620,
+		  	breakpoint: 1070,
 		  	settings: {
 		  		arrows: false,
 		  		dots: true
