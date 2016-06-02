@@ -213,9 +213,9 @@ $(function() {
 
 		var feature_image = $(this).data('image');
 
+		$('.crowdspot-features__list__item.active .crowdspot-features__list__item__text__expandable').velocity('slideUp', { queue: false });
 		$('.crowdspot-features__list__item.active').removeClass('active');
-		$('.crowdspot-features__list__item__text__expandable').velocity("slideUp");
-		$(this).addClass('active').find('.crowdspot-features__list__item__text__expandable').velocity('slideDown');
+		$(this).addClass('active').find('.crowdspot-features__list__item__text__expandable').velocity('slideDown', { queue: false });
 
 		$('.crowdspot-features__images img').attr('src', feature_image);
 
