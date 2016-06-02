@@ -2460,6 +2460,7 @@ label.label--block {
 }
 .crowdspot-features__list {
   width: calc(99.99% * 5/12 - (30px - 30px * 5/12));
+  margin-top: -1.5em;
 }
 .crowdspot-features__list:nth-child(1n) {
   float: left;
@@ -2476,10 +2477,93 @@ label.label--block {
 .crowdspot-features__list:nth-child(12n + 1) {
   clear: left;
 }
-.crowdspot-features__list__thumbnail img {
+.crowdspot-features__list__category-title {
+  text-align: center;
+  font-size: 24px;
+  font-size: 1.5rem;
+  font-weight: 600;
+  margin-top: 1.5em;
+  margin-bottom: 1em;
+}
+.crowdspot-features__list__item {
+  *zoom: 1;
+  margin-bottom: 1em;
+  cursor: pointer;
+  opacity: 0.75;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=75)";
+  filter: alpha(opacity=75);
+  -webkit-transition: opacity 0.5s ease;
+  transition: opacity 0.5s ease;
+}
+.crowdspot-features__list__item:before {
+  content: '';
+  display: table;
+}
+.crowdspot-features__list__item:after {
+  content: '';
+  display: table;
+  clear: both;
+}
+.crowdspot-features__list__item:hover,
+.crowdspot-features__list__item.active {
+  opacity: 1;
+  -ms-filter: none;
+  -webkit-filter: none;
+          filter: none;
+}
+.crowdspot-features__list__item__thumbnail {
+  width: calc(99.99% * 2/12 - (30px - 30px * 2/12));
+}
+.crowdspot-features__list__item__thumbnail:nth-child(1n) {
+  float: left;
+  margin-right: 30px;
+  clear: none;
+}
+.crowdspot-features__list__item__thumbnail:last-child {
+  margin-right: 0;
+}
+.crowdspot-features__list__item__thumbnail:nth-child(12n) {
+  margin-right: 0;
+  float: right;
+}
+.crowdspot-features__list__item__thumbnail:nth-child(12n + 1) {
+  clear: left;
+}
+.crowdspot-features__list__item__thumbnail img {
   width: 60px;
   border-radius: 50%;
   box-shadow: 2px 2px 4px 0 rgba(34,34,34,0.18);
+}
+.crowdspot-features__list__item__text {
+  width: calc(99.99% * 10/12 - (30px - 30px * 10/12));
+}
+.crowdspot-features__list__item__text:nth-child(1n) {
+  float: left;
+  margin-right: 30px;
+  clear: none;
+}
+.crowdspot-features__list__item__text:last-child {
+  margin-right: 0;
+}
+.crowdspot-features__list__item__text:nth-child(12n) {
+  margin-right: 0;
+  float: right;
+}
+.crowdspot-features__list__item__text:nth-child(12n + 1) {
+  clear: left;
+}
+.crowdspot-features__list__item__text__title {
+  font-weight: 700;
+  font-size: 18px;
+  font-size: 1.125rem;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+}
+.crowdspot-features__list__item__text__expandable {
+  font-weight: 300;
+  font-size: 18px;
+  font-size: 1.125rem;
+  display: none;
 }
 .crowdspot-features__images {
   width: calc(99.99% * 6/12 - (30px - 30px * 6/12));

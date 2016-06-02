@@ -7,12 +7,46 @@
 		
 .crowdspot-features__list
 	lost-column 5/12
+	margin-top -1.5em
+	
+.crowdspot-features__list__category-title
+	text-align center
+	fs rem(24px)
+	font-weight 600
+	margin-top 1.5em
+	margin-bottom 1em
+	
+.crowdspot-features__list__item
+	lost-utility clearfix
+	margin-bottom 1em
+	cursor pointer
+	opacity 0.75
+	transition opacity 0.5s ease
+	
+	&:hover, &.active
+		opacity 1
 
-.crowdspot-features__list__thumbnail
+.crowdspot-features__list__item__thumbnail
+	lost-column 2/12
+	
 	img
 		width 60px
 		border-radius 50%
 		box-shadow 2px 2px 4px 0 rgba(black, 0.18)
+		
+.crowdspot-features__list__item__text
+	lost-column 10/12
+	
+.crowdspot-features__list__item__text__title
+	font-weight 700
+	fs rem(18px)
+	padding-top 0.5em
+	padding-bottom 0.5em
+
+.crowdspot-features__list__item__text__expandable
+	font-weight 300
+	fs rem(18px)
+	display none
 
 .crowdspot-features__images
 	lost-column 6/12

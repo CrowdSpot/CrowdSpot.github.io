@@ -10334,6 +10334,23 @@ $(function() {
 	});
 
 
+	// Features
+
+	$('.crowdspot-features__list .crowdspot-features__list__item').filter(':first').addClass('active').find('.crowdspot-features__list__item__text__expandable').velocity('slideDown');
+
+	$('.crowdspot-features__list__item').on('click', function(event) {
+
+		var feature_image = $(this).data('image');
+
+		$('.crowdspot-features__list__item.active').removeClass('active');
+		$('.crowdspot-features__list__item__text__expandable').velocity("slideUp");
+		$(this).addClass('active').find('.crowdspot-features__list__item__text__expandable').velocity('slideDown');
+
+		$('.crowdspot-features__images img').attr('src', feature_image);
+
+	});
+
+
 	// js cookie
 
 	// Set cookies
