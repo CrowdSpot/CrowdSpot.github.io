@@ -2170,9 +2170,18 @@ label.label--block {
   display: inline-block;
 }
 .section-testimonials {
-  background-image: url("img/testimonials-background.png");
+  background-image: url("img/background-city-02.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
   min-height: 340px;
+  color: #fff;
+}
+.section-testimonials h2 {
+  margin-top: 0;
+}
+.section-testimonials h2 .gradientAnimatedBird {
+  margin-left: 0;
 }
 .section-testimonials .slick-slider {
   margin-bottom: 0;
@@ -2306,6 +2315,14 @@ label.label--block {
   margin-top: 1em;
   margin-bottom: 1em;
 }
+.section-crowdsport-projects {
+  background-image: -webkit-linear-gradient(270deg, #4a4f4c 0%, #4a4f4c 65%, #cfd2c1 65%, #cfd2c1 100%);
+  background-image: -webkit-linear-gradient(top, #4a4f4c 0%, #4a4f4c 65%, #cfd2c1 65%, #cfd2c1 100%);
+  background-image: linear-gradient(180deg, #4a4f4c 0%, #4a4f4c 65%, #cfd2c1 65%, #cfd2c1 100%);
+}
+.section-crowdsport-projects h2 {
+  color: #fff;
+}
 .projects-tabs {
   *zoom: 1;
   margin-bottom: 2em;
@@ -2333,6 +2350,7 @@ label.label--block {
   filter: alpha(opacity=50);
   -webkit-transition: opacity 0.5s ease;
   transition: opacity 0.5s ease;
+  color: #fff;
 }
 .projects-tab:nth-child(1n) {
   float: left;
@@ -2450,13 +2468,11 @@ label.label--block {
   font-weight: 700;
 }
 .section-crowdspot-features {
-  background-image: -webkit-linear-gradient(313deg, rgba(255,255,255,0.5) 0%, rgba(0,255,39,0.5) 100%), -webkit-radial-gradient(circle at top left, #284ef6, #f00);
-  background-image: -webkit-linear-gradient(313deg, rgba(255,255,255,0.5) 0%, rgba(0,255,39,0.5) 100%), -webkit-radial-gradient(top left, circle, #284ef6, #f00);
-  background-image: linear-gradient(-223deg, rgba(255,255,255,0.5) 0%, rgba(0,255,39,0.5) 100%), radial-gradient(circle at top left, #284ef6, #f00);
-  color: #fff;
+  background-color: #f4f4f4;
+  color: #4a4f4c;
 }
 .section-crowdspot-features h2 {
-  color: #fff;
+  color: #4a4f4c;
 }
 .crowdspot-features__list {
   width: calc(99.99% * 5/12 - (30px - 30px * 5/12));
@@ -2587,6 +2603,30 @@ label.label--block {
 .crowdspot-features__images img {
   margin-right: -90%;
   max-width: 200%;
+}
+.section-signup {
+  background-image: url("img/background-city-03.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  color: #4a4f4c;
+}
+.section-signup h2 {
+  color: #4a4f4c;
+}
+.section-crowdspot-in-the-news {
+  background-image: url("img/background-city-01.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  text-align: center;
+}
+.section-crowdspot-in-the-news h2 {
+  color: #fff;
+}
+.news-logo {
+  display: inline-block;
+  padding: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
