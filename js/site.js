@@ -94,6 +94,7 @@ $(function() {
 
 	$.Velocity.RunSequence(gradientBirdAnimation);
 
+
 	// preloading images
 
 	function preloadImages(images) {
@@ -110,7 +111,8 @@ $(function() {
 
 	preloadImages(imagesToPreload);
 
-	// show menu if past intro
+
+	// show main menu if past intro
 
 	(function(){
 		'use strict';
@@ -143,6 +145,36 @@ $(function() {
 
 		checkScrollY();
 	}());
+
+
+	// sticking features images
+
+	var waypoint = new Waypoint({
+		element: $('.crowdspot-features__list'),
+		handler: function(direction) {
+			if (direction === 'down') {
+				// $('#moving-phone').addClass('fixer');
+				console.log('stick it!');
+				$('.crowdspot-features__images__container').addClass('fixer');
+			} else {
+				// $('#moving-phone').removeClass('fixer').removeClass('slide-send-off').removeClass('slide-withdraw-off');
+				$('.crowdspot-features__images__container').removeClass('fixer');
+			}
+		},
+		offset: '20%'
+	});
+
+	var waypointStop = new Waypoint({
+		element: $('.crowdspot-features__list'),
+		handler: function(direction) {
+			if (direction === 'down') {
+				$('.crowdspot-features__images__container').removeClass('fixer').addClass('stop');
+			} else {
+				$('.crowdspot-features__images__container').removeClass('stop').addClass('fixer');
+			}
+		},
+		offset: '-35%'
+	});
 
 
 	// mailchimp-form for ajax mailchimp forms

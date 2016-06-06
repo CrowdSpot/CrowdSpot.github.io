@@ -2103,7 +2103,7 @@ label.label--block {
   right: 0;
   top: 0;
   z-index: 10000;
-  background-color: rgba(255,255,255,0.9);
+  background-color: rgba(255,255,255,0.95);
   padding: 1em 0;
   box-shadow: 0 0 20px 0 rgba(34,34,34,0.2);
   opacity: 0;
@@ -2526,11 +2526,13 @@ label.label--block {
   font-weight: 700;
 }
 .section-crowdspot-features {
-  background-color: #f4f4f4;
-  color: #4a4f4c;
+  position: relative;
+  background: -webkit-linear-gradient(135deg, #4e8146, #e26f86 90%), -webkit-linear-gradient(45deg, #e26e87, #50834e 90%);
+  background: linear-gradient(-45deg, #4e8146, #e26f86 90%), linear-gradient(45deg, #e26e87, #50834e 90%);
+  color: #fff;
 }
 .section-crowdspot-features h2 {
-  color: #4a4f4c;
+  color: #fff;
 }
 .crowdspot-features__list {
   width: calc(99.99% * 5/12 - (30px - 30px * 5/12));
@@ -2657,6 +2659,14 @@ label.label--block {
 }
 .crowdspot-features__images:nth-child(12n + 1) {
   clear: left;
+}
+.crowdspot-features__images .crowdspot-features__images__container.fixer {
+  position: fixed;
+  top: 20%;
+}
+.crowdspot-features__images .crowdspot-features__images__container.stop {
+  position: absolute;
+  bottom: 150px;
 }
 .crowdspot-features__images img {
   margin-right: -90%;
