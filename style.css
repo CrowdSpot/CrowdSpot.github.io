@@ -2122,6 +2122,9 @@ label.label--block {
   box-flex: 1;
   -ms-flex: auto;
   flex: auto;
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
 }
 .site-header__menu-items {
   -webkit-box-flex: 1;
@@ -2216,6 +2219,16 @@ label.label--block {
 #map .logobird,
 #map .mapgradient,
 #map .introTitles {
+  opacity: 0;
+  -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
+  filter: alpha(opacity=0);
+}
+.main-intro {
+  position: relative;
+}
+.main-intro .section__subtitle {
+  position: absolute;
+  bottom: 22%;
   opacity: 0;
   -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=0)";
   filter: alpha(opacity=0);
@@ -2677,6 +2690,8 @@ label.label--block {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
+  padding-top: 2em;
+  padding-bottom: 2em;
   color: #fff;
 }
 .section-signup h2 {
