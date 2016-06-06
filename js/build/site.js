@@ -10378,7 +10378,7 @@ $(function() {
 		fade: true,
 		// pauseOnHover: true,
 		autoplaySpeed: 2500,
-		autoplay: true,
+		autoplay: false,
 		responsive: [
 		  {
 		  	breakpoint: 1000,
