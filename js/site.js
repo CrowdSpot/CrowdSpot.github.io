@@ -10,6 +10,12 @@ $(function() {
 
 	// intro
 
+	function showMenu() {
+		if ($('.site-header').css('opacity') < 1) {
+			$('.site-header').velocity('transition.slideDownIn');
+		}
+	}
+
 	var introSequence = [
 		{ e: $('#logotype'), p: 'transition.slideDownIn' },
 		{ e: $('.logobird'), p: 'transition.slideLeftIn', o: { stagger: 250 } },
@@ -35,7 +41,7 @@ $(function() {
 		{ e: $('#Decide_Title'), p: 'transition.slideDownOut', o: { duration: 1000, sequenceQueue: false } },
 		{ e: $('.mapgradient'), p: { opacity: 1 }, o: { duration: 1000, sequenceQueue: false } },
 		{ e: $('#logotype'), p: 'transition.slideDownIn' },
-		{ e: $('.logobird'), p: 'transition.slideLeftIn', o: { stagger: 250 } },
+		{ e: $('.logobird'), p: 'transition.slideLeftIn', o: { stagger: 250, complete: showMenu } }
 		
 	];
 
@@ -92,7 +98,6 @@ $(function() {
 
 	function preloadImages(images) {
 		for (var i = images.length - 1; i >= 0; i--) {
-			console.log(images[i]);
 			$("<img />").attr("src", images[i]);
 		}
 	}
@@ -103,9 +108,41 @@ $(function() {
 		imagesToPreload.push($(this).data('image'));
 	});
 
-	console.log(imagesToPreload);
-
 	preloadImages(imagesToPreload);
+
+	// show menu if past intro
+
+	(function(){
+		'use strict';
+
+		var isMenuFixed      = false,
+			menuFixThreshold = $('.main-intro').height();
+
+		$(window).on('scroll', function(){
+			checkScrollY();
+		});
+
+		function checkScrollY(){
+			var y = window.pageYOffset;
+
+			if( y >= menuFixThreshold ){
+				// should be fixed
+				if( !isMenuFixed ){
+					isMenuFixed = true;
+					showMenu();
+				}
+			}
+			else {
+				// should not be fixed
+				if( isMenuFixed ){
+					isMenuFixed = false;
+					showMenu();
+				}
+			}
+		}
+
+		checkScrollY();
+	}());
 
 
 	// mailchimp-form for ajax mailchimp forms
