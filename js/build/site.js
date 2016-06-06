@@ -10217,6 +10217,25 @@ $(function() {
 
 	$.Velocity.RunSequence(gradientBirdAnimation);
 
+	// preloading images
+
+	function preloadImages(images) {
+		for (var i = images.length - 1; i >= 0; i--) {
+			console.log(images[i]);
+			$("<img />").attr("src", images[i]);
+		}
+	}
+
+	var imagesToPreload = [];
+
+	$('.crowdspot-features__list__item').each(function(index, el) {
+		imagesToPreload.push($(this).data('image'));
+	});
+
+	console.log(imagesToPreload);
+
+	preloadImages(imagesToPreload);
+
 
 	// mailchimp-form for ajax mailchimp forms
 
