@@ -2679,7 +2679,7 @@ label.label--block {
 }
 .crowdspot-features__images .crowdspot-features__images__container.stop {
   position: absolute;
-  bottom: 150px;
+  top: 1400px;
 }
 .crowdspot-features__images img {
   margin-right: -90%;

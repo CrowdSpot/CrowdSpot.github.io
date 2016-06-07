@@ -10303,11 +10303,11 @@ $(function() {
 				$('.crowdspot-features__images__container').removeClass('fixer');
 			}
 		},
-		offset: '20%'
+		offset: '15%'
 	});
 
 	var waypointStop = new Waypoint({
-		element: $('.crowdspot-features__list'),
+		element: $('.section-crowdspot-features'),
 		handler: function(direction) {
 			if (direction === 'down') {
 				$('.crowdspot-features__images__container').removeClass('fixer').addClass('stop');
@@ -10315,7 +10315,7 @@ $(function() {
 				$('.crowdspot-features__images__container').removeClass('stop').addClass('fixer');
 			}
 		},
-		offset: '-35%'
+		offset: 'bottom-in-view'
 	});
 
 
@@ -10447,7 +10447,13 @@ $(function() {
 		$('.crowdspot-features__list__item.active').removeClass('active');
 		$(this).addClass('active').find('.crowdspot-features__list__item__text__expandable').velocity('slideDown', { queue: false });
 
-		$('.crowdspot-features__images img').attr('src', feature_image);
+		$('.crowdspot-features__images img').velocity('fadeOut', { duration: 200, complete: function() {
+
+			$('.crowdspot-features__images img').attr('src', feature_image);
+
+			$('.crowdspot-features__images img').velocity('fadeIn', { duration: 200 });
+
+		}});
 
 	});
 
