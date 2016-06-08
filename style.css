@@ -2456,10 +2456,6 @@ label.label--block {
           filter: none;
   cursor: pointer;
 }
-.projects-tab.active .slick-slider--projects__tab-title,
-.projects-tab:hover .slick-slider--projects__tab-title {
-  font-weight: 600;
-}
 .projects-tab-images {
   max-width: 105px;
   width: 100%;

@@ -10386,7 +10386,7 @@ $(function() {
 		slidesToShow: 1,
 		slidesToScroll: 1,
 		dots: false,
-		arrows: true,
+		arrows: false,
 		fade: true,
 		// pauseOnHover: true,
 		autoplaySpeed: 2500,
