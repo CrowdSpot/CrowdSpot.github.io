@@ -646,17 +646,17 @@ html {
   font-family: 'proxima-nova', sans-serif;
   font-weight: 400;
   color: #666;
-  font-size: 14px;
+  font-size: 12px;
   line-height: 1.7em;
 }
 @media (min-width: 400px) {
   html {
-    font-size: calc( 14px + (20 - 14) * ((100vw - 400px) / (1440 - 400)) );
+    font-size: calc( 12px + (18 - 12) * ((100vw - 400px) / (1440 - 400)) );
   }
 }
 @media (min-width: 1440px) {
   html {
-    font-size: 20px;
+    font-size: 18px;
   }
 }
 h1,
@@ -738,117 +738,117 @@ h6 {
   clear: both;
 }
 h1 {
-  font-size: 32.49678827773071px;
+  font-size: 27.85438995234061px;
   margin-top: 0.915475084668197em;
   line-height: 1.098570101601837em;
   margin-bottom: 0.183095016933639em;
 }
 @media (min-width: 400px) {
   h1 {
-    font-size: calc( 32.49678827773071px + (46.423983253901014 - 32.49678827773071) * ((100vw - 400px) / (1440 - 400)) );
+    font-size: calc( 27.85438995234061px + (41.78158492851092 - 27.85438995234061) * ((100vw - 400px) / (1440 - 400)) );
   }
 }
 @media (min-width: 1440px) {
   h1 {
-    font-size: 46.423983253901014px;
+    font-size: 41.78158492851092px;
     margin-top: 0.915475084668197em;
     line-height: 1.098570101601837em;
     margin-bottom: 0.183095016933639em;
   }
 }
 h2 {
-  font-size: 27.459837310039262px;
+  font-size: 23.53700340860508px;
   margin-top: 1.083400446408452em;
   line-height: 1.300080535690142em;
-  margin-bottom: 0.240352489831836em;
+  margin-bottom: 0.244297889923526em;
 }
 @media (min-width: 400px) {
   h2 {
-    font-size: calc( 27.459837310039262px + (39.228339014341806 - 27.459837310039262) * ((100vw - 400px) / (1440 - 400)) );
+    font-size: calc( 23.53700340860508px + (35.305505112907625 - 23.53700340860508) * ((100vw - 400px) / (1440 - 400)) );
   }
 }
 @media (min-width: 1440px) {
   h2 {
-    font-size: 39.228339014341806px;
+    font-size: 35.305505112907625px;
     margin-top: 1.083400446408452em;
     line-height: 1.300080535690142em;
-    margin-bottom: 0.233250769666792em;
+    margin-bottom: 0.235091956376248em;
   }
 }
 h3 {
-  font-size: 23.203605804040404px;
+  font-size: 19.888804974891777px;
   margin-top: 1.282128314506174em;
   line-height: 1.538553977407409em;
-  margin-bottom: 0.289579001016027em;
+  margin-bottom: 0.295104557368492em;
 }
 @media (min-width: 400px) {
   h3 {
-    font-size: calc( 23.203605804040404px + (33.14800829148629 - 23.203605804040404) * ((100vw - 400px) / (1440 - 400)) );
+    font-size: calc( 19.888804974891777px + (29.833207462337665 - 19.888804974891777) * ((100vw - 400px) / (1440 - 400)) );
   }
 }
 @media (min-width: 1440px) {
   h3 {
-    font-size: 33.14800829148629px;
+    font-size: 29.833207462337665px;
     margin-top: 1.282128314506174em;
     line-height: 1.538553977407409em;
-    margin-bottom: 0.279632999581589em;
+    margin-bottom: 0.282211592546073em;
   }
 }
 h4 {
-  font-size: 19.6070834735957px;
+  font-size: 16.806071548796314px;
   margin-top: 1.517308784861526em;
   line-height: 1.820770541833831em;
-  margin-bottom: 0.349893204675525em;
+  margin-bottom: 0.357631779292728em;
 }
 @media (min-width: 400px) {
   h4 {
-    font-size: calc( 19.6070834735957px + (28.01011924799386 - 19.6070834735957) * ((100vw - 400px) / (1440 - 400)) );
+    font-size: calc( 16.806071548796314px + (25.209107323194473 - 16.806071548796314) * ((100vw - 400px) / (1440 - 400)) );
   }
 }
 @media (min-width: 1440px) {
   h4 {
-    font-size: 28.01011924799386px;
+    font-size: 25.209107323194473px;
     margin-top: 1.517308784861526em;
     line-height: 1.820770541833831em;
-    margin-bottom: 0.335963770364559em;
+    margin-bottom: 0.33957510518592em;
   }
 }
 h5 {
-  font-size: 16.56801643620442px;
-  margin-top: 1.795628349027366em;
-  line-height: 2.154754018832839em;
+  font-size: 14.201156945318074px;
+  margin-top: 1.795628349027365em;
+  line-height: 2.154754018832838em;
   margin-bottom: 0.359125669805473em;
 }
 @media (min-width: 400px) {
   h5 {
-    font-size: calc( 16.56801643620442px + (23.668594908863454 - 16.56801643620442) * ((100vw - 400px) / (1440 - 400)) );
+    font-size: calc( 14.201156945318074px + (21.30173541797711 - 14.201156945318074) * ((100vw - 400px) / (1440 - 400)) );
   }
 }
 @media (min-width: 1440px) {
   h5 {
-    font-size: 23.668594908863454px;
+    font-size: 21.30173541797711px;
     margin-top: 1.795628349027366em;
-    line-height: 2.154754018832839em;
+    line-height: 2.154754018832838em;
     margin-bottom: 0.359125669805473em;
   }
 }
 h6 {
-  font-size: 14px;
+  font-size: 12px;
   margin-top: 2.125em;
   line-height: 2.55em;
-  margin-bottom: 0.576785714285714em;
+  margin-bottom: 0.602083333333333em;
 }
 @media (min-width: 400px) {
   h6 {
-    font-size: calc( 14px + (20 - 14) * ((100vw - 400px) / (1440 - 400)) );
+    font-size: calc( 12px + (18 - 12) * ((100vw - 400px) / (1440 - 400)) );
   }
 }
 @media (min-width: 1440px) {
   h6 {
-    font-size: 20px;
+    font-size: 18px;
     margin-top: 2.125em;
     line-height: 2.55em;
-    margin-bottom: 0.455357142857143em;
+    margin-bottom: 0.460416666666667em;
   }
 }
 blockquote {
@@ -899,11 +899,11 @@ fieldset {
   border-width: 1px;
   border-style: solid;
   max-width: 100%;
-  margin-bottom: 1.785em;
+  margin-bottom: 1.794444444444445em;
 }
 @media (min-width: 1440px) {
   fieldset {
-    margin-bottom: 2.01875em;
+    margin-bottom: 2.006944444444444em;
   }
 }
 fieldset button,
@@ -917,7 +917,7 @@ legend {
 label {
   display: block;
   padding-bottom: 0.2125em;
-  margin-bottom: -0.2125em;
+  margin-bottom: -0.188888888888889em;
 }
 input[type="text"],
 input[type="email"],
@@ -926,15 +926,15 @@ textarea {
   display: block;
   max-width: 100%;
   padding: 0.425em;
-  font-size: 14px;
-  margin-bottom: 1.1475em;
+  font-size: 12px;
+  margin-bottom: 1.180555555555556em;
 }
 @media (min-width: 400px) {
   input[type="text"],
   input[type="email"],
   input[type="password"],
   textarea {
-    font-size: calc( 14px + (20 - 14) * ((100vw - 400px) / (1440 - 400)) );
+    font-size: calc( 12px + (18 - 12) * ((100vw - 400px) / (1440 - 400)) );
   }
 }
 @media (min-width: 1440px) {
@@ -942,28 +942,28 @@ textarea {
   input[type="email"],
   input[type="password"],
   textarea {
-    font-size: 20px;
-    margin-bottom: 0.499375em;
+    font-size: 18px;
+    margin-bottom: 0.507638888888889em;
   }
 }
 input[type="submit"],
 button {
   display: block;
   cursor: pointer;
-  font-size: 14px;
+  font-size: 12px;
   padding: 0.425em 1.7em;
-  margin-bottom: 1.1475em;
+  margin-bottom: 1.133333333333333em;
 }
 @media (min-width: 400px) {
   input[type="submit"],
   button {
-    font-size: calc( 14px + (20 - 14) * ((100vw - 400px) / (1440 - 400)) );
+    font-size: calc( 12px + (18 - 12) * ((100vw - 400px) / (1440 - 400)) );
   }
 }
 @media (min-width: 1440px) {
   input[type="submit"],
   button {
-    font-size: 20px;
+    font-size: 18px;
     margin-bottom: 1.275em;
   }
 }
@@ -971,11 +971,11 @@ table {
   width: 100%;
   border-spacing: 0;
   border-collapse: collapse;
-  margin-bottom: 2.125em;
+  margin-bottom: 2.172222222222222em;
 }
 @media (min-width: 1440px) {
   table {
-    margin-bottom: 1.9975em;
+    margin-bottom: 2.030555555555555em;
   }
 }
 th {
@@ -1737,6 +1737,9 @@ label.label--block {
   box-shadow: 1px 1px 2px rgba(34,34,34,0.2);
   -webkit-transition: box-shadow ease 0.3s;
   transition: box-shadow ease 0.3s;
+  font-size: 14px;
+  font-size: 0.875rem;
+  font-weight: 600;
 }
 .button:hover,
 .button:focus {
@@ -2147,12 +2150,12 @@ label.label--block {
   display: -ms-flexbox;
   display: box;
   display: flex;
-  max-width: 600px;
+  max-width: 540px;
 }
 .site-header__menu-items a {
-  color: #808080;
+  color: #4a4f4c;
   text-decoration: none;
-  font-weight: 700;
+  font-weight: 600;
   font-size: 14px;
   font-size: 0.875rem;
 }
@@ -2465,6 +2468,9 @@ label.label--block {
   box-shadow: 2px 2px 4px 0 rgba(34,34,34,0.18);
   margin-bottom: 1em;
 }
+.slick-slider--projects {
+  margin-bottom: 0;
+}
 .project-slide__container {
   margin-left: auto;
   margin-right: auto;
@@ -2546,10 +2552,10 @@ label.label--block {
   font-weight: 700;
 }
 .slick-slider--project-sub-slider {
-  margin-bottom: 1em;
+  margin-bottom: 1.5em;
 }
 .slick-dots {
-  bottom: -0.5em;
+  bottom: -1em;
 }
 .section-crowdspot-features {
   position: relative;
@@ -2688,11 +2694,11 @@ label.label--block {
 }
 .crowdspot-features__images .crowdspot-features__images__container.fixer {
   position: fixed;
-  top: 20%;
+  top: 220px;
 }
 .crowdspot-features__images .crowdspot-features__images__container.stop {
   position: absolute;
-  top: 1400px;
+  bottom: 100px;
 }
 .crowdspot-features__images img {
   margin-right: -90%;
