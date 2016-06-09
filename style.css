@@ -2696,9 +2696,13 @@ label.label--block {
   position: absolute;
   bottom: 100px;
 }
-.crowdspot-features__images img {
+.crowdspot-features__images img,
+.crowdspot-features__images video {
   margin-right: -90%;
   max-width: 200%;
+}
+.crowdspot-features__images video {
+  display: none;
 }
 .section-signup {
   background-image: url("img/background-city-03.jpg");

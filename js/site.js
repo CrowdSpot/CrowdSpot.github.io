@@ -107,7 +107,10 @@ $(function() {
 	var imagesToPreload = [];
 
 	$('.crowdspot-features__list__item').each(function(index, el) {
-		imagesToPreload.push($(this).data('image'));
+		// check that element has an image
+		if ($(this).data('image')) {
+			imagesToPreload.push($(this).data('image'));
+		}
 	});
 
 	preloadImages(imagesToPreload);
@@ -283,8 +286,6 @@ $(function() {
 		autoplay: true,
 	});
 
-	// Projects
-
 	$('.slick-slider--projects').on('afterChange', function(event, slick, currentSlide, nextSlide) {
 		
 		if($(slick.$slider.context).hasClass('slick-slider--projects')) {
@@ -318,21 +319,115 @@ $(function() {
 
 	$('.crowdspot-features__list__item').on('click', function(event) {
 
-		var feature_image = $(this).data('image');
+		showFeatureItem($(this));
+
+	});
+
+	function showFeatureItem(item) {
+
+		// console.log(item);
+
+		var features_images = $('.crowdspot-features__images img');
+		var features_videos = $('.crowdspot-features__images video');
+
+		// get states of feature image and video
+
+		var features_images_state = features_images.css('display');
+		var features_video_state = features_videos.css('display');
+
+		// change the sliding elements in the list
 
 		$('.crowdspot-features__list__item.active .crowdspot-features__list__item__text__expandable').velocity('slideUp', { queue: false });
 		$('.crowdspot-features__list__item.active').removeClass('active');
-		$(this).addClass('active').find('.crowdspot-features__list__item__text__expandable').velocity('slideDown', { queue: false });
+		item.addClass('active').find('.crowdspot-features__list__item__text__expandable').velocity('slideDown', { queue: false });
 
-		$('.crowdspot-features__images img').velocity('fadeOut', { duration: 200, complete: function() {
+		// item data
 
-			$('.crowdspot-features__images img').attr('src', feature_image);
+		var feature_image = item.data('image');
+		var feature_video = item.data('video');
+		var feature_video_poster = item.data('video-poster');
 
-			$('.crowdspot-features__images img').velocity('fadeIn', { duration: 200 });
+		// if this is an image item
 
-		}});
+		if (feature_image) {
 
-	});
+			// check if a video element is currently displayed. If it is, hide it first
+
+			if ( features_video_state === 'block' ) {
+
+				$('.crowdspot-features__images video').velocity('fadeOut', { duration: 200, complete: function() {
+
+					$('.crowdspot-features__images img').attr('src', feature_image);
+
+					$('.crowdspot-features__images img').velocity('fadeIn', { duration: 200 });
+
+				} });
+
+			} else {
+
+				$('.crowdspot-features__images img').velocity('fadeOut', { duration: 200, complete: function() {
+
+					$('.crowdspot-features__images img').attr('src', feature_image);
+
+					$('.crowdspot-features__images img').velocity('fadeIn', { duration: 200 });
+
+				}});
+			}
+
+		// of it it's a video element is currently displayed. If it is, hide it first
+		
+		} else if (feature_video) {
+
+			// check if an image 
+
+			if ( features_images_state === 'block' ) {
+
+				$('.crowdspot-features__images img').velocity('fadeOut', { duration: 200, complete: function() {
+
+					console.log(feature_video)
+
+					features_videos.data('video', feature_video);
+					features_videos.data('video-poster', feature_video_poster);
+
+					playFeaturesVideo($('.crowdspot-features__images__container video'));
+
+					$('.crowdspot-features__images video').velocity('fadeIn', { duration: 200 });
+
+				}});
+
+			} else {
+
+				$('.crowdspot-features__images video').velocity('fadeOut', { duration: 200, complete: function() {
+
+					features_videos.data('video', feature_video);
+					features_videos.data('video-poster', feature_video_poster);
+
+					playFeaturesVideo($('.crowdspot-features__images__container video'));
+
+					$('.crowdspot-features__images video').velocity('fadeIn', { duration: 200 });
+
+				}});
+
+			}
+
+		}
+
+	}
+
+	function playFeaturesVideo(video) {
+
+		var videoElement = $(video);
+		videoElement.attr('poster', videoElement.data('poster'));
+		
+		// if ($(this.element).css('display') === 'block') {
+			var video = videoElement[0];
+			video.src = videoElement.data('source');
+			video.load();
+			video.play();
+		// }
+	}
+
+	// playFeaturesVideo($('.crowdspot-features__images__container video'));
 
 
 	// js cookie
@@ -466,6 +561,8 @@ $(function() {
 	    }
 	  }
 	});
+
+
 
 
 });
