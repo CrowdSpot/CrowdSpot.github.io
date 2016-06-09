@@ -10482,7 +10482,7 @@ $(function() {
 
 			// check if a video element is currently displayed. If it is, hide it first
 
-			if ( features_video_state === 'block' ) {
+			if ( features_video_state === 'block' || features_video_state === 'inline' ) {
 
 				$('.crowdspot-features__images video').velocity('fadeOut', { duration: 200, complete: function() {
 
@@ -10509,7 +10509,7 @@ $(function() {
 
 			// check if an image 
 
-			if ( features_images_state === 'block' ) {
+			if ( features_images_state === 'block' || features_images_state === 'inline' ) {
 
 				$('.crowdspot-features__images img').velocity('fadeOut', { duration: 200, complete: function() {
 
