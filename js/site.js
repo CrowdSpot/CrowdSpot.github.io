@@ -355,7 +355,7 @@ $(function() {
 
 			if ( features_video_state === 'block' || features_video_state === 'inline' ) {
 
-				$('.crowdspot-features__images video').velocity('fadeOut', { duration: 200, complete: function() {
+				$('.crowdspot-features__video').velocity('fadeOut', { duration: 200, complete: function() {
 
 					$('.crowdspot-features__images img').attr('src', feature_image);
 
@@ -391,20 +391,20 @@ $(function() {
 
 					playFeaturesVideo($('.crowdspot-features__images__container video'));
 
-					$('.crowdspot-features__images video').velocity('fadeIn', { duration: 200 });
+					$('.crowdspot-features__video').velocity('fadeIn', { duration: 200 });
 
 				}});
 
 			} else {
 
-				$('.crowdspot-features__images video').velocity('fadeOut', { duration: 200, complete: function() {
+				$('.crowdspot-features__video').velocity('fadeOut', { duration: 200, complete: function() {
 
 					features_videos.data('video', feature_video);
 					features_videos.data('video-poster', feature_video_poster);
 
 					playFeaturesVideo($('.crowdspot-features__images__container video'));
 
-					$('.crowdspot-features__images video').velocity('fadeIn', { duration: 200 });
+					$('.crowdspot-features__video').velocity('fadeIn', { duration: 200 });
 
 				}});
 
