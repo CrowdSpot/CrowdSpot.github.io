@@ -352,13 +352,8 @@ $(function() {
 			$('.crowdspot-features__video video').data('source', feature_video);
 			$('.crowdspot-features__video video').data('poster', feature_video_poster);
 
-			console.log('video data:', $('.crowdspot-features__video video').data('source'));
-			console.log('poster data:', $('.crowdspot-features__video video').data('poster'));
-
 			$('.crowdspot-features__video video').attr('poster', $('.crowdspot-features__video video').data('poster'));
 			
-			console.log($('.crowdspot-features__video video'));
-
 			$('.crowdspot-features__video video').attr('src', $('.crowdspot-features__video video').data('source'));
 
 			$('.crowdspot-features__video video')[0].load();

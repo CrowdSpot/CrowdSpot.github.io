@@ -18,10 +18,15 @@
 	// opacity 0
 	
 .site-header__menu-items
+	display none
+	
 	flex auto
 	justify-content space-between
-	display flex
 	max-width 540px
+	
+	+above('m')
+		display flex
+	
 	
 	a
 		color #4A4F4C
