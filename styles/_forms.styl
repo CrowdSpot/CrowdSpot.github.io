@@ -1,12 +1,15 @@
-.radio
-	radio()
++html5-inputs()
+  input()
+
+// .radio
+// 	radio()
 
 // .range
 // 	range(blue, 100%, 1.5em)
 	
 form 
 	.field
-		field(left)
+		// field(left)
 		max-width 100%
 		
 		&.error
@@ -18,9 +21,14 @@ form
 		&.disabled
 			field-disabled()
 	
-input[type="text"], input[type="email"]
+input[type="text"], input[type="email"], input[type="tel"], textarea
 	// field(left)
 	input()
+	
+	display block
+	// width 100%
+	margin-bottom 1em
+	
 	&.error
 		field-error()
 	&.success
@@ -33,5 +41,6 @@ input[type="text"], input[type="email"]
 
 label
 	label()
+	display none
 	&.label--block
 		label: block

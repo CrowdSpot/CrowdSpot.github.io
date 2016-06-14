@@ -27,6 +27,27 @@
       </div>
     <![endif]-->
 
+    <div class="modal modal-signup" data-modal="signup">
+      <div class="modal-fader" data-close-modal></div>
+      <div class="modal-center">
+        <div class="modal-container">
+          <div class="close-modal" data-close-modal>
+              <div class="sprite sprite-close-button"></div>
+          </div>
+          <h2>Let’s Talk!</h2>
+          <p>To get the ball rolling, tell us a little about yourself</p>
+          <form action="">
+            <div class="field"><label for="">Name *</label><input type="text" placeholder="Name *"></div>
+            <div class="field"><label for="">Email *</label><input type="email" placeholder="Email *"></div>
+            <div class="field"><label for="">Organisation *</label><input type="text" placeholder="Organisation *"></div>
+            <div class="field"><label for="">Telephone</label><input type="tel" placeholder="Telephone"></div>
+            <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
+            <button class="button">Send</button>
+          </form>
+        </div>
+      </div>
+    </div>
+
     <div class="site-header">
       <div class="container">
         <div class="site-header__inner">
@@ -50,7 +71,7 @@
               <a class="site-header-scroller" href="http://www.medium.com" target="_blank">Blog</a>
             </div>
             <div class="site-header__menu-items__menu-item site-header__menu-items__menu-item--">
-              <a class="button">Get Started</a>
+              <a class="button" data-open-modal="signup">Get Started</a>
             </div>
 
           </div>
@@ -1191,7 +1212,7 @@
             
             <p>Lorem ipsum dolor sit amet, consectetur elit. </p>
 
-            <div class="button">Sign Up!</div>
+            <div class="button" data-open-modal="signup">Get Started</div>
 
           </div>
 

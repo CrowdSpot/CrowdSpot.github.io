@@ -10616,16 +10616,18 @@ $(function() {
 
 	$('[data-close-modal]').on('click', function(event) {
 	  event.preventDefault();
+	  $('body').removeClass('modal-open');
 	  // $(this).parent('.modal').addClass('hidden');
-	  $(this).parents('.modal').fadeOut(1000);
+	  $(this).parents('.modal').velocity("fadeOut", { duration: 400 });
 	});
 
 	$('[data-open-modal]').on('click', function(event) {
 	  event.preventDefault();
+	  $('body').addClass('modal-open');
 	  var modal_to_open = $(this).data('open-modal');
 	  console.log(modal_to_open);
 	  // $('[data-modal='+modal_to_open+']').removeClass('hidden');
-	  $('[data-modal='+modal_to_open+']').fadeIn(1000);
+	  $('[data-modal='+modal_to_open+']').velocity("fadeIn", { duration: 400 });
 	});
 
 
