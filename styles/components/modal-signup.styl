@@ -9,6 +9,7 @@
 	bottom 0
 	overflow scroll
 	z-index 20000
+	display none
 	
 	text-align center
 	
@@ -22,18 +23,28 @@
 	
 	.modal-container
 		position relative
-		// width 100%
+		
+		max-height 1000px
+		overflow scroll
 		
 		padding 2em
 		
-		background-color #CFD2C1
-		background-image url('img/modal-signup-background.svg')
-		background-size cover
-		background-position center center
+		background-color white
+		// background-color #CFD2C1
+		// background-image url('img/modal-signup-background.svg')
+		// background-size cover
+		// background-position center center
+		
+		.pipedriveWebForms
+			max-height 700px
+			// overflow scroll
 		
 		+above('m')
 			border-radius 6px
 			box-shadow 2px 2px 10px rgba(black, 0.5)
+			width 600px
+			margin-top 2em
+			margin-bottom 2em
 		
 	
 	.close-modal

@@ -2899,6 +2899,18 @@ label.label--block {
 .section-signup h2 {
   color: #fff;
 }
+.section-signup-newsletter {
+  background-image: url("img/background-city-04.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center center;
+  padding-top: 2em;
+  padding-bottom: 3em;
+  color: #fff;
+}
+.section-signup-newsletter h2 {
+  color: #fff;
+}
 .why-crowdspot-founders {
   margin: auto;
 }
@@ -2983,6 +2995,7 @@ label.label--block {
   bottom: 0;
   overflow: scroll;
   z-index: 20000;
+  display: none;
   text-align: center;
 }
 .modal .modal-fader {
@@ -2995,16 +3008,21 @@ label.label--block {
 }
 .modal .modal-container {
   position: relative;
+  max-height: 1000px;
+  overflow: scroll;
   padding: 2em;
-  background-color: #cfd2c1;
-  background-image: url("img/modal-signup-background.svg");
-  background-size: cover;
-  background-position: center center;
+  background-color: #fff;
+}
+.modal .modal-container .pipedriveWebForms {
+  max-height: 700px;
 }
 @media only screen and (min-width: 600px) {
   .modal .modal-container {
     border-radius: 6px;
     box-shadow: 2px 2px 10px rgba(34,34,34,0.5);
+    width: 600px;
+    margin-top: 2em;
+    margin-bottom: 2em;
   }
 }
 .modal .close-modal {

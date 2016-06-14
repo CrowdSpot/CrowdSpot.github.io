@@ -557,5 +557,13 @@ $(function() {
 
 
 
+	// forms
+
+	$('form').submit(function(event) {
+		console.log('form submitted');
+	})
+
+
+
 
 });
