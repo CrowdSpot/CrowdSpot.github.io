@@ -8,12 +8,29 @@
 	color white
 	overflow hidden
 	
+	padding-top 2em
+	padding-bottom 2em
+	
+	.gradientAnimatedBird
+		width 47px
+		margin-bottom -18px
+		margin-left 0.5em
+		
+		+above('m')
+			width 67px
+			margin-bottom -15px
+			margin-left 1em
+	
 	h2
 		color white
 		
 .crowdspot-features__list
-	lost-column 5/12
-	margin-top -1.5em
+	// lost-column 5/12
+	
+	
+	+above('m')
+		lost-column 5/12
+		margin-top -1.5em
 	// background-color red
 	
 .crowdspot-features__list__category-title
@@ -56,34 +73,57 @@
 	display none
 
 .crowdspot-features__images
-	lost-column 6/12
-	lost-offset -1/12
+	display none
+	
+	+above('m')
+		display block
+		lost-column 6/12
+		lost-offset -1/12
 	
 	.crowdspot-features__images__container
 		
 		&.fixer
 			position fixed
-			top 220px
+			bottom 1em
+			
+			left 1em
+			right 1em
+			
+			+above('m')
+				bottom auto
+				left auto
+				right auto
+				
+				top 220px
+			
 			
 		&.stop
 			position absolute
-			bottom 100px
+			top 100px
+			
+			+above('m')
+				top auto
+				bottom 100px
 			
 	img, video
-		margin-right -90%
-		max-width 200%
+		+above('m')
+			margin-right -90%
+			max-width 200%
 		
 	video
 		padding-top 60px
 		
 .crowdspot-features__video
 	position relative
-	margin-right -90%
+	
 	max-width 940px
 	display none
 	overflow hidden
 	border-radius 5px
 	box-shadow 2px 2px 5px rgba(black, 0.18)
+	
+	+above('m')
+		margin-right -90%
 	
 	&:before
 		content ''

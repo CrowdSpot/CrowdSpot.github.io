@@ -183,40 +183,6 @@ $(function() {
 	$("body").fitVids();
 
 
-	// enquire for js media queries
-
-	enquire.register("screen and (max-width:45em)", {
-
-	    // OPTIONAL
-	    // If supplied, triggered when a media query matches.
-	    match : function() {
-	    	console.log('max width 45em');
-	    },      
-	                                
-	    // OPTIONAL
-	    // If supplied, triggered when the media query transitions 
-	    // *from a matched state to an unmatched state*.
-	    unmatch : function() {
-	    	console.log('not max width 45em');
-	    },    
-	    
-	    // OPTIONAL
-	    // If supplied, triggered once, when the handler is registered.
-	    setup : function() {},    
-	                                
-	    // OPTIONAL, defaults to false
-	    // If set to true, defers execution of the setup function 
-	    // until the first time the media query is matched
-	    // deferSetup : true,
-	                                
-	    // OPTIONAL
-	    // If supplied, triggered when handler is unregistered. 
-	    // Place cleanup code here
-	    destroy : function() {}
-	      
-	});
-
-
 	// slick slider
 
 	$('.slick-slider').slick({
@@ -237,6 +203,32 @@ $(function() {
 		  		arrows: false,
 		  		dots: true
 		  	}
+		  }
+		]
+	});
+
+	$('.slick-slider--how-it-works').slick({
+		prevArrow : '<div class="slick-prev"><div class="sprite sprite-slider-arrow-left-dark hide-mobile"></div><div class="sprite sprite-slider-arrow-left-dark show-only-mobile"></div></div>',
+		nextArrow : '<div class="slick-next"><div class="sprite sprite-slider-arrow-right-dark hide-mobile"></div><div class="sprite sprite-slider-arrow-right-dark show-only-mobile"></div></div>',
+		slidesToShow: 1,
+		slidesToScroll: 1,
+		dots: false,
+		arrows: true,
+		fade: true,
+		// pauseOnHover: true,
+		autoplaySpeed: 2500,
+		autoplay: false,
+		responsive: [
+		  {
+		  	breakpoint: 1000,
+		  	settings: {
+		  		arrows: false,
+		  		dots: true
+		  	}
+		  },
+		  {
+		  	breakpoint: 600,
+		  	settings: 'unslick'
 		  }
 		]
 	});
@@ -270,7 +262,7 @@ $(function() {
 		  	breakpoint: 1070,
 		  	settings: {
 		  		arrows: false,
-		  		dots: true
+		  		dots: false
 		  	}
 		  }
 		]
@@ -279,7 +271,7 @@ $(function() {
 	$('.slick-slider--project-sub-slider').slick({
 		slidesToShow: 1,
 		slidesToScroll: 1,
-		dots: true,
+		dots: false,
 		arrows: false,
 		fade: true,
 		autoplaySpeed: 2500,
@@ -322,6 +314,8 @@ $(function() {
 		showFeatureItem($(this));
 
 	});
+
+	
 
 	function showFeatureItem(item) {
 
@@ -419,6 +413,53 @@ $(function() {
 		}
 
 	}
+
+	// enquire for js media queries
+
+	enquire.register("screen and (max-width:600px)", {
+
+	    // OPTIONAL
+	    // If supplied, triggered when a media query matches.
+	    match : function() {
+	    	console.log('max width 600px');
+
+	    	$('.crowdspot-features__list .crowdspot-features__list__item').find('.crowdspot-features__list__item__text__expandable').velocity('slideDown');
+
+	    	$('.crowdspot-features__list__item').unbind('click');
+	    },      
+	                                
+	    // OPTIONAL
+	    // If supplied, triggered when the media query transitions 
+	    // *from a matched state to an unmatched state*.
+	    unmatch : function() {
+	    	console.log('not max width 600px');
+
+	    	$('.crowdspot-features__list__item').on('click', function(event) {
+
+	    		showFeatureItem($(this));
+
+	    	});
+
+	    	$('.crowdspot-features__list .crowdspot-features__list__item').find('.crowdspot-features__list__item__text__expandable').velocity('slideUp');
+
+	    	$('.crowdspot-features__list .crowdspot-features__list__item').filter(':first').addClass('active').find('.crowdspot-features__list__item__text__expandable').velocity('slideDown');
+	    },    
+	    
+	    // OPTIONAL
+	    // If supplied, triggered once, when the handler is registered.
+	    setup : function() {},    
+	                                
+	    // OPTIONAL, defaults to false
+	    // If set to true, defers execution of the setup function 
+	    // until the first time the media query is matched
+	    // deferSetup : true,
+	                                
+	    // OPTIONAL
+	    // If supplied, triggered when handler is unregistered. 
+	    // Place cleanup code here
+	    destroy : function() {}
+	      
+	});
 
 
 	// js cookie

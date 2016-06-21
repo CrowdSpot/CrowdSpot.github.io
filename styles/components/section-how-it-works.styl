@@ -2,8 +2,20 @@
 	text-align center
 	background-color #F4F4F4
 	
+	padding-top 0em
+	
+	.gradientAnimatedBird
+		width 28px
+		margin-bottom -30px
+		margin-left 0.5em
+		
+		+above('m')
+			width 47px
+			margin-bottom -20px
+			margin-left 1em
+	
 	+above('m')
-		padding-top 80px
+		padding-top 60px
 	
 .slick-slider--how-it-works
 	
@@ -22,12 +34,25 @@
 	margin-right auto
 	max-width 960px
 
+.how-it-works-mobile-tab
+	margin-top 1em
+	margin-bottom 2em
+	
+	opacity 1
+	
+	.how-it-works-tab-icon__hover
+		opacity 0
+	
+	.how-it-works-tab-icon
+		width 50px
+		height 50px
+	
 .how-it-works-tab
 	opacity 0.55
 	transition opacity 0.5s ease
 	cursor pointer
 	
-	+above('s')
+	+above('m')
 		lost-column 1/3
 	
 	&:hover, &.active
