@@ -10137,6 +10137,21 @@ $(function() {
 	});
 
 
+	// Mobile Menu
+
+	function toggleMobileMenu() {
+		$('.site-header__menu-items').toggleClass('mobile-menu-open');
+	}
+
+	function hideMobileMenu() {
+		$('.site-header__menu-items').removeClass('mobile-menu-open');
+	}
+
+	$('.site-header__mobile-toggle').on('touchstart', function(event) {
+		toggleMobileMenu();
+	});
+
+
 	// intro
 
 	function showMenu() {
@@ -10711,11 +10726,15 @@ $(function() {
 	    var target = $(this.hash);
 	    target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
 	    if (target.length) {
+
+	    	// remove mobile menu class
+
+		    hideMobileMenu();
 	      
 	      // $('.site-nav .navbar-collapse').collapse('hide');
 
 	      // console.log(target);
-	      target.velocity('scroll', { duration: 1500, easing: [ 120, 20 ] });
+	      target.velocity('scroll', { duration: 1500, easing: [ 120, 20 ], offset: -50 });
 
 	      // $('html,body').animate({
 	      //   scrollTop: target.offset().top - header_menu_height

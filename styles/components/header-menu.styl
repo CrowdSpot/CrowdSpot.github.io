@@ -8,17 +8,52 @@
 	padding 1em 0
 	box-shadow 0 0 20px 0 rgba(black, 0.2)
 	opacity 0
+	
+	// +below('l')
+	// 	height 56px
 
 .site-header__inner
-	display flex
+	+above('m')
+		display flex
 
 .site-header__logo
 	// padding 1em 0
 	flex auto
 	// opacity 0
+
+.site-header__mobile-toggle
+	fs: rem(40px)
+	position absolute
+	right 10px
+	top 15px
+	
+	+above('m')
+		display none
 	
 .site-header__menu-items
-	display none
+	// display none
+		
+	+below('s')
+		// position fixed
+		// left 0px
+		// right 0px
+		// top 56px
+		width 100%
+		display none
+		background-color white
+		max-width 100%
+		justify-content space-around
+		flex-wrap wrap
+		// flex 0 1 auto
+		// padding 10px
+		padding-top 10px
+		padding-bottom 0px
+		// margin 10px 5px
+		
+		&.mobile-menu-open
+			display flex
+			
+	
 	
 	flex auto
 	justify-content space-between
@@ -26,7 +61,6 @@
 	
 	+above('m')
 		display flex
-	
 	
 	a
 		color #4A4F4C
@@ -36,3 +70,6 @@
 
 .site-header__menu-items__menu-item
 	align-self flex-end
+	
+	+below('s')
+		margin 10px

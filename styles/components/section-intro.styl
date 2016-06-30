@@ -12,12 +12,24 @@
 	position relative
 	
 	.section__subtitle
+		display block
 		position absolute
-		bottom 100%
 		opacity 0
+		bottom 100%
 		
+		.title-2
+			text-align center
+			fs: rem(16px)
+			
+		+above(320px)
+			bottom 5%
+			left 0
+			right 0
+			
 		+above('m')
 			bottom 8%
+			.title-2
+				fs: rem(24px)
 			
 		+above('xl')
 			bottom 22%
