@@ -10329,7 +10329,7 @@ $(function() {
 
 	// slick slider
 
-	$('.slick-slider').slick({
+	$('.slick-slider--testimonial').slick({
 		prevArrow : '<div class="slick-prev"><div class="sprite sprite-slider-arrow-left-dark hide-mobile"></div><div class="sprite sprite-slider-arrow-left-dark show-only-mobile"></div></div>',
 		nextArrow : '<div class="slick-next"><div class="sprite sprite-slider-arrow-right-dark hide-mobile"></div><div class="sprite sprite-slider-arrow-right-dark show-only-mobile"></div></div>',
 		slidesToShow: 1,
@@ -10338,14 +10338,13 @@ $(function() {
 		arrows: true,
 		fade: true,
 		// pauseOnHover: true,
-		autoplaySpeed: 2500,
-		autoplay: false,
+		autoplaySpeed: 4500,
+		autoplay: true,
 		responsive: [
 		  {
 		  	breakpoint: 1000,
 		  	settings: {
-		  		arrows: false,
-		  		dots: true
+		  		arrows: false
 		  	}
 		  }
 		]
@@ -10366,8 +10365,7 @@ $(function() {
 		  {
 		  	breakpoint: 1000,
 		  	settings: {
-		  		arrows: false,
-		  		dots: true
+		  		arrows: false
 		  	}
 		  },
 		  {
@@ -10405,8 +10403,7 @@ $(function() {
 		  {
 		  	breakpoint: 1070,
 		  	settings: {
-		  		arrows: false,
-		  		dots: false
+		  		arrows: false
 		  	}
 		  }
 		]
