@@ -1788,10 +1788,7 @@ label.label--block {
   text-align: center;
 }
 .mc-label {
-  position: absolute;
-  bottom: -1em;
-  -webkit-transform: translateX(-50%);
-          transform: translateX(-50%);
+  margin-bottom: 1em;
 }
 .button {
   font-size: 13px;
