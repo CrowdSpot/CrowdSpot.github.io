@@ -269,7 +269,7 @@ gulp.task('favicons', function () {
 // imagemin
 
 gulp.task('minifyimages', function () {
-    return gulp.src('img/src/*')
+    return gulp.src('img/src/**/*')
         .pipe(plugins.imagemin({
             progressive: true,
             svgoPlugins: [{removeViewBox: false}],
