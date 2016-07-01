@@ -27,10 +27,12 @@
 .crowdspot-features__list
 	// lost-column 5/12
 	
-	
 	+above('m')
-		lost-column 5/12
+		lost-column 6/12
 		margin-top -1.5em
+		
+	+above('l')
+		lost-column 5/12
 	// background-color red
 	
 .crowdspot-features__list__category-title
@@ -54,7 +56,13 @@
 		opacity 1
 
 .crowdspot-features__list__item__thumbnail
-	lost-column 2/12
+	lost-column 3/12
+	
+	+above('m')
+		lost-column 3/12
+		
+	+above('l')
+		lost-column 2/12
 	
 	img
 		width 80px
@@ -62,7 +70,13 @@
 		// box-shadow 2px 2px 4px 0 rgba(black, 0.18)
 		
 .crowdspot-features__list__item__text
-	lost-column 10/12
+	lost-column 9/12
+	
+	+above('m')
+		lost-column 7/12
+		
+	+above('l')
+		lost-column 2/12
 	
 .crowdspot-features__list__item__text__title
 	font-weight 700
@@ -81,7 +95,9 @@
 	+above('m')
 		display block
 		lost-column 6/12
-		lost-offset -1/12
+		
+	// +above('l')
+	// 	lost-offset -1/12
 	
 	.crowdspot-features__images__container
 		

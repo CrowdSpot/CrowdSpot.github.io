@@ -2911,8 +2911,28 @@ body {
 }
 @media only screen and (min-width: 600px) {
   .crowdspot-features__list {
-    width: calc(99.99% * 5/12 - (30px - 30px * 5/12));
+    width: calc(99.99% * 6/12 - (30px - 30px * 6/12));
     margin-top: -1.5em;
+  }
+  .crowdspot-features__list:nth-child(1n) {
+    float: left;
+    margin-right: 30px;
+    clear: none;
+  }
+  .crowdspot-features__list:last-child {
+    margin-right: 0;
+  }
+  .crowdspot-features__list:nth-child(12n) {
+    margin-right: 0;
+    float: right;
+  }
+  .crowdspot-features__list:nth-child(12n + 1) {
+    clear: left;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .crowdspot-features__list {
+    width: calc(99.99% * 5/12 - (30px - 30px * 5/12));
   }
   .crowdspot-features__list:nth-child(1n) {
     float: left;
@@ -2964,7 +2984,7 @@ body {
   opacity: 1;
 }
 .crowdspot-features__list__item__thumbnail {
-  width: calc(99.99% * 2/12 - (30px - 30px * 2/12));
+  width: calc(99.99% * 3/12 - (30px - 30px * 3/12));
 }
 .crowdspot-features__list__item__thumbnail:nth-child(1n) {
   float: left;
@@ -2981,11 +3001,51 @@ body {
 .crowdspot-features__list__item__thumbnail:nth-child(12n + 1) {
   clear: left;
 }
+@media only screen and (min-width: 600px) {
+  .crowdspot-features__list__item__thumbnail {
+    width: calc(99.99% * 3/12 - (30px - 30px * 3/12));
+  }
+  .crowdspot-features__list__item__thumbnail:nth-child(1n) {
+    float: left;
+    margin-right: 30px;
+    clear: none;
+  }
+  .crowdspot-features__list__item__thumbnail:last-child {
+    margin-right: 0;
+  }
+  .crowdspot-features__list__item__thumbnail:nth-child(12n) {
+    margin-right: 0;
+    float: right;
+  }
+  .crowdspot-features__list__item__thumbnail:nth-child(12n + 1) {
+    clear: left;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .crowdspot-features__list__item__thumbnail {
+    width: calc(99.99% * 2/12 - (30px - 30px * 2/12));
+  }
+  .crowdspot-features__list__item__thumbnail:nth-child(1n) {
+    float: left;
+    margin-right: 30px;
+    clear: none;
+  }
+  .crowdspot-features__list__item__thumbnail:last-child {
+    margin-right: 0;
+  }
+  .crowdspot-features__list__item__thumbnail:nth-child(12n) {
+    margin-right: 0;
+    float: right;
+  }
+  .crowdspot-features__list__item__thumbnail:nth-child(12n + 1) {
+    clear: left;
+  }
+}
 .crowdspot-features__list__item__thumbnail img {
   width: 80px;
 }
 .crowdspot-features__list__item__text {
-  width: calc(99.99% * 10/12 - (30px - 30px * 10/12));
+  width: calc(99.99% * 9/12 - (30px - 30px * 9/12));
 }
 .crowdspot-features__list__item__text:nth-child(1n) {
   float: left;
@@ -3001,6 +3061,46 @@ body {
 }
 .crowdspot-features__list__item__text:nth-child(12n + 1) {
   clear: left;
+}
+@media only screen and (min-width: 600px) {
+  .crowdspot-features__list__item__text {
+    width: calc(99.99% * 7/12 - (30px - 30px * 7/12));
+  }
+  .crowdspot-features__list__item__text:nth-child(1n) {
+    float: left;
+    margin-right: 30px;
+    clear: none;
+  }
+  .crowdspot-features__list__item__text:last-child {
+    margin-right: 0;
+  }
+  .crowdspot-features__list__item__text:nth-child(12n) {
+    margin-right: 0;
+    float: right;
+  }
+  .crowdspot-features__list__item__text:nth-child(12n + 1) {
+    clear: left;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .crowdspot-features__list__item__text {
+    width: calc(99.99% * 2/12 - (30px - 30px * 2/12));
+  }
+  .crowdspot-features__list__item__text:nth-child(1n) {
+    float: left;
+    margin-right: 30px;
+    clear: none;
+  }
+  .crowdspot-features__list__item__text:last-child {
+    margin-right: 0;
+  }
+  .crowdspot-features__list__item__text:nth-child(12n) {
+    margin-right: 0;
+    float: right;
+  }
+  .crowdspot-features__list__item__text:nth-child(12n + 1) {
+    clear: left;
+  }
 }
 .crowdspot-features__list__item__text__title {
   font-weight: 700;
@@ -3022,7 +3122,6 @@ body {
   .crowdspot-features__images {
     display: block;
     width: calc(99.99% * 6/12 - (30px - 30px * 6/12));
-    margin-left: calc(99.99% * (-1/12 * -1) - (30px - 30px * (-1/12 * -1)) + 30px) !important;
   }
   .crowdspot-features__images:nth-child(1n) {
     float: left;
