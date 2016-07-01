@@ -3084,7 +3084,7 @@ body {
 }
 @media only screen and (min-width: 800px) {
   .crowdspot-features__list__item__text {
-    width: calc(99.99% * 2/12 - (30px - 30px * 2/12));
+    width: calc(99.99% * 9/12 - (30px - 30px * 9/12));
   }
   .crowdspot-features__list__item__text:nth-child(1n) {
     float: left;
