@@ -2489,14 +2489,9 @@ body {
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center center;
-  padding-top: 3.5em;
+  padding-top: 3em;
   padding-bottom: 3em;
   color: #fff;
-}
-@media only screen and (min-width: 600px) {
-  .section-testimonials {
-    min-height: 340px;
-  }
 }
 .section-testimonials h2 {
   margin-top: 0;
