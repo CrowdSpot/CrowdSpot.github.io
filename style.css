@@ -2941,8 +2941,6 @@ body {
 .crowdspot-features__list__item {
   *zoom: 1;
   margin-bottom: 1em;
-  cursor: pointer;
-  opacity: 0.75;
   -webkit-transition: opacity 0.5s ease;
   transition: opacity 0.5s ease;
 }
@@ -2954,6 +2952,12 @@ body {
   content: '';
   display: table;
   clear: both;
+}
+@media only screen and (min-width: 600px) {
+  .crowdspot-features__list__item {
+    cursor: pointer;
+    opacity: 0.75;
+  }
 }
 .crowdspot-features__list__item:hover,
 .crowdspot-features__list__item.active {

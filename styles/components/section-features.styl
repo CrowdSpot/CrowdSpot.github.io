@@ -43,9 +43,12 @@
 .crowdspot-features__list__item
 	lost-utility clearfix
 	margin-bottom 1em
-	cursor pointer
-	opacity 0.75
+	
 	transition opacity 0.5s ease
+	
+	+above('m')
+		cursor pointer
+		opacity 0.75
 	
 	&:hover, &.active
 		opacity 1
