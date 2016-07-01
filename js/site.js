@@ -128,7 +128,7 @@ $(function() {
 		}
 	});
 
-	preloadImages(imagesToPreload);
+	
 
 
 	// waypoints
@@ -531,6 +531,8 @@ $(function() {
 	// pace
 
 	Pace.on('done', function() {
+
+		preloadImages(imagesToPreload);
 
 	});
 
