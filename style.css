@@ -759,7 +759,7 @@ h5,
 h6 {
   font-family: 'proxima-nova', sans-serif;
   font-weight: 600;
-  color: #111;
+  color: #666;
   clear: both;
 }
 h1 {
@@ -910,7 +910,7 @@ address {
   font-style: normal;
 }
 dt {
-  color: #111;
+  color: #666;
   font-weight: bold;
 }
 ul {
@@ -936,7 +936,7 @@ fieldset input[type="submit"] {
   margin-bottom: 0;
 }
 legend {
-  color: #111;
+  color: #666;
   font-weight: bold;
 }
 label {
@@ -1005,7 +1005,7 @@ table {
 }
 th {
   text-align: left;
-  color: #111;
+  color: #666;
   padding: 0.2125em 0.85em;
 }
 @media (min-width: 1440px) {
