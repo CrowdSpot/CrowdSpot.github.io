@@ -455,11 +455,38 @@ $(function() {
 	    	$('.crowdspot-features__list .crowdspot-features__list__item').find('.crowdspot-features__list__item__text__expandable').velocity('slideUp');
 
 	    	$('.crowdspot-features__list .crowdspot-features__list__item').filter(':first').addClass('active').find('.crowdspot-features__list__item__text__expandable').velocity('slideDown');
+
+	    	$('.slick-slider--how-it-works').slick({
+	    		prevArrow : '<div class="slick-prev"><div class="sprite sprite-slider-arrow-left-dark hide-mobile"></div><div class="sprite sprite-slider-arrow-left-dark show-only-mobile"></div></div>',
+	    		nextArrow : '<div class="slick-next"><div class="sprite sprite-slider-arrow-right-dark hide-mobile"></div><div class="sprite sprite-slider-arrow-right-dark show-only-mobile"></div></div>',
+	    		slidesToShow: 1,
+	    		slidesToScroll: 1,
+	    		dots: false,
+	    		arrows: true,
+	    		fade: true,
+	    		// pauseOnHover: true,
+	    		autoplaySpeed: 2500,
+	    		autoplay: false,
+	    		responsive: [
+	    		  {
+	    		  	breakpoint: 1000,
+	    		  	settings: {
+	    		  		arrows: false
+	    		  	}
+	    		  },
+	    		  {
+	    		  	breakpoint: 600,
+	    		  	settings: 'unslick'
+	    		  }
+	    		]
+	    	});
 	    },    
 	    
 	    // OPTIONAL
 	    // If supplied, triggered once, when the handler is registered.
-	    setup : function() {},    
+	    setup : function() {
+
+	    },    
 	                                
 	    // OPTIONAL, defaults to false
 	    // If set to true, defers execution of the setup function 
