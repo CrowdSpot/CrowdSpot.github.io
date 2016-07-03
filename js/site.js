@@ -521,7 +521,7 @@ $(function() {
 					$('.crowdspot-features__images__container').removeClass('fixer');
 				}
 			},
-			offset: -420
+			offset: -430
 		});
 
 		var waypointStop = new Waypoint({
@@ -538,7 +538,7 @@ $(function() {
 				// console.log('features list height',$('.crowdspot-features__list').height());
 				// console.log('window height', $(window).height());
 				// return -(this.element[0].clientHeight - $('.crowdspot-features__images__container').height());
-				return - ( $('.crowdspot-features__list').height() - 320 );
+				return - ( $('.crowdspot-features__list').height() - 300 );
 			}
 		});
 
