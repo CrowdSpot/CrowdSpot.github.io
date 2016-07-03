@@ -445,8 +445,6 @@ $(function() {
 
 	Pace.on('done', function() {
 
-
-
 		// projects
 
 		$('.slick-slider--projects').slick({
@@ -543,6 +541,40 @@ $(function() {
 		});
 
 	});
+
+	// ======================================
+	// Helper functions
+	// ======================================
+	// Get section or article by href
+	function getRelatedContent(el){
+		return $($(el).attr('href'));
+	}
+	// Get link by section or article id
+	function getRelatedNavigation(el){
+		return $('nav a[href=#'+$(el).attr('id')+']');
+	}
+
+	var sectionsWaypointsEnter = $('.section')
+		.waypoint(function(direction) {
+			// Highlight element when related content
+			// is 10% percent from the bottom... 
+			// remove if below
+			$('.site-header__menu-items__menu-item a').removeClass('current-section-in-view')
+			$('.site-header__menu-items__menu-item a[href=#'+ this.element.id +']').addClass('current-section-in-view');
+		}, {
+			offset: '100px' // 
+		})
+
+	// var sectionsWaypointsExit = $('.section')
+	// 	.waypoint(function(direction) {
+	// 		// Highlight element when bottom of related content
+	// 		// is 100px from the top - remove if less
+	// 		// TODO - make function for this
+	// 		console.log(this.element.id);
+	// 		$('.site-header__menu-items__menu-item a[href=#'+ this.element.id +']').removeClass('current-section-in-view');
+	// 	}, {
+	// 		offset: '900%'
+	// 	});
 
 
 	// function showSocialModal(delay) {
