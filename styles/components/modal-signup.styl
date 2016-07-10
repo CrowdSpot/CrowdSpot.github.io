@@ -24,8 +24,8 @@
 	.modal-container
 		position relative
 		
-		max-height 1200px
-		overflow scroll
+		// max-height 1200px
+		// overflow scroll
 		
 		padding 2em
 		
@@ -36,12 +36,17 @@
 		// background-position center center
 		
 		.pipedriveWebForms
-			max-height 1400px
-			overflow scroll
+			// max-height 1200px
+			
+			height 500px!important
+			
+			
+			-webkit-overflow-scrolling: touch;
+			  overflow-y: scroll!important;
 				
-			// iframe
+			iframe
 			// 	overflow scroll!important
-			// 	height 700px!important
+				height 800px!important
 		
 		+above('m')
 			border-radius 6px
