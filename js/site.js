@@ -536,7 +536,7 @@ $(function() {
 				// console.log('features list height',$('.crowdspot-features__list').height());
 				// console.log('window height', $(window).height());
 				// return -(this.element[0].clientHeight - $('.crowdspot-features__images__container').height());
-				return - ( $('.crowdspot-features__list').height() - 300 );
+				return - ( $('.crowdspot-features__list').height() - 100 );
 			}
 		});
 
