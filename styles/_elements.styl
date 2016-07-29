@@ -2,21 +2,21 @@
 ::selection
 	background-color #D12325
 	color white
-	
+
 .bubble
 	color white
 	// bubble()
 	bubble(pos0: bottom, pos1: right, color: red, triangleSize: 15px, padding: 20px, triangleColor: red)
-  
+
 code
 	code: blue
 
 pre
 	pre()
-	
+
 .table-layout
 	tl()
-	
+
 table
 	table()
 
@@ -27,13 +27,13 @@ table
 	gradient lighten(orange, 70%) 10%
 	// padding 40px
 	lost-utility clearfix
-	
+
 	.icon
 		text-align center
 		padding 20px 0
-		
+
 		lost-column 1/2
-		
+
 		+above('s')
 			padding 40px 0
 			lost-column 1/3
@@ -45,29 +45,46 @@ h2
 	fs rem(36px)
 	font-weight 700
 	margin-bottom 1em
-	
+
 	+above('m')
 		margin-bottom 57px
-	
+
 .gradientAnimatedBird
 	margin-bottom -20px
 	margin-left 1em
-	
+
 .title-2
 	font-weight 600
 	fs rem(24px)
 	margin-bottom 1.5em
-	
+
 	+above('m')
 		margin-bottom 45px
-	
+
 p
 	fs rem(18px)
 	line-height 1.25
-	
+
 a
 	color #D12325
 	text-decoration none
-	
+
 	&:hover
 		text-decoration underline
+
+.embed-container
+	position relative
+	padding-bottom 140%
+	height 0
+	overflow hidden
+	max-width 100%
+
+	+above('l')
+		padding-bottom 56.25%
+
+	iframe, object, embed
+		position absolute
+		top 0
+		left 0
+		width 100%
+		height 100%
