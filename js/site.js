@@ -144,7 +144,7 @@ $(function() {
 				$('.site-header').velocity('transition.slideUpOut');
 			}
 		},
-		offset: '-40%'
+		offset: '-5%'
 	});
 
 	
@@ -169,11 +169,13 @@ $(function() {
 
 	// Features
 
-	$('.crowdspot-features__list .crowdspot-features__list__item').filter(':first').addClass('active').find('.crowdspot-features__list__item__text__expandable').velocity('slideDown');
+	$('.crowdspot-features__list .crowdspot-features__list__item.active').addClass('active').find('.crowdspot-features__list__item__text__expandable').velocity('slideDown');
 
 	$('.crowdspot-features__list__item').on('click', function(event) {
 
-		showFeatureItem($(this));
+		if (!$(this).hasClass('active')) {
+			showFeatureItem($(this));
+		}
 
 	});
 
@@ -183,8 +185,12 @@ $(function() {
 
 		// console.log(item);
 
-		var features_images = $('.crowdspot-features__image img');
-		var features_videos = $('.crowdspot-features__video');
+		// console.log(item.parents('.crowdspot-features-row'));
+
+		var feature_section = item.parents('.crowdspot-features-row');
+
+		var features_images = feature_section.find('.crowdspot-features__image img');
+		var features_videos = feature_section.find('.crowdspot-features__video');
 
 		// get states of feature image and video
 
@@ -193,8 +199,8 @@ $(function() {
 
 		// change the sliding elements in the list
 
-		$('.crowdspot-features__list__item.active .crowdspot-features__list__item__text__expandable').velocity('slideUp', { queue: false });
-		$('.crowdspot-features__list__item.active').removeClass('active');
+		feature_section.find('.crowdspot-features__list__item.active .crowdspot-features__list__item__text__expandable').velocity('slideUp', { queue: false });
+		feature_section.find('.crowdspot-features__list__item.active').removeClass('active');
 		item.addClass('active').find('.crowdspot-features__list__item__text__expandable').velocity('slideDown', { queue: false });
 
 		// item data
@@ -205,15 +211,15 @@ $(function() {
 
 		function playVideo() {
 
-			$('.crowdspot-features__video video').data('source', feature_video);
-			$('.crowdspot-features__video video').data('poster', feature_video_poster);
+			feature_section.find('.crowdspot-features__video video').data('source', feature_video);
+			feature_section.find('.crowdspot-features__video video').data('poster', feature_video_poster);
 
-			$('.crowdspot-features__video video').attr('poster', $('.crowdspot-features__video video').data('poster'));
+			feature_section.find('.crowdspot-features__video video').attr('poster', feature_section.find('.crowdspot-features__video video').data('poster'));
 			
-			$('.crowdspot-features__video video').attr('src', $('.crowdspot-features__video video').data('source'));
+			feature_section.find('.crowdspot-features__video video').attr('src', feature_section.find('.crowdspot-features__video video').data('source'));
 
-			$('.crowdspot-features__video video')[0].load();
-			$('.crowdspot-features__video video')[0].play();
+			feature_section.find('.crowdspot-features__video video')[0].load();
+			feature_section.find('.crowdspot-features__video video')[0].play();
 
 		}
 		
@@ -252,21 +258,21 @@ $(function() {
 
 			if ( features_images_state === 'block' || features_images_state === 'inline' ) {
 
-				$('.crowdspot-features__images img').velocity('fadeOut', { duration: 200, complete: function() {
+				feature_section.find('.crowdspot-features__images img').velocity('fadeOut', { duration: 200, complete: function() {
 
 					playVideo();
 
-					$('.crowdspot-features__video').velocity('fadeIn', { duration: 200 });
+					feature_section.find('.crowdspot-features__video').velocity('fadeIn', { duration: 200 });
 
 				}});
 
 			} else {
 
-				$('.crowdspot-features__video').velocity('fadeOut', { duration: 200, complete: function() {
+				feature_section.find('.crowdspot-features__video').velocity('fadeOut', { duration: 200, complete: function() {
 
 					playVideo();
 
-					$('.crowdspot-features__video').velocity('fadeIn', { duration: 200 });
+					feature_section.find('.crowdspot-features__video').velocity('fadeIn', { duration: 200 });
 
 				}});
 
@@ -298,13 +304,15 @@ $(function() {
 
 	    	$('.crowdspot-features__list__item').on('click', function(event) {
 
-	    		showFeatureItem($(this));
+	    		if (!$(this).hasClass('active')) {
+	    			showFeatureItem($(this));
+	    		}
 
 	    	});
 
 	    	$('.crowdspot-features__list .crowdspot-features__list__item').find('.crowdspot-features__list__item__text__expandable').velocity('slideUp');
 
-	    	$('.crowdspot-features__list .crowdspot-features__list__item').filter(':first').addClass('active').find('.crowdspot-features__list__item__text__expandable').velocity('slideDown');
+	    	$('.crowdspot-features__list .crowdspot-features__list__item.active').find('.crowdspot-features__list__item__text__expandable').velocity('slideDown');
 
 	    	$('.slick-slider--how-it-works').slick({
 	    		prevArrow : '<div class="slick-prev"><div class="sprite sprite-slider-arrow-left-dark hide-mobile"></div><div class="sprite sprite-slider-arrow-left-dark show-only-mobile"></div></div>',
@@ -506,39 +514,6 @@ $(function() {
 		});
 
 		preloadImages(imagesToPreload);
-
-		var waypoint = new Waypoint({
-			element: $('.crowdspot-features__list'),
-			handler: function(direction) {
-				if (direction === 'down') {
-					// $('#moving-phone').addClass('fixer');
-					// console.log('stick it!');
-					$('.crowdspot-features__images__container').addClass('fixer');
-				} else {
-					// $('#moving-phone').removeClass('fixer').removeClass('slide-send-off').removeClass('slide-withdraw-off');
-					$('.crowdspot-features__images__container').removeClass('fixer');
-				}
-			},
-			offset: -430
-		});
-
-		var waypointStop = new Waypoint({
-			element: $('.crowdspot-features__list'),
-			handler: function(direction) {
-				if (direction === 'down') {
-					$('.crowdspot-features__images__container').removeClass('fixer').addClass('stop');
-				} else {
-					$('.crowdspot-features__images__container').removeClass('stop').addClass('fixer');
-				}
-			},
-			offset: function() {
-				// console.log('images height', $('.crowdspot-features__images__container img').height());
-				// console.log('features list height',$('.crowdspot-features__list').height());
-				// console.log('window height', $(window).height());
-				// return -(this.element[0].clientHeight - $('.crowdspot-features__images__container').height());
-				return - ( $('.crowdspot-features__list').height() - 100 );
-			}
-		});
 
 	});
 
