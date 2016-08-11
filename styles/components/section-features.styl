@@ -9,7 +9,7 @@
 	overflow hidden
 
 	padding-top 2em
-	padding-bottom 2em
+	padding-bottom 0em
 
 	.gradientAnimatedBird
 		width 47px
@@ -19,14 +19,14 @@
 		+above('m')
 			width 67px
 			margin-bottom -15px
-			// margin-left 1em
+			margin-left 1em
 
 	// h2
 	// 	color white
 
 .crowdspot-features-section
-	
-	background-image url('img/footerbackground.svg')
+	// background-image url('img/footerbackground.svg')
+	background-image none
 	background-size cover
 	background-repeat no-repeat
 	background-position top
@@ -34,21 +34,10 @@
 	padding-bottom 2em
 	
 .crowdspot-features-section--alt
-	// background-color lighten(grey, 90%)
-	// box-shadow none
 	box-shadow 0 0 25px rgba(black, 0.15) inset
-	// background none
-	
+			
 .crowdspot-features-section--community
-	background-size 800px
-	background-position bottom right
-	background-image url('img/community-background.svg')
-
-.crowdspot-features-section--insights
-	background-size 800px
-	background-position bottom left
-	background-image url('img/insights-background.svg')
-	
+	background-image url('img/footerbackground.svg')
 	
 .crowdspot-features-row
 	display flex
@@ -65,20 +54,8 @@
 		.crowdspot-features__list
 			padding-right 0em
 			padding-left 2em
-		
-		// .crowdspot-features__list__item
-		// 	flex-direction row-reverse
 	
 .crowdspot-features__list
-	// // lost-column 5/12
-
-	// +above('m')
-	// 	lost-column 6/12
-	// 	// margin-top -1.5em
-
-	// +above('l')
-	// 	lost-column 5/12
-	// // background-color red
 	+above('m')
 		width 100%
 		
@@ -89,18 +66,11 @@
 .crowdspot-features__list__category-title
 	text-align center
 	fs rem(24px)
-	font-weight 600
-	// margin-top 2em
-	// margin-bottom 1em
-	// margin-left -2em
-	// margin-right -2em
-	padding-top 2em
+	font-weight 700
+	padding-top 1em
 	padding-bottom 1em
-	// border-top 4px solid #DDDDDD
-	// box-shadow 0 -25px 25px -25px rgba(black, 0.40)
 
 .crowdspot-features__list__item
-	// lost-utility clearfix
 	margin-bottom 1em
 	display flex
 
@@ -114,29 +84,11 @@
 		opacity 1
 
 .crowdspot-features__list__item__thumbnail
-	// lost-column 3/12
 	width 80px
 	flex-shrink 0
 
-	// +above('m')
-	// 	lost-column 3/12
-
-	// +above('l')
-	// 	lost-column 2/12
-
 	img
 		width 55px
-		// border-radius 50%
-		// box-shadow 2px 2px 4px 0 rgba(black, 0.18)
-
-.crowdspot-features__list__item__text
-	// lost-column 9/12
-
-	// +above('m')
-	// 	lost-column 7/12
-
-	// +above('l')
-	// 	lost-column 9/12
 
 .crowdspot-features__list__item__text__title
 	font-weight 700
@@ -154,35 +106,35 @@
 
 	+above('m')
 		display block
-		min-height 500px
+		min-height 420px
 		width 100%
+		margin-top 2em
 		
 	+above('l')
+		margin-top 0
 		width 65%
-	// 	lost-column 6/12
-	// 	overflow visible
+		min-height 680px
+		overflow visible
+		
+		.crowdspot-features__image, .crowdspot-features__video
+			margin-right -25%
+			
+		img, video
+			width 100%
 
-	// img, video
-	// 	width 50vw
-	// 	+above('m')
-	// 		margin-right -90%
-	// 		max-width 118%
-	// 		// max-width 1000000px
-
-	// video
-	// 	padding-top 3vw
-
+.crowdspot-features-row--alt
+	
+	+above('l')
+		.crowdspot-features__image, .crowdspot-features__video
+			margin-right 0
+			margin-left -25%
+			
 .crowdspot-features__video
 	position relative
-	// width 50vw
-	// max-width 940px
 	display none
 	overflow hidden
 	border-radius 5px
 	box-shadow 2px 2px 5px rgba(black, 0.18)
-
-	// +above('m')
-	// 	margin-right -90%
 
 	&:before
 		content ''
@@ -195,10 +147,3 @@
 		z-index 10
 		border-top-left-radius 5px
 		border-top-right-radius 5px
-
-// .crowdspot-features-row--alt
-// 	.crowdspot-features__images
-// 		img, video
-// 			+above('m')
-// 				margin-right 0
-// 				margin-left -90%

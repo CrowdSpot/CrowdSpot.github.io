@@ -270,10 +270,7 @@ gulp.task('favicons', function () {
 
 gulp.task('minifyimages', function () {
     return gulp.src('img/src/**/*')
-        .pipe(plugins.imagemin({
-            progressive: true,
-            svgoPlugins: [{removeViewBox: false}],
-            use: [pngcrush()]
-        }))
+        .pipe(plugins.newer('img'))
+        .pipe(plugins.imagemin())
         .pipe(gulp.dest('img'));
 });

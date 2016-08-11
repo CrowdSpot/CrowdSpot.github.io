@@ -2897,7 +2897,7 @@ body {
   position: relative;
   overflow: hidden;
   padding-top: 2em;
-  padding-bottom: 2em;
+  padding-bottom: 0em;
 }
 .section-crowdspot-features .gradientAnimatedBird {
   width: 47px;
@@ -2908,10 +2908,11 @@ body {
   .section-crowdspot-features .gradientAnimatedBird {
     width: 67px;
     margin-bottom: -15px;
+    margin-left: 1em;
   }
 }
 .crowdspot-features-section {
-  background-image: url("img/footerbackground.svg");
+  background-image: none;
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top;
@@ -2922,14 +2923,7 @@ body {
   box-shadow: 0 0 25px rgba(34,34,34,0.15) inset;
 }
 .crowdspot-features-section--community {
-  background-size: 800px;
-  background-position: bottom right;
-  background-image: url("img/community-background.svg");
-}
-.crowdspot-features-section--insights {
-  background-size: 800px;
-  background-position: bottom left;
-  background-image: url("img/insights-background.svg");
+  background-image: url("img/footerbackground.svg");
 }
 .crowdspot-features-row {
   display: -webkit-box;
@@ -2967,8 +2961,8 @@ body {
   text-align: center;
   font-size: 24px;
   font-size: 1.5rem;
-  font-weight: 600;
-  padding-top: 2em;
+  font-weight: 700;
+  padding-top: 1em;
   padding-bottom: 1em;
 }
 .crowdspot-features__list__item {
@@ -3016,13 +3010,32 @@ body {
 @media only screen and (min-width: 600px) {
   .crowdspot-features__images {
     display: block;
-    min-height: 500px;
+    min-height: 420px;
     width: 100%;
+    margin-top: 2em;
   }
 }
 @media only screen and (min-width: 800px) {
   .crowdspot-features__images {
+    margin-top: 0;
     width: 65%;
+    min-height: 680px;
+    overflow: visible;
+  }
+  .crowdspot-features__images .crowdspot-features__image,
+  .crowdspot-features__images .crowdspot-features__video {
+    margin-right: -25%;
+  }
+  .crowdspot-features__images img,
+  .crowdspot-features__images video {
+    width: 100%;
+  }
+}
+@media only screen and (min-width: 800px) {
+  .crowdspot-features-row--alt .crowdspot-features__image,
+  .crowdspot-features-row--alt .crowdspot-features__video {
+    margin-right: 0;
+    margin-left: -25%;
   }
 }
 .crowdspot-features__video {
