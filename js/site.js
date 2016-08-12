@@ -61,7 +61,30 @@ $(function() {
 		
 	];
 
-	$.Velocity.RunSequence(introSequence);
+	var introSequenceShort = [
+		{ e: $('.mainroad, .features'), p: 'transition.shrinkIn', o: { stagger: 150 } },
+		{ e: $('.roads'), p: 'transition.shrinkIn', o: { duration: 400 } },
+		{ e: $('.map'), p: { opacity: 0.5 }, o: { duration: 1000, sequenceQueue: false } },
+		{ e: $('.mapgradient'), p: { opacity: 1 }, o: { duration: 1000, sequenceQueue: false } },
+		{ e: $('#logotype'), p: 'transition.slideDownIn' },
+		{ e: $('.logobird'), p: 'transition.slideLeftIn', o: { stagger: 250 } },
+		{ e: $('.main-intro .section__subtitle'), p: 'transition.slideDownIn', o: { stagger: 250 } }
+		
+	];
+
+	console.log(Modernizr);
+	console.log(Modernizr.mobile);
+	console.log(Modernizr.safari);
+
+	// if mobile or safari, play short intro animation otherwise play full one
+
+	if (Modernizr.mobile || Modernizr.mobile) {
+		$.Velocity.RunSequence(introSequenceShort);
+	} else {
+		$.Velocity.RunSequence(introSequence);
+	}
+
+	
 
 	// gradient bird animations 
 	//#FF0000;#284EF6;#00FF28;#FF0000
