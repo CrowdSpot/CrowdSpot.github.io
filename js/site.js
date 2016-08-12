@@ -136,6 +136,8 @@ $(function() {
 
 	// preloading images
 
+
+
 	function preloadImages(images) {
 		for (var i = images.length - 1; i >= 0; i--) {
 			$("<img />").attr("src", images[i]);
@@ -144,12 +146,16 @@ $(function() {
 
 	var imagesToPreload = [];
 
-	$('.crowdspot-features__list__item').each(function(index, el) {
-		// check that element has an image
-		if ($(this).data('image')) {
-			imagesToPreload.push($(this).data('image'));
-		}
-	});
+	if (!Modernizr.mobile) {
+
+		$('.crowdspot-features__list__item').each(function(index, el) {
+			// check that element has an image
+			if ($(this).data('image')) {
+				imagesToPreload.push($(this).data('image'));
+			}
+		});
+
+	}
 
 	
 
@@ -324,6 +330,17 @@ $(function() {
 	    // *from a matched state to an unmatched state*.
 	    unmatch : function() {
 	    	console.log('not max width 600px');
+
+	    	if (!Modernizr.mobile) {
+
+	    		$('.crowdspot-features__list__item').each(function(index, el) {
+	    			// check that element has an image
+	    			if ($(this).data('image')) {
+	    				imagesToPreload.push($(this).data('image'));
+	    			}
+	    		});
+
+	    	}
 
 	    	$('.crowdspot-features__list__item').on('click', function(event) {
 
