@@ -1,0 +1,678 @@
+<svg id="map" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 2239.64 1085.67">
+  <defs>
+    <pattern id="New_Pattern_Swatch_4" data-name="New Pattern Swatch 4" width="28.8" height="28.8" patternTransform="translate(6.65 17.6) rotate(-18.1) scale(1.55)" patternUnits="userSpaceOnUse" viewBox="0 0 28.8 28.8">
+          <rect width="28.8" height="28.8" style="fill: none"/>
+          <circle cx="28.8" cy="28.8" r="1.44" style="fill: #d9dad1;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 1.8425200000000002px"/>
+          <circle cx="14.4" cy="28.8" r="1.44" style="fill: #d9dad1;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 1.8425200000000002px"/>
+          <circle cy="28.8" r="1.44" style="fill: #d9dad1;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 1.8425200000000002px"/>
+          <circle cx="28.8" cy="14.4" r="1.44" style="fill: #d9dad1;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 1.8425200000000002px"/>
+          <circle cx="14.4" cy="14.4" r="1.44" style="fill: #d9dad1;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 1.8425200000000002px"/>
+          <circle cy="14.4" r="1.44" style="fill: #d9dad1;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 1.8425200000000002px"/>
+          <circle cx="28.8" r="1.44" style="fill: #d9dad1;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 1.8425200000000002px"/>
+          <circle cx="14.4" r="1.44" style="fill: #d9dad1;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 1.8425200000000002px"/>
+          <circle r="1.44" style="fill: #d9dad1;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 1.8425200000000002px"/>
+          <circle cx="-14.4" r="1.44" style="fill: #d9dad1;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 1.8425200000000002px"/>
+          <path d="M-14.4,0" style="fill: #d9dad1"/>
+          <circle cx="7.2" cy="21.6" r="1.44" style="fill: #d9dad1;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 1.8425200000000002px"/>
+          <circle cx="21.6" cy="21.6" r="1.44" style="fill: #d9dad1;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 1.8425200000000002px"/>
+          <circle cx="7.2" cy="7.2" r="1.44" style="fill: #d9dad1;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 1.8425200000000002px"/>
+          <circle cx="21.6" cy="7.2" r="1.44" style="fill: #d9dad1;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 1.8425200000000002px"/>
+          <circle cx="-7.2" cy="7.2" r="1.44" style="fill: #d9dad1;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 1.8425200000000002px"/>
+          <path d="M-7.2,7.2" style="fill: #d9dad1"/>
+        </pattern>
+        <pattern id="New_Pattern_Swatch_1" data-name="New Pattern Swatch 1" width="72" height="72" patternTransform="translate(-37.51 102.36) rotate(-18.1) scale(1.55)" patternUnits="userSpaceOnUse" viewBox="0 0 72 72">
+          <rect width="72" height="72" style="fill: none"/>
+          <line x1="-23.75" y1="66" x2="-17.75" y2="72" style="fill: none"/>
+          <line x1="-23.75" y1="72" x2="-17.75" y2="66" style="fill: none"/>
+          <line x1="-7.48" y1="10.52" x2="10.51" y2="-7.48" style="fill: none;stroke: #d9dad1;stroke-linejoin: round;stroke-width: 2.8346500000000003px"/>
+          <line x1="-7.48" y1="22.52" x2="22.51" y2="-7.48" style="fill: none;stroke: #d9dad1;stroke-linejoin: round;stroke-width: 2.8346500000000003px"/>
+          <line x1="-7.48" y1="34.52" x2="34.51" y2="-7.48" style="fill: none;stroke: #d9dad1;stroke-linejoin: round;stroke-width: 2.8346500000000003px"/>
+          <line x1="-7.48" y1="46.52" x2="46.51" y2="-7.48" style="fill: none;stroke: #d9dad1;stroke-linejoin: round;stroke-width: 2.8346500000000003px"/>
+          <line x1="-7.48" y1="58.52" x2="58.51" y2="-7.48" style="fill: none;stroke: #d9dad1;stroke-linejoin: round;stroke-width: 2.8346500000000003px"/>
+          <line x1="-7.48" y1="70.52" x2="70.51" y2="-7.48" style="fill: none;stroke: #d9dad1;stroke-linejoin: round;stroke-width: 2.8346500000000003px"/>
+          <line x1="-1.48" y1="76.52" x2="76.51" y2="-1.48" style="fill: none;stroke: #d9dad1;stroke-linejoin: round;stroke-width: 2.8346500000000003px"/>
+          <line x1="10.51" y1="76.52" x2="76.51" y2="10.52" style="fill: none;stroke: #d9dad1;stroke-linejoin: round;stroke-width: 2.8346500000000003px"/>
+          <line x1="22.51" y1="76.52" x2="76.51" y2="22.52" style="fill: none;stroke: #d9dad1;stroke-linejoin: round;stroke-width: 2.8346500000000003px"/>
+          <line x1="34.51" y1="76.52" x2="76.51" y2="34.52" style="fill: none;stroke: #d9dad1;stroke-linejoin: round;stroke-width: 2.8346500000000003px"/>
+          <line x1="46.51" y1="76.52" x2="76.51" y2="46.52" style="fill: none;stroke: #d9dad1;stroke-linejoin: round;stroke-width: 2.8346500000000003px"/>
+          <line x1="58.51" y1="76.52" x2="76.51" y2="58.52" style="fill: none;stroke: #d9dad1;stroke-linejoin: round;stroke-width: 2.8346500000000003px"/>
+          <line x1="-28.75" y1="13.5" x2="-18.75" y2="3.5" style="fill: none;stroke: #d9dad1;stroke-linejoin: bevel;stroke-width: 2.8346500000000003px"/>
+        </pattern>
+        <pattern id="New_Pattern_Swatch_4-5" data-name="New Pattern Swatch 4" width="28.8" height="28.8" patternTransform="translate(75.63 37.52) rotate(-18.1) scale(1.55)" patternUnits="userSpaceOnUse" viewBox="0 0 28.8 28.8">
+          <rect width="28.8" height="28.8" style="fill: none"/>
+          <circle cx="28.8" cy="28.8" r="1.44" style="fill: #d9dad1;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 1.8425200000000002px"/>
+          <circle cx="14.4" cy="28.8" r="1.44" style="fill: #d9dad1;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 1.8425200000000002px"/>
+          <circle cy="28.8" r="1.44" style="fill: #d9dad1;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 1.8425200000000002px"/>
+          <circle cx="28.8" cy="14.4" r="1.44" style="fill: #d9dad1;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 1.8425200000000002px"/>
+          <circle cx="14.4" cy="14.4" r="1.44" style="fill: #d9dad1;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 1.8425200000000002px"/>
+          <circle cy="14.4" r="1.44" style="fill: #d9dad1;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 1.8425200000000002px"/>
+          <circle cx="28.8" r="1.44" style="fill: #d9dad1;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 1.8425200000000002px"/>
+          <circle cx="14.4" r="1.44" style="fill: #d9dad1;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 1.8425200000000002px"/>
+          <circle r="1.44" style="fill: #d9dad1;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 1.8425200000000002px"/>
+          <circle cx="-14.4" r="1.44" style="fill: #d9dad1;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 1.8425200000000002px"/>
+          <path d="M-14.4,0" style="fill: #d9dad1"/>
+          <circle cx="7.2" cy="21.6" r="1.44" style="fill: #d9dad1;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 1.8425200000000002px"/>
+          <circle cx="21.6" cy="21.6" r="1.44" style="fill: #d9dad1;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 1.8425200000000002px"/>
+          <circle cx="7.2" cy="7.2" r="1.44" style="fill: #d9dad1;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 1.8425200000000002px"/>
+          <circle cx="21.6" cy="7.2" r="1.44" style="fill: #d9dad1;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 1.8425200000000002px"/>
+          <circle cx="-7.2" cy="7.2" r="1.44" style="fill: #d9dad1;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 1.8425200000000002px"/>
+          <path d="M-7.2,7.2" style="fill: #d9dad1"/>
+        </pattern>
+        <linearGradient id="linear-gradient" x1="1121.11" x2="1121.11" y2="1085.27" gradientUnits="userSpaceOnUse">
+          <stop offset="0" stop-color="#fff"/>
+          <stop offset="1" stop-color="#fff" stop-opacity="0"/>
+        </linearGradient>
+        <clipPath id="clip-path">
+          <polyline points="1153.03 364.81 1160.44 393.33 1160.76 393.33 1168.17 364.82 1153.03 364.81" style="fill: #ff1609;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-2">
+          <rect x="1134.97" y="315.64" width="52" height="78" style="fill: none"/>
+        </clipPath>
+        <clipPath id="clip-path-3">
+          <path d="M1155.6,335.25a6.61,6.61,0,1,1-6.61-6.88,6.75,6.75,0,0,1,6.61,6.88m30.6,7.17c0-14.73-11.46-26.68-25.6-26.68s-25.6,11.94-25.6,26.68,11.46,26.68,25.6,26.68,25.6-11.94,25.6-26.68" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-5">
+          <polyline points="1422.42 556.35 1429.84 584.87 1430.15 584.87 1437.57 556.35 1422.42 556.35" style="fill: #ff1609;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-6">
+          <rect x="1404.36" y="507.17" width="52" height="78" style="fill: none"/>
+        </clipPath>
+        <clipPath id="clip-path-7">
+          <path d="M1425,526.78a6.61,6.61,0,1,1-6.61-6.88,6.75,6.75,0,0,1,6.61,6.88m30.6,7.17c0-14.73-11.46-26.68-25.6-26.68s-25.6,11.94-25.6,26.68,11.46,26.68,25.6,26.68,25.6-11.94,25.6-26.68" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-9">
+          <polyline points="647.83 812.54 640.42 841.06 640.1 841.06 632.69 812.54 647.83 812.54" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-10">
+          <rect x="613.9" y="763.36" width="52" height="78" style="fill: none"/>
+        </clipPath>
+        <clipPath id="clip-path-11">
+          <path d="M645.27,783a6.61,6.61,0,1,0,6.61-6.88,6.75,6.75,0,0,0-6.61,6.88m-30.6,7.17c0-14.73,11.46-26.68,25.6-26.68s25.6,11.94,25.6,26.68-11.46,26.68-25.6,26.68-25.6-11.94-25.6-26.68" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-13">
+          <polyline points="1729.01 602.47 1721.59 630.99 1721.28 630.99 1713.86 602.48 1729.01 602.47" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-14">
+          <rect x="1695.07" y="553.29" width="52" height="78" style="fill: none"/>
+        </clipPath>
+        <clipPath id="clip-path-15">
+          <path d="M1726.44,572.91A6.61,6.61,0,1,0,1733,566a6.75,6.75,0,0,0-6.61,6.88m-30.6,7.17c0-14.73,11.46-26.68,25.6-26.68s25.6,11.94,25.6,26.68-11.46,26.68-25.6,26.68-25.6-11.94-25.6-26.68" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-17">
+          <polyline points="1503 304 1510.41 332.52 1510.73 332.52 1518.14 304 1503 304" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-18">
+          <rect x="1485" y="255" width="52" height="78" style="fill: none"/>
+        </clipPath>
+        <clipPath id="clip-path-19">
+          <path d="M1505.59,274.51a6.61,6.61,0,1,1-6.61-6.88,6.75,6.75,0,0,1,6.61,6.88m30.6,7.17c0-14.73-11.46-26.68-25.6-26.68s-25.6,11.94-25.6,26.68,11.46,26.68,25.6,26.68,25.6-11.94,25.6-26.68" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-21">
+          <polyline points="338.38 761.24 345.8 789.76 346.11 789.76 353.53 761.24 338.38 761.24" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-22">
+          <rect x="320.38" y="712.24" width="52" height="78" style="fill: none"/>
+        </clipPath>
+        <clipPath id="clip-path-23">
+          <path d="M341,731.75a6.61,6.61,0,1,1-6.61-6.88,6.75,6.75,0,0,1,6.61,6.88m30.6,7.17c0-14.73-11.46-26.68-25.6-26.68s-25.6,11.94-25.6,26.68,11.46,26.68,25.6,26.68,25.6-11.94,25.6-26.68" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-25">
+          <polyline points="936.49 519.76 929.07 548.28 928.76 548.28 921.34 519.77 936.49 519.76" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-26">
+          <rect x="902.49" y="470.76" width="52" height="78" style="fill: none"/>
+        </clipPath>
+        <clipPath id="clip-path-27">
+          <path d="M933.9,490.27a6.61,6.61,0,1,0,6.61-6.88,6.75,6.75,0,0,0-6.61,6.88m-30.6,7.17c0-14.73,11.46-26.68,25.6-26.68s25.6,11.94,25.6,26.68-11.46,26.68-25.6,26.68-25.6-11.94-25.6-26.68" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-29">
+          <polyline points="2021.34 636.86 2013.92 665.38 2013.61 665.38 2006.19 636.87 2021.34 636.86" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-30">
+          <rect x="1987.34" y="587.86" width="52" height="78" style="fill: none"/>
+        </clipPath>
+        <clipPath id="clip-path-31">
+          <path d="M2018.74,607.37a6.61,6.61,0,1,0,6.61-6.88,6.75,6.75,0,0,0-6.61,6.88m-30.6,7.17c0-14.73,11.46-26.68,25.6-26.68s25.6,11.94,25.6,26.68-11.46,26.68-25.6,26.68-25.6-11.94-25.6-26.68" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-33">
+          <polyline points="1081.55 771.6 1088.96 800.12 1089.28 800.12 1096.69 771.6 1081.55 771.6" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-34">
+          <rect x="1063.55" y="722.6" width="52" height="78" style="fill: none"/>
+        </clipPath>
+        <clipPath id="clip-path-35">
+          <path d="M1084.14,742.1a6.61,6.61,0,1,1-6.61-6.88,6.75,6.75,0,0,1,6.61,6.88m30.6,7.17c0-14.73-11.46-26.68-25.6-26.68s-25.6,11.94-25.6,26.68S1075,776,1089.14,776s25.6-11.94,25.6-26.68" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-37">
+          <polyline points="1924.95 394.59 1932.37 423.11 1932.68 423.11 1940.1 394.59 1924.95 394.59" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-38">
+          <rect x="1906.95" y="345.59" width="52" height="78" style="fill: none"/>
+        </clipPath>
+        <clipPath id="clip-path-39">
+          <path d="M1927.55,365.09a6.61,6.61,0,1,1-6.61-6.88,6.75,6.75,0,0,1,6.61,6.88m30.6,7.17c0-14.73-11.46-26.68-25.6-26.68s-25.6,11.94-25.6,26.68,11.46,26.68,25.6,26.68,25.6-11.94,25.6-26.68" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-41">
+          <polyline points="1519.4 802.78 1511.99 831.3 1511.67 831.3 1504.26 802.79 1519.4 802.78" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-42">
+          <rect x="1485.4" y="753.78" width="52" height="78" style="fill: none"/>
+        </clipPath>
+        <clipPath id="clip-path-43">
+          <path d="M1516.81,773.29a6.61,6.61,0,1,0,6.61-6.88,6.75,6.75,0,0,0-6.61,6.88m-30.6,7.17c0-14.73,11.46-26.68,25.6-26.68s25.6,11.94,25.6,26.68-11.46,26.68-25.6,26.68-25.6-11.94-25.6-26.68" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-45">
+          <polyline points="604.56 276.25 597.14 304.77 596.83 304.77 589.42 276.25 604.56 276.25" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-46">
+          <rect x="570.56" y="227.25" width="52" height="78" style="fill: none"/>
+        </clipPath>
+        <clipPath id="clip-path-47">
+          <path d="M602,246.76a6.61,6.61,0,1,0,6.61-6.88,6.75,6.75,0,0,0-6.61,6.88m-30.6,7.17c0-14.73,11.46-26.68,25.6-26.68s25.6,11.94,25.6,26.68S611.1,280.6,597,280.6s-25.6-11.94-25.6-26.68" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-49">
+          <polyline points="632.32 288.87 597.3 304.77 596.99 304.77 617.17 288.87 632.32 288.87" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-50">
+          <polygon points="570.25 305.04 622.25 305.04 697.75 261.56 645.75 261.56 570.25 305.04" style="fill: none"/>
+        </clipPath>
+        <clipPath id="clip-path-51">
+          <path d="M620.74,276.43c14.26-8.21,37.28-14.87,51.42-14.87s14,6.66-.22,14.87-37.28,14.87-51.42,14.87-14-6.66.23-14.87" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-53">
+          <polyline points="381.29 772.11 346.27 788.01 345.95 788.01 366.14 772.12 381.29 772.11" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-54">
+          <polygon points="319.22 788.28 371.22 788.28 446.72 744.8 394.72 744.8 319.22 788.28" style="fill: none"/>
+        </clipPath>
+        <clipPath id="clip-path-55">
+          <path d="M369.7,759.67C384,751.46,407,744.8,421.12,744.8s14,6.66-.22,14.87-37.28,14.87-51.42,14.87-14-6.66.23-14.87" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-57">
+          <polyline points="675.18 828.81 640.16 844.71 639.84 844.71 660.03 828.82 675.18 828.81" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-58">
+          <polygon points="613.11 844.98 665.11 844.98 740.61 801.5 688.61 801.5 613.11 844.98" style="fill: none"/>
+        </clipPath>
+        <clipPath id="clip-path-59">
+          <path d="M663.59,816.37c14.26-8.21,37.28-14.87,51.42-14.87s14,6.66-.22,14.87-37.28,14.87-51.42,14.87-14-6.66.23-14.87" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-61">
+          <polyline points="964.23 529.82 929.21 545.72 928.89 545.72 949.08 529.83 964.23 529.82" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-62">
+          <polygon points="902.15 545.99 954.15 545.99 1029.66 502.51 977.66 502.51 902.15 545.99" style="fill: none"/>
+        </clipPath>
+        <clipPath id="clip-path-63">
+          <path d="M952.64,517.38c14.26-8.21,37.28-14.87,51.42-14.87s14,6.66-.22,14.87-37.28,14.87-51.42,14.87-14-6.66.23-14.87" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-65">
+          <polyline points="1124.45 785.77 1089.43 801.67 1089.12 801.67 1109.31 785.77 1124.45 785.77" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-66">
+          <polygon points="1062.38 801.94 1114.38 801.94 1189.88 758.46 1137.88 758.46 1062.38 801.94" style="fill: none"/>
+        </clipPath>
+        <clipPath id="clip-path-67">
+          <path d="M1112.87,773.33c14.26-8.21,37.28-14.87,51.42-14.87s14,6.66-.22,14.87-37.28,14.87-51.42,14.87-14-6.66.23-14.87" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-69">
+          <polyline points="1463.37 571.73 1428.35 587.63 1428.03 587.63 1448.22 571.73 1463.37 571.73" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-70">
+          <polygon points="1401.29 587.9 1453.29 587.9 1528.8 544.42 1476.8 544.42 1401.29 587.9" style="fill: none"/>
+        </clipPath>
+        <clipPath id="clip-path-71">
+          <path d="M1451.78,559.29c14.26-8.21,37.28-14.87,51.42-14.87s14,6.66-.22,14.87-37.28,14.87-51.42,14.87-14-6.66.23-14.87" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-73">
+          <polyline points="1545.91 316.09 1510.89 331.99 1510.57 331.99 1530.76 316.09 1545.91 316.09" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-74">
+          <polygon points="1483.84 332.26 1535.84 332.26 1611.34 288.78 1559.34 288.78 1483.84 332.26" style="fill: none"/>
+        </clipPath>
+        <clipPath id="clip-path-75">
+          <path d="M1534.32,303.65c14.26-8.21,37.28-14.87,51.42-14.87s14,6.66-.22,14.87-37.28,14.87-51.42,14.87-14-6.66.23-14.87" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-77">
+          <polyline points="1757.21 614.94 1722.19 630.84 1721.88 630.84 1742.06 614.95 1757.21 614.94" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-78">
+          <polygon points="1695.14 631.11 1747.14 631.11 1822.64 587.63 1770.64 587.63 1695.14 631.11" style="fill: none"/>
+        </clipPath>
+        <clipPath id="clip-path-79">
+          <path d="M1745.62,602.5c14.26-8.21,37.28-14.87,51.42-14.87s14,6.66-.22,14.87-37.28,14.87-51.42,14.87-14-6.66.23-14.87" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-81">
+          <polyline points="1967.86 407.4 1932.84 423.3 1932.53 423.3 1952.71 407.4 1967.86 407.4" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-82">
+          <polygon points="1905.79 423.56 1957.79 423.56 2033.29 380.08 1981.29 380.08 1905.79 423.56" style="fill: none"/>
+        </clipPath>
+        <clipPath id="clip-path-83">
+          <path d="M1956.27,395c14.26-8.21,37.28-14.87,51.42-14.87s14,6.66-.22,14.87-37.28,14.87-51.42,14.87-14-6.66.23-14.87" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-85">
+          <polyline points="2049.1 650.43 2014.08 666.33 2013.77 666.33 2033.95 650.43 2049.1 650.43" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-86">
+          <polygon points="1987.03 666.59 2039.03 666.59 2114.53 623.12 2062.53 623.12 1987.03 666.59" style="fill: none"/>
+        </clipPath>
+        <clipPath id="clip-path-87">
+          <path d="M2037.52,638c14.26-8.21,37.28-14.87,51.42-14.87s14,6.66-.22,14.87-37.28,14.87-51.42,14.87-14-6.66.23-14.87" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-89">
+          <polyline points="1546.99 818.25 1511.97 834.14 1511.66 834.14 1531.85 818.25 1546.99 818.25" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-90">
+          <polygon points="1484.92 834.41 1536.92 834.41 1612.42 790.93 1560.42 790.93 1484.92 834.41" style="fill: none"/>
+        </clipPath>
+        <clipPath id="clip-path-91">
+          <path d="M1535.41,805.8c14.26-8.21,37.28-14.87,51.42-14.87s14,6.66-.22,14.87-37.28,14.87-51.42,14.87-14-6.66.23-14.87" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-93">
+          <polyline points="1195.94 377.75 1160.92 393.65 1160.6 393.65 1180.79 377.75 1195.94 377.75" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-94">
+          <polygon points="1133.87 393.92 1185.87 393.92 1261.37 350.44 1209.37 350.44 1133.87 393.92" style="fill: none"/>
+        </clipPath>
+        <clipPath id="clip-path-95">
+          <path d="M1184.35,365.31c14.26-8.21,37.28-14.87,51.42-14.87s14,6.66-.22,14.87-37.28,14.87-51.42,14.87-14-6.66.23-14.87" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-97">
+          <polyline points="1096.8 523.51 1119.34 606.64 1120.3 606.64 1142.84 523.53 1096.8 523.51" style="fill: #ff1609;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-98">
+          <path d="M1104.6,437.35a20.08,20.08,0,1,1-20.08-20.06,20.07,20.07,0,0,1,20.08,20.06m93,20.9A77.83,77.83,0,1,0,1119.82,536a77.79,77.79,0,0,0,77.82-77.75" style="fill: #ff1609;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-99">
+          <polyline points="1018.12 606.64 1104.22 606.64 1104.57 605.66 1030.15 562.24 1018.12 606.64" style="fill: #595b5a;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-100">
+          <path d="M984.89,557.35a20.07,20.07,0,1,1,24.12-15,20.07,20.07,0,0,1-24.12,15m-41.49,85.78a77.76,77.76,0,1,0-58.12-93.38,77.83,77.83,0,0,0,58.12,93.38" style="fill: #595b5a;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-101">
+          <polyline points="1221.52 606.64 1135.42 606.64 1135.07 605.66 1209.49 562.24 1221.52 606.64" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <clipPath id="clip-path-102">
+          <path d="M1254.75,557.35a20.07,20.07,0,1,0-24.12-15,20.07,20.07,0,0,0,24.12,15m41.49,85.78a77.76,77.76,0,1,1,58.12-93.38,77.83,77.83,0,0,1-58.12,93.38" style="fill: none;clip-rule: evenodd"/>
+        </clipPath>
+        <linearGradient id="linear-gradient-2" x1="1119.82" y1="1087.23" x2="1119.82" y2="609.75" xlink:href="#linear-gradient"/>
+  </defs>
+  <title>CrowdSpot_Animation</title>
+  <g class="map">
+      <g id="roads" class="roads">
+        <g>
+          <line x1="1587.49" y1="1276.91" x2="1057.63" y2="-343.9" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 5.66929px"/>
+          <line x1="912.86" y1="60.23" x2="1225.55" y2="-41.99" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="994.64" y1="310.38" x2="1307.33" y2="208.16" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="1117.31" y1="685.61" x2="1429.99" y2="583.39" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 5.66929px"/>
+          <line x1="1035.53" y1="435.46" x2="1348.22" y2="333.24" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 5.66929px"/>
+          <line x1="994.64" y1="310.38" x2="1307.33" y2="208.16" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="1076.42" y1="560.53" x2="1389.11" y2="458.31" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="1158.19" y1="810.68" x2="1470.88" y2="708.46" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="1076.42" y1="560.53" x2="1389.11" y2="458.31" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="1158.19" y1="810.68" x2="1470.88" y2="708.46" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="953.75" y1="185.31" x2="1266.44" y2="83.09" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 5.66929px"/>
+          <line x1="1199.08" y1="935.76" x2="1511.77" y2="833.54" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 5.66929px"/>
+          <line x1="1378.73" y1="-421.73" x2="1826.79" y2="948.85" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 5.66929px"/>
+          <line x1="1764.73" y1="335.53" x2="2033.66" y2="1158.19" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="2004.1" y1="-626.18" x2="2533.97" y2="994.64" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="1753.95" y1="-544.4" x2="2283.81" y2="1076.42" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="1879.03" y1="-585.29" x2="2408.89" y2="1035.53" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 5.66929px"/>
+          <line x1="1628.88" y1="-503.51" x2="2158.74" y2="1117.31" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 5.66929px"/>
+          <line x1="2129.18" y1="-667.06" x2="2659.04" y2="953.75" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 5.66929px"/>
+          <line x1="1803.21" y1="876.73" x2="2928.89" y2="508.73" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="1348.61" y1="333.12" x2="2724.44" y2="-116.65" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 5.66929px"/>
+          <line x1="1389.51" y1="458.2" x2="2765.33" y2="8.43" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="1307.73" y1="208.05" x2="2683.55" y2="-241.72" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="1389.5" y1="458.2" x2="2765.33" y2="8.43" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="1307.73" y1="208.05" x2="2683.55" y2="-241.73" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="1846.51" y1="585.69" x2="1721.43" y2="626.58" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="2742.48" y1="362.01" x2="2117.1" y2="566.45" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="2722.03" y1="299.47" x2="2096.66" y2="503.91" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="1951.14" y1="482.26" x2="1867.75" y2="509.52" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="1992.02" y1="607.34" x2="1908.64" y2="634.6" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="2574.1" y1="693.93" x2="2198.88" y2="816.6" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="1253.65" y1="-380.84" x2="1783.51" y2="1239.97" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="1378.73" y1="-421.73" x2="1826.79" y2="948.85" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 5.66929px"/>
+          <line x1="1658.44" y1="1280.86" x2="1128.58" y2="-339.96" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 5.66929px"/>
+          <line x1="2923.52" y1="372.04" x2="2013.74" y2="669.46" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 5.66929px"/>
+          <line x1="1571.9" y1="1229.22" x2="3010.66" y2="758.88" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="2803.81" y1="549.62" x2="2178.43" y2="754.06" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="2969.78" y1="633.8" x2="1593.94" y2="1083.58" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 5.66929px"/>
+          <line x1="1266.84" y1="82.97" x2="2678.19" y2="-378.42" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 5.66929px"/>
+          <line x1="1266.83" y1="82.96" x2="2642.66" y2="-366.82" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 5.66929px"/>
+          <line x1="1503.8" y1="-462.62" x2="1682.95" y2="85.38" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="1430.39" y1="583.28" x2="2841.75" y2="121.89" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 5.66929px"/>
+          <line x1="1248.82" y1="27.85" x2="2499.57" y2="-381.03" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 5.66929px"/>
+          <line x1="1516.89" y1="0.87" x2="2144.77" y2="-619.37" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 5.66929px"/>
+        </g>
+        <g>
+          <rect x="1505.66" y="529.36" width="263.18" height="526.36" transform="translate(-165.22 547.97) rotate(-18.1)" style="fill: #fff;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="607.74" y1="1597.2" x2="77.88" y2="-23.61" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="357.59" y1="1678.98" x2="-172.27" y2="58.17" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="482.66" y1="1638.09" x2="-47.2" y2="17.28" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 5.66929px"/>
+          <line x1="232.51" y1="1719.87" x2="-297.35" y2="99.05" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 5.66929px"/>
+          <line x1="1462.42" y1="1317.8" x2="932.56" y2="-303.01" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="732.81" y1="1556.31" x2="202.95" y2="-64.5" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 5.66929px"/>
+          <line x1="857.89" y1="1515.42" x2="556.07" y2="592.2" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="453.1" y1="-146.28" x2="982.96" y2="1474.54" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 5.66929px"/>
+          <line x1="1337.34" y1="1358.69" x2="807.48" y2="-262.13" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 5.66929px"/>
+          <line x1="578.18" y1="-187.16" x2="1108.04" y2="1433.65" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="-442.11" y1="503.19" x2="683.56" y2="135.19" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="-487.82" y1="1210.34" x2="888" y2="760.57" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 5.66929px"/>
+          <line x1="-528.71" y1="1085.27" x2="847.12" y2="635.49" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="-446.94" y1="1335.41" x2="928.89" y2="885.64" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="-528.71" y1="1085.27" x2="847.12" y2="635.5" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="-446.94" y1="1335.42" x2="928.89" y2="885.65" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="619.82" y1="363.69" x2="-5.56" y2="568.14" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="640.26" y1="426.23" x2="14.88" y2="630.67" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="908.45" y1="823.11" x2="825.06" y2="850.36" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="867.56" y1="698.03" x2="784.17" y2="725.29" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="287.89" y1="195.32" x2="-87.33" y2="317.98" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="121.93" y1="111.13" x2="38.54" y2="138.39" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="328.78" y1="320.4" x2="78.63" y2="402.17" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <polyline points="533.22 945.77 616.6 918.51 604.71 882.14" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <path d="M856.74,170.87l40.89,125.08,27.26,83.38,68.95,69.75L1062,657.54l-35.28,103.83L1054,844.75l82.58,111.45,137.16,419.57-62.54,20.44-116.72-357L970.58,872l-27.26-83.38,14-27.66L916.47,635.9l-69-69.75L813.44,461.91l14.43-97L780.17,219l35.28-103.83-112.2-343.2,41.69-13.63L870.77,143.21Z" style="fill: #fff;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="953.75" y1="185.31" x2="-149.81" y2="546.07" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 5.66929px"/>
+          <line x1="-523.89" y1="253.04" x2="601.78" y2="-114.96" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="558.48" y1="176.08" x2="-66.89" y2="380.52" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="642.67" y1="10.12" x2="-733.16" y2="459.89" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 5.66929px"/>
+          <line x1="-406.05" y1="1460.49" x2="1219.93" y2="928.94" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 5.66929px"/>
+          <rect x="590.45" y="654.45" width="263.18" height="43.86" transform="translate(-174.43 257.84) rotate(-18.1)" style="fill: #fff;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="901.63" y1="802.26" x2="1108.2" y2="1434.15" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <path d="M1106.94,1430.29l-116.72-357a131.59,131.59,0,0,0-166-84.19l-1000.6,327.11h0a131.59,131.59,0,0,1-166-84.19L-672.57,221.72" style="fill: none;stroke: #fff;stroke-miterlimit: 10;stroke-width: 11.338600000000001px"/>
+          <line x1="-569.6" y1="960.19" x2="1035.53" y2="435.46" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 5.66929px"/>
+          <polygon points="637.85 842.35 137.55 1005.9 14.88 630.67 139.96 589.78 305.92 673.97 556.07 592.2 637.85 842.35" style="fill: #fff;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <rect x="2215.22" y="290.54" width="263.18" height="263.18" transform="translate(-15 750.11) rotate(-18.1)" style="fill: #fff;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+        </g>
+      </g>
+      <g id="features" class="features">
+        <polygon points="1430.39 583.28 1680.54 501.5 1844.1 1001.81 1593.95 1083.59 1430.39 583.28" style="stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px;fill: url(#New_Pattern_Swatch_4)"/>
+        <path d="M856.74,170.87l40.89,125.08,27.26,83.38,68.95,69.76L1062,657.54l-35.28,103.83L1054,844.75l82.58,111.45,137.16,419.57-62.54,20.44-116.72-357L970.58,872l-27.26-83.38,14-27.66L916.47,635.9l-69-69.75L813.44,461.91l14.43-97L780.17,219l35.28-103.83-112.2-343.2,41.69-13.63L870.77,143.21Z" style="stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px;fill: url(#New_Pattern_Swatch_1)"/>
+        <polygon points="637.85 842.35 137.55 1005.9 14.88 630.67 139.96 589.78 305.92 673.97 556.07 592.2 637.85 842.35" style="stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px;fill: url(#New_Pattern_Swatch_4)"/>
+        <polygon points="2180.84 337.95 2430.99 256.17 2512.77 506.32 2262.62 588.1 2180.84 337.95" style="stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px;fill: url(#New_Pattern_Swatch_4-5)"/>
+      </g>
+      <g id="mainroad4" class="mainroad">
+        <path d="M2715.92-263L1992.58-26.54h0a131.59,131.59,0,0,0-84.19,166l313,957.4" style="fill: none;stroke: #fff;stroke-miterlimit: 10;stroke-width: 11.338600000000001px"/>
+        <g>
+          <path d="M2709.1-283.85h0L1985.76-47.38s-145.93,47.7-98.22,193.62l313,957.4,41.69-13.63-313-957.4c-34.07-104.23,70.16-138.3,70.16-138.3l723.34-236.47h0" style="fill: #fff;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <path d="M2715.92-263L2000.08-29l-9.59,3.13C1921.41-3.28,1884,64.93,1906.62,134l314.76,962.82" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 11.338600000000001px;stroke-dasharray: 2.8346500396728516,5.102359771728516"/>
+          <circle cx="1969.72" cy="327.04" r="21.93" transform="translate(-4.12 628.24) rotate(-18.1)" style="fill: #fff;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+        </g>
+      </g>
+      <g id="mainroad3" class="mainroad">
+        <path d="M1078.83,144.44L1392,42.06a131.59,131.59,0,0,1,166,84.19l245.3,750.37h0a131.59,131.59,0,0,0,166,84.19L2979.51,630.53" style="fill: none;stroke: #fff;stroke-miterlimit: 10;stroke-width: 11.338600000000001px"/>
+        <g>
+          <path d="M2972.69,609.68L1962.42,939.95c-104.23,34.07-138.3-70.16-138.3-70.16L1582.22,129.85,1578.68,119s-47.56-145.51-193.49-97.8L1072,123.59l13.63,41.69L1398.82,62.9c104.23-34.07,138.3,70.16,138.3,70.16h0l245.3,750.36s47.7,145.93,193.62,98.22L2986.32,651.37Z" style="fill: #fff;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <path d="M1078.83,144.44L1397,40.42c69.08-22.58,137.43,13.83,160,82.9l243.8,745.78,3.13,9.59c22.58,69.08,90.79,106.46,159.87,83.87l1015.69-332" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 11.338600000000001px;stroke-dasharray: 2.8346500396728516,5.102359771728516"/>
+          <circle cx="1639.5" cy="376.48" r="21.93" transform="translate(-35.82 528.07) rotate(-18.1)" style="fill: #fff;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <circle cx="1332.3" cy="61.57" r="21.93" transform="translate(46.82 417.03) rotate(-18.1)" style="fill: #fff;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <circle cx="1803.05" cy="876.78" r="21.93" transform="translate(-183.19 603.66) rotate(-18.1)" style="fill: #fff;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <circle cx="1721.27" cy="626.62" r="21.93" transform="matrix(0.95, -0.31, 0.31, 0.95, -109.5, 565.87)" style="fill: #fff;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <circle cx="2156.85" cy="899.46" r="21.93" transform="translate(-172.72 714.72) rotate(-18.1)" style="fill: #fff;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+        </g>
+      </g>
+      <g id="mainroad2" class="mainroad">
+        <g>
+          <rect x="1175.56" y="-345.22" width="43.86" height="1705.22" transform="translate(-98.38 397.21) rotate(-18.1)" style="fill: #fff;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+          <line x1="1462.42" y1="1317.8" x2="932.56" y2="-303.01" style="fill: none;stroke: #fff;stroke-miterlimit: 10;stroke-width: 11.338600000000001px"/>
+          <line x1="1460.39" y1="1311.6" x2="933.79" y2="-299.24" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 11.338600000000001px;stroke-dasharray: 2.832594871520996,5.098660469055176"/>
+        </g>
+        <circle cx="1078.73" cy="144.11" r="21.93" transform="translate(8.62 342.32) rotate(-18.1)" style="fill: #fff;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+        <circle cx="1160.6" cy="394.57" r="21.93" transform="translate(-65.15 380.16) rotate(-18.1)" style="fill: #fff;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+        <circle cx="1324.16" cy="894.87" r="21.93" transform="translate(-212.51 455.75) rotate(-18.1)" style="fill: #fff;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+        <circle cx="1242.38" cy="644.72" r="21.93" transform="translate(-138.83 417.96) rotate(-18.1)" style="fill: #fff;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+      </g>
+      <g id="mainroad1" class="mainroad">
+        <path d="M-651.73,214.91l330.27,1010.27c34.07,104.23,138.31,70.15,138.31,70.15L807,971.63l10.84-3.54s145.51-47.57,193.21,98.35l116.72,357-41.69,13.63-116.72-357c-34.07-104.23-138.31-70.15-138.31-70.15h0L-169.53,1337s-145.92,47.71-193.63-98.21L-693.42,228.53Z" style="fill: #fff;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+        <path d="M1106.94,1430.29l-118.35-362C966,999.18,896.25,965.54,827.17,988.12l-996,325.61-9.59,3.13c-69.08,22.58-139.53-10.38-162.11-79.45l-332-1015.69" style="fill: none;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 11.338600000000001px;stroke-dasharray: 2.8346500396728516,5.102359771728516"/>
+        <circle cx="574.19" cy="1071.1" r="21.93" transform="translate(-304.4 231.44) rotate(-18.1)" style="fill: #fff;stroke: #d9dad1;stroke-miterlimit: 10;stroke-width: 2.8346500000000003px"/>
+      </g>
+      <rect id="gradient" class="mapgradient" width="2242.22" height="585.27" style="fill: url(#linear-gradient)"/>
+  </g>
+
+  <g id="marker12" class="marker">
+    <circle cx="1148.99" cy="335.53" r="11.61" style="fill: #fff"/>
+    <g>
+      <polyline points="1153.03 364.81 1160.44 393.33 1160.76 393.33 1168.17 364.82 1153.03 364.81" style="fill: #ff1609;fill-rule: evenodd"/>
+      <g style="clip-path: url(#clip-path)">
+        <g style="clip-path: url(#clip-path-2)">
+          <rect x="1148.03" y="359.81" width="25.14" height="38.52" style="fill: #ff1609"/>
+        </g>
+      </g>
+    </g>
+    <g style="clip-path: url(#clip-path-3)">
+      <g style="clip-path: url(#clip-path-2)">
+        <rect x="1130.01" y="310.74" width="61.19" height="63.35" style="fill: #ff1609"/>
+      </g>
+    </g>
+  </g>
+  <g id="marker11" class="marker">
+    <circle cx="1418.38" cy="526.78" r="11.61" style="fill: #fff"/>
+    <g>
+      <polyline points="1422.42 556.35 1429.84 584.87 1430.15 584.87 1437.57 556.35 1422.42 556.35" style="fill: #ff1609;fill-rule: evenodd"/>
+      <g style="clip-path: url(#clip-path-5)">
+        <g style="clip-path: url(#clip-path-6)">
+          <rect x="1417.42" y="551.35" width="25.14" height="38.52" style="fill: #ff1609"/>
+        </g>
+      </g>
+    </g>
+    <g style="clip-path: url(#clip-path-7)">
+      <g style="clip-path: url(#clip-path-6)">
+        <rect x="1399.4" y="502.28" width="61.19" height="63.35" style="fill: #ff1609"/>
+      </g>
+    </g>
+  </g>
+  <g id="marker10" class="marker">
+    <circle cx="651.87" cy="782.98" r="11.61" style="fill: #fff"/>
+    <g style="clip-path: url(#clip-path-9)">
+      <g style="clip-path: url(#clip-path-10)">
+        <rect x="627.69" y="807.54" width="25.14" height="38.52" style="fill: #ff1609"/>
+      </g>
+    </g>
+    <g style="clip-path: url(#clip-path-11)">
+      <g style="clip-path: url(#clip-path-10)">
+        <rect x="609.66" y="758.47" width="61.19" height="63.35" style="fill: #ff1609"/>
+      </g>
+    </g>
+  </g>
+  <g id="marker9" class="marker">
+    <circle cx="1733.2" cy="574.16" r="11.61" style="fill: #fff"/>
+    <g style="clip-path: url(#clip-path-13)">
+      <g style="clip-path: url(#clip-path-14)">
+        <rect x="1708.86" y="597.47" width="25.14" height="38.52" style="fill: #ff1609"/>
+      </g>
+    </g>
+    <g style="clip-path: url(#clip-path-15)">
+      <g style="clip-path: url(#clip-path-14)">
+        <rect x="1690.84" y="548.4" width="61.19" height="63.35" style="fill: #ff1609"/>
+      </g>
+    </g>
+  </g>
+  <g id="marker8" class="marker">
+    <circle cx="1498.99" cy="274.51" r="11.61" style="fill: #fff"/>
+    <g style="clip-path: url(#clip-path-17)">
+      <g style="clip-path: url(#clip-path-18)">
+        <rect x="1498" y="299" width="25.14" height="38.52" style="fill: #4eaf46"/>
+      </g>
+    </g>
+    <g style="clip-path: url(#clip-path-19)">
+      <g style="clip-path: url(#clip-path-18)">
+        <rect x="1480" y="250" width="61.19" height="63.35" style="fill: #4eaf46"/>
+      </g>
+    </g>
+  </g>
+  <g id="marker7" class="marker">
+    <circle cx="334.37" cy="731.75" r="11.61" style="fill: #fff"/>
+    <g style="clip-path: url(#clip-path-21)">
+      <g style="clip-path: url(#clip-path-22)">
+        <rect x="333.38" y="756.24" width="25.14" height="38.52" style="fill: #4eaf46"/>
+      </g>
+    </g>
+    <g style="clip-path: url(#clip-path-23)">
+      <g style="clip-path: url(#clip-path-22)">
+        <rect x="315.38" y="707.24" width="61.19" height="63.35" style="fill: #4eaf46"/>
+      </g>
+    </g>
+  </g>
+  <g id="marker6" class="marker">
+    <circle cx="940.5" cy="490.27" r="11.61" style="fill: #fff"/>
+    <g style="clip-path: url(#clip-path-25)">
+      <g style="clip-path: url(#clip-path-26)">
+        <rect x="916.34" y="514.76" width="25.14" height="38.52" style="fill: #4eaf46"/>
+      </g>
+    </g>
+    <g style="clip-path: url(#clip-path-27)">
+      <g style="clip-path: url(#clip-path-26)">
+        <rect x="898.29" y="465.76" width="61.19" height="63.35" style="fill: #4eaf46"/>
+      </g>
+    </g>
+  </g>
+  <g id="marker5" class="marker">
+    <circle cx="2025.35" cy="607.34" r="11.61" style="fill: #fff"/>
+    <g style="clip-path: url(#clip-path-29)">
+      <g style="clip-path: url(#clip-path-30)">
+        <rect x="2001.19" y="631.86" width="25.14" height="38.52" style="fill: #4eaf46"/>
+      </g>
+    </g>
+    <g style="clip-path: url(#clip-path-31)">
+      <g style="clip-path: url(#clip-path-30)">
+        <rect x="1983.14" y="582.86" width="61.19" height="63.35" style="fill: #4eaf46"/>
+      </g>
+    </g>
+  </g>
+  <g id="marker4" class="marker">
+    <circle cx="1077.53" cy="742.11" r="11.61" style="fill: #fff"/>
+    <g style="clip-path: url(#clip-path-33)">
+      <g style="clip-path: url(#clip-path-34)">
+        <rect x="1076.55" y="766.6" width="25.14" height="38.52" style="fill: #4a4f4c"/>
+      </g>
+    </g>
+    <g style="clip-path: url(#clip-path-35)">
+      <g style="clip-path: url(#clip-path-34)">
+        <rect x="1058.55" y="717.6" width="61.19" height="63.35" style="fill: #4a4f4c"/>
+      </g>
+    </g>
+  </g>
+  <g id="marker3" class="marker">
+    <circle cx="1920.94" cy="365.31" r="11.61" style="fill: #fff"/>
+    <g style="clip-path: url(#clip-path-37)">
+      <g style="clip-path: url(#clip-path-38)">
+        <rect x="1919.95" y="389.59" width="25.14" height="38.52" style="fill: #4a4f4c"/>
+      </g>
+    </g>
+    <g style="clip-path: url(#clip-path-39)">
+      <g style="clip-path: url(#clip-path-38)">
+        <rect x="1901.95" y="340.59" width="61.19" height="63.35" style="fill: #4a4f4c"/>
+      </g>
+    </g>
+  </g>
+  <g id="marker2" class="marker">
+    <circle cx="1523.27" cy="773.33" r="11.61" style="fill: #fff"/>
+    <g style="clip-path: url(#clip-path-41)">
+      <g style="clip-path: url(#clip-path-42)">
+        <rect x="1499.26" y="797.78" width="25.14" height="38.52" style="fill: #4a4f4c"/>
+      </g>
+    </g>
+    <g style="clip-path: url(#clip-path-43)">
+      <g style="clip-path: url(#clip-path-42)">
+        <rect x="1481.21" y="748.78" width="61.19" height="63.35" style="fill: #4a4f4c"/>
+      </g>
+    </g>
+  </g>
+  <g id="marker1" class="marker">
+    <circle cx="608.57" cy="246.76" r="11.61" style="fill: #fff"/>
+    <g style="clip-path: url(#clip-path-45)">
+      <g style="clip-path: url(#clip-path-46)">
+        <rect x="584.42" y="271.25" width="25.14" height="38.52" style="fill: #4a4f4c"/>
+      </g>
+    </g>
+    <g style="clip-path: url(#clip-path-47)">
+      <g style="clip-path: url(#clip-path-46)">
+        <rect x="566.36" y="222.25" width="61.19" height="63.35" style="fill: #4a4f4c"/>
+      </g>
+    </g>
+  </g>
+
+  <circle class="visualise" cx="601.78" cy="278.6" r="119.95" style="fill: #4a4f4c;fill-opacity: 0.67;stroke: #4a4f4c;stroke-miterlimit: 10;stroke-width: 0px"/>
+  <circle class="visualise" cx="1114.31" cy="758.46" r="239.62" style="fill: #4a4f4c;fill-opacity: 0.67;stroke: #4a4f4c;stroke-miterlimit: 10;stroke-width: 0px"/>
+  <circle class="visualise" cx="345.98" cy="746.86" r="239.62" style="fill: #4eaf46;fill-opacity: 0.67;stroke: #4eaf46;stroke-miterlimit: 10;stroke-width: 0px"/>
+  <circle class="visualise" cx="763.21" cy="580.08" r="69.34" style="fill: #4eaf46;fill-opacity: 0.67;stroke: #4eaf46;stroke-miterlimit: 10;stroke-width: 0px"/>
+  <circle class="visualise" cx="1462.42" cy="318.52" r="106.15" style="fill: #4eaf46;fill-opacity: 0.67;stroke: #4eaf46;stroke-miterlimit: 10;stroke-width: 0px"/>
+  <circle class="visualise" cx="2009.1" cy="635.81" r="69.34" style="fill: #4eaf46;fill-opacity: 0.67;stroke: #4eaf46;stroke-miterlimit: 10;stroke-width: 0px"/>
+  <circle class="visualise" cx="1432.9" cy="552.62" r="184.2" style="fill: #ff1609;fill-opacity: 0.67;stroke: #ff1609;stroke-miterlimit: 10;stroke-width: 0px"/>
+  <circle class="visualise" cx="1158.19" cy="354.54" r="234.57" style="fill: #ff1609;fill-opacity: 0.67;stroke: #ff1609;stroke-miterlimit: 10;stroke-width: 0px"/>
+  <circle class="visualise" cx="639.66" cy="829.78" r="104.91" style="fill: #ff1609;fill-opacity: 0.67;stroke: #ff1609;stroke-miterlimit: 10;stroke-width: 0px"/>
+  <circle class="visualise" cx="1724.67" cy="595.73" r="103.64" style="fill: #ff1609;fill-opacity: 0.67;stroke: #ff1609;stroke-miterlimit: 10;stroke-width: 0px"/>
+  <circle class="visualise" cx="911.71" cy="509.42" r="154.88" style="fill: #4eaf46;fill-opacity: 0.67;stroke: #4eaf46;stroke-miterlimit: 10;stroke-width: 0px"/>
+  <circle class="visualise" cx="1503" cy="794.59" r="106.93" style="fill: #4a4f4c;fill-opacity: 0.67;stroke: #4a4f4c;stroke-miterlimit: 10;stroke-width: 0px"/>
+  <circle class="visualise" cx="1378.73" cy="836.74" r="65.79" style="fill: #4a4f4c;fill-opacity: 0.67;stroke: #4a4f4c;stroke-miterlimit: 10;stroke-width: 0px"/>
+  <circle class="visualise" cx="1924.95" cy="402.17" r="231.32" style="fill: #4a4f4c;fill-opacity: 0.67;stroke: #4a4f4c;stroke-miterlimit: 10;stroke-width: 0px"/>
+
+  <g id="decisionbird3" class="decisionbird">
+    <g>
+      <polyline points="1096.8 523.51 1119.34 606.64 1120.3 606.64 1142.84 523.53 1096.8 523.51" style="fill: #ff1609;fill-rule: evenodd"/>
+      <g style="clip-path: url(#clip-path-97)">
+        <rect x="1085.93" y="512.64" width="67.78" height="104.87" style="fill: #ff1609"/>
+      </g>
+    </g>
+    <g>
+      <path d="M1104.6,437.35a20.08,20.08,0,1,1-20.08-20.06,20.07,20.07,0,0,1,20.08,20.06m93,20.9A77.83,77.83,0,1,0,1119.82,536a77.79,77.79,0,0,0,77.82-77.75" style="fill: #ff1609;fill-rule: evenodd"/>
+      <g style="clip-path: url(#clip-path-98)">
+        <rect x="1031.12" y="369.62" width="177.39" height="177.25" style="fill: #ff1609"/>
+      </g>
+    </g>
+  </g>
+  <g id="decisionbird2" class="decisionbird">
+    <g>
+      <polyline points="1018.12 606.64 1104.22 606.64 1104.57 605.66 1030.15 562.24 1018.12 606.64" style="fill: #595b5a;fill-rule: evenodd"/>
+      <g style="clip-path: url(#clip-path-99)">
+        <rect x="1007.25" y="551.36" width="108.19" height="66.14" style="fill: #595b5a"/>
+      </g>
+    </g>
+    <g>
+      <path d="M984.89,557.35a20.07,20.07,0,1,1,24.12-15,20.07,20.07,0,0,1-24.12,15m-41.49,85.78a77.76,77.76,0,1,0-58.12-93.38,77.83,77.83,0,0,0,58.12,93.38" style="fill: #595b5a;fill-rule: evenodd"/>
+      <g style="clip-path: url(#clip-path-100)">
+        <rect x="872.35" y="478.76" width="177.43" height="177.29" style="fill: #595b5a"/>
+      </g>
+    </g>
+  </g>
+  <g id="decisionbird1" class="decisionbird">
+    <g style="clip-path: url(#clip-path-101)">
+      <rect x="1124.2" y="551.36" width="108.19" height="66.14" style="fill: #4eaf46"/>
+    </g>
+    <g style="clip-path: url(#clip-path-102)">
+      <rect x="1189.86" y="478.76" width="177.43" height="177.29" style="fill: #4eaf46"/>
+    </g>
+  </g>
+
+  <g id="Build_Title" data-name="Build Title" class="introTitles">
+    <rect y="609.75" width="2239.64" height="477.49" style="fill: url(#linear-gradient-2); opacity: 0.55;"/>
+    <text transform="translate(1035.8 1012.54)" style="font-size: 72px;fill: #4a4f4c;font-family: Proxima Nova;font-weight: 700">Build</text>
+  </g>
+  <g id="Engage_Title" data-name="Engage Title" class="introTitles">
+    <rect y="609.75" width="2239.64" height="477.49" style="fill: url(#linear-gradient-2); opacity: 0.55;"/>
+    <text transform="translate(996.41 1012.34)" style="font-size: 72px;fill: #4a4f4c;font-family: Proxima Nova;font-weight: 700">Engage</text>
+  </g>
+  <g id="Insights_Title" data-name="Insights Title" class="introTitles">
+    <rect y="609.75" width="2239.64" height="477.49" style="fill: url(#linear-gradient-2); opacity: 0.55;"/>
+    <text transform="translate(991.55 1012.34)" style="font-size: 72px;fill: #4a4f4c;font-family: Proxima Nova;font-weight: 700">Insights</text>
+  </g>
+  <g id="Decide_Title" data-name="Decide Title" class="introTitles">
+    <rect y="609.75" width="2239.64" height="477.49" style="fill: url(#linear-gradient-2); opacity: 0.55;"/>
+    <text transform="translate(1005.99 1012.34)" style="font-size: 72px;fill: #4a4f4c;font-family: Proxima Nova;font-weight: 700">Decide</text>
+  </g>
+
+  <g id="logotype">
+      <path d="M1518.65,554.28h-29.15V533.34h-24.78v20.94H1453v19.9h11.69v32.64c0,12.22,1.75,18.15,7.16,23.91,5.93,6.46,14.31,9.95,23.91,9.95a58.35,58.35,0,0,0,19.2-3.31q1-.52,3.67-1.57V613.62c-6.28,3.66-11.35,5.06-17.45,5.06-4.37,0-8-1.4-9.6-3.84s-2.09-4.71-2.09-11.35V574.18h29.15v-19.9Zm-88.48,42.41c0,12-8.9,21.12-20.42,21.12-11.69,0-20.59-9.08-20.59-21.12s8.73-20.94,20.42-20.94a20.6,20.6,0,0,1,20.6,20.94m24.61,0c0-24.43-20.07-44.15-45-44.15-25.31,0-45,19.37-45,44.15,0,24.61,19.9,44.16,45.2,44.16,25.13,0,44.85-19.37,44.85-44.16m-156.2-16.58c6.63-3.49,10.47-4.71,15.53-4.71,12,0,20.59,8.73,20.59,21.12,0,12.91-8.2,22-20.07,22a32.91,32.91,0,0,1-16.06-4.19V580.11Zm-1.74-25.83h-23.39V671.21h25.13V636a24,24,0,0,0,10.3,4,38,38,0,0,0,8.73.87c23.39,0,41.54-18.85,41.54-43.46,0-25.31-18.33-44.85-41.89-44.85-6.81,0-12.56,1.57-16.93,4.71-1,.7-2.09,1.74-3.49,2.79v-5.76Zm-37-15.18c-6.29-12.74-17.1-19-33-19-21.47,0-36.65,13.09-36.65,31.59,0,10.3,4.71,19.2,14.14,26.53a65.69,65.69,0,0,0,10.12,6.46c0.52,0.17,3.67,1.74,9.42,4.36,10.82,5.24,14.84,9.25,14.84,14.83a12.78,12.78,0,0,1-13.09,12.74c-7.85,0-14.14-4.88-19-14.66l-21.29,14c10.12,17.63,22.34,25.31,39.79,25.31,24.43,0,42.41-15.88,42.41-37.52,0-12-5.93-22.69-16.4-29.67a56.91,56.91,0,0,0-9.6-5.06c-0.7-.35-3.67-1.57-8.55-3.49-12.39-5.06-16.93-8.9-16.93-14.48,0-5.06,4.36-8.9,10.3-8.9,6.46,0,9.95,2.79,12.39,9.77ZM1153.9,579.59v32.64a26.74,26.74,0,0,1-15,4.71,20.53,20.53,0,0,1-20.94-20.77c0-11.87,8.73-20.42,21.47-20.42,4.89,0,8.38,1,14.49,3.84M1179,522.34H1153.9v34a47.33,47.33,0,0,0-18.33-3.84c-23.39,0-41.89,19.2-41.89,43.28,0,23.91,19,44,41.54,44a31.22,31.22,0,0,0,20.25-6.81v5.76H1179V522.34Zm-80.28,31.94h-27.57l-12.57,52.53-13.26-52.53h-26.53l-13.09,52.53L993,554.28H965.77l26,84.47h27.05L1031.91,589l13.44,49.74h27.4ZM946,596.69c0,12-8.9,21.12-20.42,21.12-11.69,0-20.59-9.08-20.59-21.12s8.73-20.94,20.42-20.94A20.6,20.6,0,0,1,946,596.69m24.61,0c0-24.43-20.07-44.15-45-44.15-25.31,0-45,19.37-45,44.15,0,24.61,19.89,44.16,45.2,44.16,25.13,0,44.85-19.37,44.85-44.16m-89.11-42.41a47.61,47.61,0,0,0-7.68-.7,37,37,0,0,0-9.08,1c-4.71,1.4-7,2.79-11.34,7.15v-7.5H830.06v84.47h25.13V582.21a20,20,0,0,1,9.77-5.76,30.73,30.73,0,0,1,9.6-1.57,23.23,23.23,0,0,1,7,1V554.28Zm-58.46-25c-9.77-4.54-13.79-5.93-22.16-7.68a84.79,84.79,0,0,0-16.06-1.57c-36.13,0-63.88,26.18-63.88,60.38C721,615,748,641.2,784,641.2A88.82,88.82,0,0,0,818.54,634c1-.35,2.62-1,4.54-1.92V605.24c-10.3,5.93-14.66,7.85-22.16,9.77A55.48,55.48,0,0,1,788,616.59c-22.51,0-39.62-15.53-39.62-36.13,0-19.9,16.93-35.78,38-35.78,9.6,0,20.24,3,30,8.38,1.57,0.87,3.84,2.27,6.63,4.19V529.32Z" style="fill: #595b5a"/>
+  </g>
+  <g id="bird2" class="logobird">
+    <polygon points="1252.62 448.01 1273.96 528.58 1274.92 528.58 1297.68 448.01 1252.62 448.01" style="fill: #ff1609"/>
+    <path d="M1262.93,394.16A16.13,16.13,0,1,1,1246.8,378a16.13,16.13,0,0,1,16.13,16.13m74.73,16.8a62.5,62.5,0,1,0-62.51,62.5,62.51,62.51,0,0,0,62.51-62.5" style="fill: #ff1609"/>
+  </g>
+  <g id="bird1" class="logobird">
+    <polygon points="1131.26 473.58 1214.62 473.82 1214.86 472.89 1142.93 430.05 1131.26 473.58" style="fill: #ff1609"/>
+    <path d="M1140.78,419.64a16.13,16.13,0,1,1-16.13-16.13,16.13,16.13,0,0,1,16.13,16.13m22.59,23.13a62.5,62.5,0,1,0-62.5,62.51,62.51,62.51,0,0,0,62.5-62.51" style="fill: #ff1609"/>
+  </g>
+</svg>
