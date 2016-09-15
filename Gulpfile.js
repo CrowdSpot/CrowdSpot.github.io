@@ -88,7 +88,7 @@ var sprites_folder 		= 'img/icons',
 
 // Default Task
 
-gulp.task('default', ['styles', 'js-dev', 'browser-sync', 'watch:styles', 'watch:minifyimages', 'watch:favicon'], function() {
+gulp.task('default', ['styles-production', 'js-production', 'browser-sync', 'watch:styles', 'watch:minifyimages', 'watch:favicon'], function() {
 	gulp.watch(javascripts, function() {
 	    gulp.run('js-dev');
 	});
