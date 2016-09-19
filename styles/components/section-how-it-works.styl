@@ -1,24 +1,24 @@
 .section-how-it-works
 	text-align center
 	background-color #F4F4F4
-	
+
 	padding-top 0em
-	
+
 	.gradientAnimatedBird
 		width 28px
 		margin-bottom -30px
 		margin-left 0.5em
-		
+
 		+above('m')
 			width 47px
 			margin-bottom -20px
 			margin-left 1em
-	
+
 	+above('m')
 		padding-top 60px
-	
+
 .slick-slider--how-it-works
-	
+
 	img
 		margin-left auto
 		margin-right auto
@@ -27,7 +27,7 @@
 	opacity 1
 	transition opacity 0.5s ease
 	fill grey
-	
+
 .how-it-works-tabs
 	lost-utility clearfix
 	margin-left auto
@@ -37,27 +37,27 @@
 .how-it-works-mobile-tab
 	margin-top 1em
 	margin-bottom 2em
-	
+
 	opacity 1
-	
+
 	.how-it-works-tab-icon__hover
 		opacity 0
-	
+
 	.how-it-works-tab-icon
 		width 50px
 		height 50px
-	
+
 .how-it-works-tab
 	opacity 0.55
 	transition opacity 0.5s ease
 	cursor pointer
-	
+
 	+above('m')
 		lost-column 1/3
-	
+
 	&:hover, &.active
 		opacity 1
-		
+
 		.how-it-works-tab-icon__hover
 			opacity 0
 
@@ -65,7 +65,31 @@
 	font-weight 600
 	fs rem(24px)
 	margin-bottom 1em
-	
+
 .how-it-works-tab-icon
 	margin-top 1em
 	margin-bottom 1em
+
+.how-it-works-grid
+	margin 3em 0 0em
+	box-shadow 0 0 20px 0 rgba(black, 0.2)
+
+	display flex
+	flex-wrap wrap
+
+.how-it-works-grid__item
+	width 100%
+	padding 3em 1em
+	box-shadow 0 0 1px 0 rgba(black, 0.2)
+
+	+above('xs')
+		width 50%
+
+	+above('m')
+		width (100/3)%
+
+.how-it-works-grid__item__icon
+	height 100px
+	display flex
+	justify-content center
+	align-items center
