@@ -29,7 +29,7 @@ var processors = [
 	require('postcss-mixins'),
 	require('postcss-simple-vars'),
 	require('postcss-nested'),
-	require('autoprefixer-core')({ browsers: ['last 2 versions', '> 2%'] }),
+	require('autoprefixer')({ browsers: ['last 2 versions', '> 2%'] }),
 	lost(),
 	autoprefixer()
 ];
