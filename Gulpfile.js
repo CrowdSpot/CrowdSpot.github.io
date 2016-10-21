@@ -1,19 +1,19 @@
 
 
-var gulp 			= require('gulp');
+var gulp 					= require('gulp');
 var browserSync 	=	require('browser-sync').create(),
-	pngcrush 		=	require('imagemin-pngcrush'),
-	favicons 		=	require('favicons');
-	typographic 	=	require('typographic');
-	nib			 	=	require('nib'),
-	autoprefixer 	= 	require('autoprefixer'),
-	lost 			= 	require('lost'),
-	axis 			= 	require('axis'),
-	rupture 		= 	require('rupture'),
-	csswring 		= 	require('csswring'),
-	cp				=	require('child_process');
+	pngcrush 				=	require('imagemin-pngcrush'),
+	favicons 				=	require('favicons');
+	typographic 		=	require('typographic');
+	nib			 				=	require('nib'),
+	autoprefixer 		= require('autoprefixer'),
+	lost 						= require('lost'),
+	axis 						= require('axis'),
+	rupture 				= require('rupture'),
+	csswring 				= require('csswring'),
+	cp							=	require('child_process');
 
-var plugins 		= 	require('gulp-load-plugins')();
+var plugins 			= require('gulp-load-plugins')();
 
 var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
@@ -21,7 +21,7 @@ var messages = {
 
 //	uglify      	=	require('gulp-uglify'),
 //	jshint      	=	require('gulp-jshint'),
-//	
+//
 //	stripDebug  	=	require('gulp-strip-debug'),
 //	imagemin    	=	require('gulp-imagemin'),
 
@@ -55,6 +55,7 @@ var javascripts = [
 	'bower_components/fitvids/jquery.fitvids.js',
 	'bower_components/waypoints/lib/jquery.waypoints.js',
 	'bower_components/waypoints/lib/shortcuts/sticky.js',
+	'bower_components/waypoints/lib/shortcuts/inview.js',
 	// 'js/*.js'
 	// 'js/acfgooglemap.js',
 	'bower_components/js-cookie/src/js.cookie.js',
