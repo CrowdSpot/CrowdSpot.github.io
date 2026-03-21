@@ -1,6 +1,20 @@
 $(function() {
 
-	
+	// Position nav below the announcement banner
+	var $banner = $('.announcement-banner');
+	var $header = $('.site-header');
+
+	function getBannerHeight() {
+		return $banner.length ? $banner.outerHeight() : 0;
+	}
+
+	function positionHeader() {
+		$header.css('top', getBannerHeight() + 'px');
+	}
+
+	positionHeader();
+	$(window).on('resize', positionHeader);
+
 	// browserhappy for old browsers
 
 	$('.browsehappy').click(function() {
